@@ -1,0 +1,1 @@
+export const ABOUT_WHATIS__URL = "https://images.squarespace-cdn.com/content/v1/5fc9626cf8d07478c2461f12/1619201969042-X3XVYVW6Y87HK9TY8V1P/Image_1%2B%25281%2529.jpg?format=2500w";
