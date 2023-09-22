@@ -2,7 +2,6 @@ import Image from "next/image";
 import imagePath from "../../../../public/images/what-is-1.png"
 import { ABOUT_WHATIS__URL } from "../../URL's";
 
-
 export function WhatIs() {
   return (
     <div>
@@ -21,8 +20,7 @@ export function WhatIs() {
           real-time corrective feedback to help users achieve their goals in sports and fitness — all in the palm of
           your hand using only your mobile phone and at a fraction of the cost of existing 3D Motion Capture Systems.
         </div>
-        <img src= {ABOUT_WHATIS__URL} 
-        alt="Image Description" className="w-[45%]" />
+        <img src= {ABOUT_WHATIS__URL} alt="Image Description" className="w-[45%] rounded-[30px]" />
       </div>
     </div>
   );
