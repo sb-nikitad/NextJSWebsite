@@ -16,14 +16,16 @@
     font-style: normal;
   }
 
-  .anton-font {
-    font-family: 'Anton',; /* Use the custom font */
+  @font-face {
+    font-family: 'Anton',;
     src: url('/fonts/Anton-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
-
-  body {
-    font-family: 'Anton', sans-serif;
-  }
   
+  .anton-font {
+    font-family: 'Anton'; /* Use the custom font */
+  }
+  .lato-font{
+    font-family: 'Lato'; /* Use the custom font */
+  }
