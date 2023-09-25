@@ -3,6 +3,11 @@ import imagePath from "../../../../public/images/what-is-1.png";
 import "../../../app/globals.css";
 import { ABOUT_WHATIS__URL } from "../../URL's";
 
+import { Lato, Anton } from "next/font/google";
+
+const lato = Lato({ weight: "400", subsets: ["latin"] });
+const anton = Anton({ weight: "400", subsets: ["latin"] });
+
 export function WhatIs() {
   return (
     //   <div className="mx-32">
@@ -27,8 +32,10 @@ export function WhatIs() {
     // );
     <div className="flex flex-col gap-y-20 justify-center">
       <div className="flex flex-row gap-x-32 items-center">
-        <div className="text-4xl font-bold text-white anton-font w-1/2 px-12">
-          <span className="border-b-4 border-blue-500 inline-block p-2">
+        <div className="text-4xl font-bold text-white w-1/2 px-12">
+          <span
+            className={`border-b-4 border-blue-500 inline-block p-2 ${anton.className} font-bold`}
+          >
             WHAT IS SPORTSBOX AI?
           </span>
         </div>
