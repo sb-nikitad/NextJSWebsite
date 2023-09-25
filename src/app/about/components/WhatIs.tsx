@@ -32,7 +32,9 @@ export function WhatIs() {
     // );
     <div className="flex flex-col gap-y-20 justify-center">
       <div className="flex flex-row gap-x-8 items-center">
-        <div className="text-4xl font-bold text-white anton-font w-1/2 px-12">
+        <div
+          className={`text-4xl font-bold text-white ${anton.className} w-1/2 px-12`}
+        >
           <span className="border-b-4 border-blue-500 inline-block p-2">
             WHAT IS SPORTSBOX AI?
           </span>
