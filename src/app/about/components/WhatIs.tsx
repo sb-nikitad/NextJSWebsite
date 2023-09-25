@@ -26,7 +26,7 @@ export function WhatIs() {
     //   </div>
     // );
     <div className="flex flex-col gap-y-20 justify-center">
-      <div className="flex flex-row gap-x-32 items-center">
+      <div className="flex flex-row gap-x-8 items-center">
         <div className="text-4xl font-bold text-white anton-font w-1/2 px-12">
           <span className="border-b-4 border-blue-500 inline-block p-2">
             WHAT IS SPORTSBOX AI?
@@ -39,7 +39,7 @@ export function WhatIs() {
         </div>
       </div>
 
-      <div className="flex flex-row items-center gap-x-32">
+      <div className="flex flex-row items-center gap-x-8">
         <div className="text-white text-lg w-[50%] px-12">
           Through our unique technology that can capture, measure and analyze
           complex athletic motions in 3D, combined with the knowledge and
