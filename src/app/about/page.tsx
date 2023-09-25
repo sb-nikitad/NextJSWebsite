@@ -1,10 +1,13 @@
+import { Separator } from "../../components/Separator";
+import { ImageCarousel } from "./components/ImageCarousel";
 import { WhatIs } from "./components/WhatIs";
 
 export default function About() {
-    return (
-      <div className="bg-blue-900 p-32">
-        <WhatIs />
-      </div>
-    );
-  }
-  
+  return (
+    <div className="bg-blue-900 p-32">
+      <WhatIs />
+      <Separator height={100} />
+      <ImageCarousel />
+    </div>
+  );
+}
