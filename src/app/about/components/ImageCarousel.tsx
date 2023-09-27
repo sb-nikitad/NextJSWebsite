@@ -6,6 +6,7 @@ import img1 from "../../../../public/images/carousel-1.png";
 import img2 from "../../../../public/images/carousel-2.png";
 import img3 from "../../../../public/images/carousel-3.png";
 import img4 from "../../../../public/images/carousel-4.png";
+import arrowImg from "../../../../public/images/arrow-icon.png";
 
 export function ImageCarousel() {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -27,19 +28,27 @@ export function ImageCarousel() {
   };
 
   return (
-    <div className="flex justify-between items-center">
-      <div className="bg-white" onClick={() => handleImageChange("backward")}>
-        {"<"}
-      </div>
+    <div className="flex justify-between items-center ">
+      <Image
+        src={arrowImg}
+        alt="Arrow"
+        className="w-12 h-12 transform rotate-180"
+        onClick={() => handleImageChange("backward")}
+      />
       <Image
         src={imageArray[selectedImage]}
         alt="image"
-        width="500"
+        width="1000"
         height="500"
+        className=""
       />
-      <div className="bg-white" onClick={() => handleImageChange("forward")}>
-        {">"}
-      </div>
+
+      <Image
+        src={arrowImg}
+        alt="Arrow"
+        className="w-12 h-12"
+        onClick={() => handleImageChange("forward")}
+      />
     </div>
   );
 }

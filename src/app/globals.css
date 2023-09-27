@@ -5,3 +5,15 @@
 .custom-hsl-background {
   background-color: hsl(233, 81%, 20%);
 }
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: darkblue;
+}

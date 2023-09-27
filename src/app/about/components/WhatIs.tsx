@@ -11,16 +11,16 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export function WhatIs() {
   return (
     <div className="flex flex-col gap-y-16 items-center">
-      <div className="flex flex-row items-center">
+      <div className="flex gap-x-12">
         <div
-          className={`font-bold text-white ${anton.className} w-[55%] pl-24`}
+          className={`font-bold text-white ${anton.className} w-1/2`}
           style={{ fontSize: "3.2rem" }}
         >
           <span className="border-b-4 border-blue-500 inline-block">
             WHAT IS SPORTSBOX AI?
           </span>
         </div>
-        <div className="text-white text-lg w-[50%] pr-28">
+        <div className="text-white text-lg w-1/2">
           Founded in 2020, Sportsbox AI is an AI-powered technology company that
           develops AI Coach mobile applications in sports and fitness, using
           patent-pending 3D Motion Analysis and Kinematic AI technology.
@@ -28,7 +28,7 @@ export function WhatIs() {
       </div>
 
       <div className="flex flex-row justify-center items-center gap-x-12">
-        <div className="text-white text-lg w-[50%] pl-24">
+        <div className="text-white text-lg w-1/2">
           Through our unique technology that can capture, measure, and analyze
           complex athletic motions in 3D, combined with the knowledge and
           experience of the world’s leading instructors in each sport, Sportsbox
@@ -37,13 +37,13 @@ export function WhatIs() {
           your mobile phone and at a fraction of the cost of existing 3D Motion
           Capture Systems.
         </div>
-        <div className="w-[50%] py-8 pr-20">
-          <img
-            src={ABOUT_WHATIS__URL}
-            alt="Image Description"
-            className="rounded-[30px]"
-          />
-        </div>
+        <img
+          src={ABOUT_WHATIS__URL}
+          alt="Image Description"
+          className="rounded-[30px] block w-1/2"
+          width={400}
+          height={200}
+        />
       </div>
     </div>
   );
