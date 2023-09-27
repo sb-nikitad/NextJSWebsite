@@ -1,6 +1,6 @@
 "use client";
 
-import { getPost } from "./api";
+import { getPost } from "../API/api";
 import s from "./form.module.css";
 import { useState, useCallback } from "react";
 
