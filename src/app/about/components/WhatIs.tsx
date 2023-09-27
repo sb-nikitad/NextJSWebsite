@@ -28,7 +28,7 @@ export function WhatIs() {
       </div>
 
       <div className="flex flex-row justify-center items-center gap-x-12">
-        <div className="text-white text-lg w-1/2">
+        <div className="text-white text-lg w-[55%]">
           Through our unique technology that can capture, measure, and analyze
           complex athletic motions in 3D, combined with the knowledge and
           experience of the world’s leading instructors in each sport, Sportsbox
@@ -40,7 +40,7 @@ export function WhatIs() {
         <img
           src={ABOUT_WHATIS__URL}
           alt="Image Description"
-          className="rounded-[30px] block w-1/2"
+          className="rounded-[30px] block w-[45%]"
           width={400}
           height={200}
         />
