@@ -7,7 +7,7 @@ export default function Demo() {
       <ProductDemo />
       <HoverButton
         text="Still have questions? Request a 15-minute product demo"
-        color="#3B46FF"
+        color="bg-sb-blue"
         width="500px"
         height="60px"
       />

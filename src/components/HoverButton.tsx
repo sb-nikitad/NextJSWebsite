@@ -10,11 +10,6 @@ type Props = {
 
 export function HoverButton({ text, color, width, height }: Props) {
   // Define a custom style object with the width
-  const buttonStyle = {
-    width: width,
-    height: height,
-    backgroundColor: color,
-  };
 
   return (
     <button
@@ -23,13 +18,17 @@ export function HoverButton({ text, color, width, height }: Props) {
         "flex",
         "justify-center",
         "items-center",
-        "shadow-yellow",
-        "shadow-ls",
-        "border border-red-500",
-        color,
-        ["shadow-yellow", "shadow-ls"]
+        "transition-all",
+        `${color}`,
+        "hover:bg-transparent",
+        "hover:border-b-4",
+        "hover:border-blue-500"
       )}
-      style={buttonStyle} // Apply the custom style object here
+      style={{
+        width,
+        height,
+        boxShadow: "0 0 10px rgba(255, 255, 255, 0.5)",
+      }}
     >
       {text}
     </button>
