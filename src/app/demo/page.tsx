@@ -8,8 +8,8 @@ export default function Demo() {
       <HoverButton
         text="Still have questions? Request a 15-minute product demo"
         color="bg-sb-blue"
-        width="500px"
-        height="60px"
+        width="w-[500px]"
+        height="h-[60px]"
       />
     </div>
   );

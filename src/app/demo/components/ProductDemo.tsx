@@ -16,7 +16,7 @@ export function ProductDemo() {
         </span>
       </div>
       <div className="text-2xl">Watch our detailed demo:</div>
-      <video controls className="w-[700px] h-">
+      <video controls className="w-[700px]">
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

@@ -18,6 +18,11 @@ const config: Config = {
         "sb-blue": "#3B46FF",
         "sb-lightpurple": "#8D9FFF",
       },
+      borderColor: {
+        "sb-darkblue": "#050A30",
+        "sb-blue": "#3B46FF",
+        "sb-lightpurple": "#8D9FFF",
+      },
     },
   },
   plugins: [],

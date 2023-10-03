@@ -19,16 +19,20 @@ export function HoverButton({ text, color, width, height }: Props) {
         "justify-center",
         "items-center",
         "transition-all",
-        `${color}`,
+        "shadow-[0px_0px_10px_rgba(255,255,255,0.6)]",
         "hover:bg-transparent",
         "hover:border-b-4",
-        "hover:border-blue-500"
-      )}
-      style={{
+        "hover:border-sb-blue",
+        "hover:shadow-none",
+        color,
         width,
-        height,
-        boxShadow: "0 0 10px rgba(255, 255, 255, 0.5)",
-      }}
+        height
+      )}
+      style={
+        {
+          //boxShadow: "0 0 10px rgba(255, 255, 255, 0.6)",
+        }
+      }
     >
       {text}
     </button>
