@@ -13,7 +13,14 @@ export function TabButton({ text, width, height }: Props) {
 
   return (
     <button
-      className={clsx("relative", "block", s.tabButton, width, height)}
+      className={clsx(
+        "relative",
+        "block",
+        s.tabButton,
+        width,
+        height,
+        "text-xl"
+      )}
       style={
         {
           //boxShadow: "0 0 10px rgba(255, 255, 255, 0.6)",
