@@ -1,0 +1,15 @@
+.tabButton::after {
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #3b46ff;
+  transition: width 0.3s ease, left 0.3s ease;
+  width: 0;
+}
+
+.tabButton:hover::after {
+  width: 100%;
+  left: 0;
+}
