@@ -1,5 +1,5 @@
 import { ProductDemo } from "././components/ProductDemo";
-import { HoverButton } from "../../components/HoverButton";
+import { HoverButton } from "../../components/HoverButton/HoverButton";
 
 export default function Demo() {
   return (
