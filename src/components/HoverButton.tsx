@@ -28,11 +28,6 @@ export function HoverButton({ text, color, width, height }: Props) {
         width,
         height
       )}
-      style={
-        {
-          //boxShadow: "0 0 10px rgba(255, 255, 255, 0.6)",
-        }
-      }
     >
       {text}
     </button>
