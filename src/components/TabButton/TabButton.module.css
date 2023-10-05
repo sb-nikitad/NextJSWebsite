@@ -7,6 +7,7 @@
   background: #3b46ff;
   transition: width 0.3s ease, left 0.3s ease;
   width: 0;
+  bottom: -10px;
 }
 
 .tabButton:hover::after {

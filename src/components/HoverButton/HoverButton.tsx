@@ -23,6 +23,7 @@ export function HoverButton({ text, color, width, height }: Props) {
         "shadow-[0px_0px_10px_rgba(255,255,255,0.6)]",
         "relative",
         "transition-bg duration-300",
+        "rounded-[5px]",
         s.hoverButton,
         color,
         width,
