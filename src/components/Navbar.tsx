@@ -13,59 +13,83 @@ const Navbar = () => {
     <nav
       className={clsx(
         "flex",
-        "gap-x-36",
         "box-border",
         "items-center",
-        "px-20",
-        "py-16"
+        "gap-x-16",
+        "py-10",
+        "px-12",
+        "relative",
+        "w-[100%]"
       )}
     >
-      <Image
-        src={LogoImage}
-        alt="Sportsbox3DGolf Logo"
-        width={300}
-        height={50}
-      />
       <div
-        className={clsx("flex", "gap-x-8", "justify-center", "items-center")}
+        className={clsx(
+          "flex",
+          "flex-nowrap",
+          "gap-x-10",
+          "items-center",
+          "text-sm"
+        )}
       >
-        <Link href={`/demo`}>
-          <TabButton text="About" height="h-[20px]" />
-        </Link>
-        <Link href={`/demo`}>
-          <TabButton text="Education" height="h-[20px]" />
-        </Link>
-        <Link href={`/demo`}>
-          <TabButton text="Pricing" height="h-[20px]" />
-        </Link>
-        <Link href={`/demo`}>
-          <TabButton text="Need a Coach" height="h-[20px]" />
-        </Link>
-        <Link href={`/demo`}>
-          <TabButton text="Pro Shop" height="h-[20px]" />
-        </Link>
-        <Link href={`/demo`}>
-          <TabButton text="Support" height="h-[20px]" />
-        </Link>
-        <Link href={`/demo`}>
-          <TabButton text="More" height="h-[20px]" />
-        </Link>
+        <Image
+          src={LogoImage}
+          alt="Sportsbox3DGolf Logo"
+          width={300}
+          height={50}
+        />
+        <div
+          className={clsx(
+            "flex",
+            "flex-wrap",
+            "gap-x-4",
+            "justify-center",
+            "items-center",
+            "text-[18px]"
+          )}
+        >
+          <Link href={`/demo`}>
+            <TabButton text="About" />
+          </Link>
+          <Link href={`/demo`}>
+            <TabButton text="Education" />
+          </Link>
+          <Link href={`/demo`}>
+            <TabButton text="Pricing" />
+          </Link>
+          <Link href={`/demo`}>
+            <TabButton text="Need a Coach" />
+          </Link>
+          <Link href={`/demo`}>
+            <TabButton text="Pro Shop" />
+          </Link>
+          <Link href={`/demo`}>
+            <TabButton text="Support" />
+          </Link>
+          <Link href={`/demo`}>
+            <TabButton text="More" />
+          </Link>
+        </div>
       </div>
-
       <div
-        className={clsx("flex", "gap-x-8", "justify-center", "items-center")}
+        className={clsx(
+          "flex",
+          "gap-x-8",
+          "justify-center",
+          "items-center",
+          "text-[16px]"
+        )}
       >
         <HoverButton
           text="Book A Demo"
-          color="bg-sb-blue"
-          height="h-[40px]"
-          width="w-[150px]"
+          color="bg-sb-lightpurple"
+          height="h-[50px]"
+          width="w-[180px]"
         />
         <HoverButton
           text="Start your free trial"
           color="bg-sb-blue"
-          height="h-[40px]"
-          width="w-[200px]"
+          height="h-[50px]"
+          width="w-[220px]"
         />
       </div>
     </nav>
