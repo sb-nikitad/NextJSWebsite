@@ -26,7 +26,7 @@ const Navbar = () => {
         className={clsx(
           "flex",
           "flex-nowrap",
-          "gap-x-16",
+          "gap-x-12",
           "items-center",
           "text-sm"
         )}
@@ -41,10 +41,10 @@ const Navbar = () => {
           className={clsx(
             "flex",
             "flex-wrap",
-            "gap-x-8",
+            "gap-x-4",
             "justify-center",
             "items-center",
-            "text-[20px]"
+            "text-[18px]"
           )}
         >
           <Link href={`/demo`}>
