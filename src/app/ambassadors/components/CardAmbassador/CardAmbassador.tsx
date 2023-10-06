@@ -42,9 +42,9 @@ export function CardAmbassador({
       )}
     >
       <Image
-        src={""}
+        src={imageSrc ? imageSrc.src : ""}
         alt="Image Description"
-        className="rounded-full"
+        className="rounded-full border-ra"
         width={450}
         height={450}
       />
@@ -56,12 +56,12 @@ export function CardAmbassador({
           anton.className
         )}
       >
-        SEAN FOLEY
+        {mainText}
       </div>
       <div
         className={clsx("font-bold", "text-xl", "text-white", anton.className)}
       >
-        NO. 5 ON GOLF DIGEST'S 50 BEST TEACHERS, GOLF.COM TOP 100
+        {secondText}
       </div>
       <div
         className={clsx(
@@ -73,27 +73,7 @@ export function CardAmbassador({
           isExpanded ? "max-h-auto" : "max-h-24"
         )}
       >
-        Proprietary 2D and 3D models using over 30 key points on the body, club
-        and ball, which allows us to accurately detect comprehensive joints and
-        body segments in motion without any markers from a single video
-        Proprietary 2D and 3D models using over 30 key points on the body, club
-        and ball, which allows us to accurately detect comprehensive joints and
-        body segments in motion without any markers from a single
-        videoProprietary 2D and 3D models using over 30 key points on the body,
-        club and ball, which allows us to accurately detect comprehensive joints
-        and body segments in motion without any markers from a single
-        videoProprietary 2D and 3D models using over 30 key points on the body,
-        club and ball, which allows us to accurately detect comprehensive joints
-        and body segments in motion without any markers from a single
-        videoProprietary 2D and 3D models using over 30 key points on the body,
-        club and ball, which allows us to accurately detect comprehensive joints
-        and body segments in motion without any markers from a single
-        videoProprietary 2D and 3D models using over 30 key points on the body,
-        club and ball, which allows us to accurately detect comprehensive joints
-        and body segments in motion without any markers from a single
-        videoProprietary 2D and 3D models using over 30 key points on the body,
-        club and ball, which allows us to accurately detect comprehensive joints
-        and body segments in motion without any markers from a single video
+        {thirdText}
       </div>
 
       <button
