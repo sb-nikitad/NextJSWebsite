@@ -5,7 +5,7 @@ import { Technology } from "././components/Technology";
 
 export default function About() {
   return (
-    <div className="wrapper p-32">
+    <div className="">
       <WhatIs />
       <Separator height={100} />
       <ImageCarousel />

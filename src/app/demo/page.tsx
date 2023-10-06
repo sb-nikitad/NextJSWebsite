@@ -3,7 +3,7 @@ import { HoverButton } from "../../components/HoverButton/HoverButton";
 
 export default function Demo() {
   return (
-    <div className="flex flex-col items-center gap-y-16 wrapper p-32">
+    <div className="flex flex-col items-center gap-y-16">
       <ProductDemo />
       <HoverButton
         text="Still have questions? Request a 15-minute product demo"
