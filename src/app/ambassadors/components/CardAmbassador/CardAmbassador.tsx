@@ -41,14 +41,13 @@ export function CardAmbassador({
         "text-center"
       )}
     >
-      <div className="h-[190px] w-[190px] rounded-full object-cover border-radius-[50%] display-block">
-        <Image
-          src={imageSrc ? imageSrc.src : ""}
-          alt="Image Description"
-          className=""
-          fill
-        />
-      </div>
+      <Image
+        src={imageSrc ? imageSrc.src : ""}
+        alt="Image Description"
+        className="h-[190px] w-[190px] object-cover object-[80%] rounded-full border border-sb-purple"
+        width={190}
+        height={190}
+      />
 
       <div
         className={clsx(

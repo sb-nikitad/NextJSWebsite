@@ -42,7 +42,7 @@ const ambassadors = [
 
 export function Ambassadors() {
   return (
-    <div className="flex flex-row gap-x-8 gap-y-4 w-[1200px] flex-wrap items-stretch justify-evenly">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
       {ambassadors.map((ambassador) => (
         <CardAmbassador
           imageSrc={ambassador.imageSrc}
