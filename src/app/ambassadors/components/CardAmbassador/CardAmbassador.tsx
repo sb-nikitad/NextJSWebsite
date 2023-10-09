@@ -23,7 +23,7 @@ export function CardAmbassador({
   mainText,
   secondText,
   thirdText,
-}: Props): JSX.Element {
+}: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -41,13 +41,15 @@ export function CardAmbassador({
         "text-center"
       )}
     >
-      <Image
-        src={imageSrc ? imageSrc.src : ""}
-        alt="Image Description"
-        className="rounded-full border-ra"
-        width={450}
-        height={450}
-      />
+      <div className="h-[190px] w-[190px] rounded-full object-cover border-radius-[50%] display-block">
+        <Image
+          src={imageSrc ? imageSrc.src : ""}
+          alt="Image Description"
+          className=""
+          fill
+        />
+      </div>
+
       <div
         className={clsx(
           "font-bold",
@@ -70,7 +72,8 @@ export function CardAmbassador({
           "mb-8",
           "text-justify",
           "overflow-hidden",
-          isExpanded ? "max-h-auto" : "max-h-24"
+          isExpanded ? "max-h-64" : "max-h-24",
+          "transition-max-height ease-in-out duration-300"
         )}
       >
         {thirdText}
