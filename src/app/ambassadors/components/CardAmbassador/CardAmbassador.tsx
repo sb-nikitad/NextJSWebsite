@@ -71,7 +71,7 @@ export function CardAmbassador({
           "mb-8",
           "text-justify",
           "overflow-hidden",
-          isExpanded ? "max-h-64" : "max-h-24",
+          isExpanded ? "max-h-[600px]" : "max-h-[150px]",
           "transition-max-height ease-in-out duration-300"
         )}
       >
