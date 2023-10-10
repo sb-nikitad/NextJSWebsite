@@ -22,7 +22,7 @@ import fourteenthImg from "../../../../public/images/ambassadors/TJM_0372.jpeg";
 import fifteenthImg from "../../../../public/images/ambassadors/tempImage2HGNTH.jpg";
 import sixteenthImg from "../../../../public/images/ambassadors/Devan Bonebrake Headshot-2.png";
 
-import { CardAmbassador } from "./CardAmbassador/CardAmbassador";
+import { CardPersonInfo } from "../../../components/PersonInfCard/CardPersonInfo";
 import { text } from "stream/consumers";
 
 const lato = Lato({ weight: "400", subsets: ["latin"] });
@@ -155,7 +155,7 @@ export function Ambassadors() {
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
         {ambassadors.map((ambassador) => (
-          <CardAmbassador
+          <CardPersonInfo
             imageSrc={ambassador.imageSrc}
             mainText={ambassador.mainText}
             secondText={ambassador.secondText}

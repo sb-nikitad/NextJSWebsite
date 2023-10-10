@@ -4,9 +4,9 @@ import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 import React, { useState } from "react";
 
-import "../../../../app/globals.css";
+import "../../../src/app/globals.css";
 import { Lato, Anton } from "next/font/google";
-import s from "./CardAmbassador.module.css";
+import s from "./CardPersonInfo.module.css";
 
 const lato = Lato({ weight: "400", subsets: ["latin"] });
 const anton = Anton({ weight: "400", subsets: ["latin"] });
@@ -18,7 +18,7 @@ type Props = {
   thirdText?: string;
 };
 
-export function CardAmbassador({
+export function CardPersonInfo({
   imageSrc,
   mainText,
   secondText,
