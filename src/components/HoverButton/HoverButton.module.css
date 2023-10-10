@@ -1,0 +1,20 @@
+.hoverButton::after {
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0%;
+  position: absolute;
+  background: #3b46ff;
+  transition: width 0.3s ease;
+  bottom: 0;
+  width: 0%;
+}
+
+.hoverButton:hover::after {
+  width: 100%;
+}
+.hoverButton:hover {
+  background-color: transparent;
+  box-shadow: none;
+  /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
+}

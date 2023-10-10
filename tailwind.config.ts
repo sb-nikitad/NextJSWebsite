@@ -22,6 +22,10 @@ const config: Config = {
         "sb-darkblue": "#050A30",
         "sb-blue": "#3B46FF",
         "sb-lightpurple": "#8D9FFF",
+        "sb-purple": "#7F39FB",
+      },
+      transitionProperty: {
+        bg: "background-color",
       },
     },
   },

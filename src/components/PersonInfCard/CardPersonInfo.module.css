@@ -1,0 +1,20 @@
+.cardButton {
+  color: white;
+  position: relative;
+}
+
+.cardButton::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover::after {
+  background-color: #3b46ff;
+}

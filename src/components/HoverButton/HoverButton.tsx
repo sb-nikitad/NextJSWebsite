@@ -1,6 +1,8 @@
 "use client";
 import clsx from "clsx";
 
+import s from "./HoverButton.module.css";
+
 type Props = {
   text: string;
   color: string;
@@ -18,21 +20,15 @@ export function HoverButton({ text, color, width, height }: Props) {
         "flex",
         "justify-center",
         "items-center",
-        "transition-all",
         "shadow-[0px_0px_10px_rgba(255,255,255,0.6)]",
-        "hover:bg-transparent",
-        "hover:border-b-4",
-        "hover:border-sb-blue",
-        "hover:shadow-none",
+        "relative",
+        "transition-bg duration-300",
+        "rounded-[5px]",
+        s.hoverButton,
         color,
         width,
         height
       )}
-      style={
-        {
-          //boxShadow: "0 0 10px rgba(255, 255, 255, 0.6)",
-        }
-      }
     >
       {text}
     </button>
