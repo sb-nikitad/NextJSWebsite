@@ -82,7 +82,7 @@ export function CardAmbassador({
         className={`${s.cardButton} self-start`}
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        Read more
+        {isExpanded ? "Read less" : "Read more"}{" "}
       </button>
     </div>
   );
