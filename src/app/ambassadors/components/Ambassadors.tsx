@@ -23,6 +23,7 @@ import fifteenthImg from "../../../../public/images/ambassadors/tempImage2HGNTH.
 import sixteenthImg from "../../../../public/images/ambassadors/Devan Bonebrake Headshot-2.png";
 
 import { CardAmbassador } from "./CardAmbassador/CardAmbassador";
+import { text } from "stream/consumers";
 
 const lato = Lato({ weight: "400", subsets: ["latin"] });
 const anton = Anton({ weight: "400", subsets: ["latin"] });
@@ -146,15 +147,22 @@ const ambassadors = [
 
 export function Ambassadors() {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
-      {ambassadors.map((ambassador) => (
-        <CardAmbassador
-          imageSrc={ambassador.imageSrc}
-          mainText={ambassador.mainText}
-          secondText={ambassador.secondText}
-          thirdText={ambassador.thirdText}
-        />
-      ))}
+    <div className="flex flex-col gap-y-16">
+      <div className={clsx(anton.className, "text-5xl")}>
+        <span className={clsx(anton.className, "border-b-4", "border-sb-blue")}>
+          AMBASSADORS
+        </span>
+      </div>
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        {ambassadors.map((ambassador) => (
+          <CardAmbassador
+            imageSrc={ambassador.imageSrc}
+            mainText={ambassador.mainText}
+            secondText={ambassador.secondText}
+            thirdText={ambassador.thirdText}
+          />
+        ))}
+      </div>
     </div>
   );
 }
