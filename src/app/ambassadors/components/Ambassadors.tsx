@@ -14,6 +14,13 @@ import sixthImg from "../../../../public/images/ambassadors/Terry+Rowles.jpeg";
 import seventhImg from "../../../../public/images/ambassadors/Jeff+Smith.jpeg";
 import eighthImg from "../../../../public/images/ambassadors/Chris+Mayson.png";
 import ninthImg from "../../../../public/images/ambassadors/Suzy+Whaley.jpeg";
+import tenthImg from "../../../../public/images/ambassadors/James+OH.jpg";
+import eleventhImg from "../../../../public/images/ambassadors/Jorge+Parada.jpg";
+import twelfthImg from "../../../../public/images/ambassadors/Austin+Na.jpg";
+import thirteenthImg from "../../../../public/images/ambassadors/Scott+Cowx+2.jpeg";
+import fourteenthImg from "../../../../public/images/ambassadors/TJM_0372.jpeg";
+import fifteenthImg from "../../../../public/images/ambassadors/tempImage2HGNTH.jpg";
+import sixteenthImg from "../../../../public/images/ambassadors/Devan Bonebrake Headshot-2.png";
 
 import { CardAmbassador } from "./CardAmbassador/CardAmbassador";
 
@@ -83,7 +90,57 @@ const ambassadors = [
     secondText:
       "GOLF DIGEST 50 BEST TEACHER, GOLF.COM TOP 100, PGA OF AMERICA HONORARY PRESIDENT",
     thirdText:
-      "Jeff Smith has helped players win collegiate tournaments, conference championships, national championships, prestigious amateur events as well as coached players to victories on the Mackenzie Tour, Web.com and PGA Tour. Coaches Viktor Hovland, Patrick Rodgers, Davis Riley, Aaron Wise, among other elite tour players.",
+      "The first woman elected to serve as an Officer of the PGA of America, PGA Honorary President and PGA Master Professional Suzy Whaley is the PGA Director of Instruction for the Country Club at Mirasol in Palm Beach Gardens, Florida. After serving two years as PGA Secretary, and two years as Vice President, Whaley was elected as the PGA of America's first female President at the 2018 PGA Annual Meeting. Recognized as one of GOLF’s “Top 100 Teachers in America” and with the Metropolitan Golf Association’s Distinguished Service Award in 2019, Whaley's resume includes numerous other teaching awards: Golf Digest Top 50 Instructor, LPGA Top 50 Instructor, two-time Connecticut PGA Teacher of the Year, 10-time Golf Digest State Teacher of the Year and U.S. Kids Golf Master Kids Teacher. She is a five-time PGA Jr. League Championship finals Coach and has instructed more than 300 children to collegiate golf. A dual member of the PGA of America and LPGA Teaching & Club Professional division, Whaley was a LPGA Tour member in 1990 and 1993. She famously qualified and participated in the 2003 Greater Hartford Open, becoming the first woman since Babe Zaharias in 1945 to qualify for a PGA Tour event. This occurred afterWhaley became the first PGA of America woman professional to win the Connecticut PGA Championship. She competed in both the 2002 and 2005 PGA Professional Championships. Whaley also recently competed in the USGA Senior Women's Open, as well at the LPGA Senior Women’s Championship.",
+  },
+  {
+    imageSrc: tenthImg,
+    mainText: "JAMES OH",
+    secondText:
+      "U.S. JUNIOR AMATEUR CHAMPION, KORN FERRY TOUR WINNER, FORMER PGA TOUR PLAYER",
+    thirdText:
+      "James Oh is currently a golf instructor at Hacienda Golf Club in La Habra Heights, CA. As a former PGA Tour player, James has a track record of developing top tour professionals and amateurs over the last two decades. His students have won PGA Tour titles to USGA National Championships and he has helped over 50 students earn full scholarships to the nation’s Top Division 1 golf programs. In 1996, James became the youngest golfer to qualify for U.S. Amateur at age 14 years, 4 months, 20 day--one month younger than Bobby Jones in 1916. James won the 1998 U.S. Junior Amateur at Conway Farms, defeating Aaron Baddeley in the finals. James played one season of college golf at UNLV before turning pro in 2001. He Monday-qualified for the 2003 Mark Christopher Charity Classic on the Nationwide Tour and went on to win the event. After earning his card at Q-school in 2009, James played a season on the PGA Tour.",
+  },
+  {
+    imageSrc: eleventhImg,
+    mainText: "JORGE PARADA",
+    secondText: "GOLF DIGEST BEST YOUNG TEACHER",
+    thirdText:
+      "Jorge Parada is currently the Director of Instruction at Liberty National Golf Club, where he has been since 2018 after spending 10 years at the TOUR Academy TPC Sawgrass where he held roles such as Master Instructor and Head Instructor/Facility Director. Jorge has been named one of America's Best Young Instructors biannually since 2012 by Golf Digest and has most recently been ranked #3 in the Golf Digest Best Teachers in the State of New Jersey. Some of the players Jorge has worked with in the past or currently works with include Jonas Blixt and Matt Every, Carlota Ciganda, Mel Reid and Ryan O'Toole, to name a few. In 2016 Jorge, as a coach, had 4 of his clients compete in the Rio Olympics representing their countries. He has been published in Golf Digest, Golfweek Magazine, Golf.com, and recently he was featured on Golf Channel's show Swing Expedition with Chris Como.",
+  },
+  {
+    imageSrc: twelfthImg,
+    mainText: "AUSTIN NA",
+    secondText: "TOP INSTRUCTOR IN SOUTH KOREA, SBS GOLF COMMENTATOR",
+    thirdText:
+      "Austin Na is recognized as one of the top instructors in Korea. He has coached major tour professionals around the world. When he’s not coaching, you can find him commentating on SBS Golf, on the Asia’s Top 100 Golf Course Selection Committee, and shooting some low scores on the golf course himself. Austin grew up playing competitive golf with his brother, Kevin Na, a 5x PGA Tour winner. After graduating from UCLA with a degree in Economics, followed by a Master’s Degree at UNLV, Austin earned his Ph.D. from Korean National Sport University in Sports Management.",
+  },
+  {
+    imageSrc: thirteenthImg,
+    mainText: "SCOTT COWX",
+    secondText: "OPGA TEACHER OF THE YEAR",
+    thirdText:
+      "Scott Cowx was named the 2019 Canadian PGA Teacher of the Year and is regarded as on of the top coaches in the world, especially in the field of swing biomechanics. Scott was named the 2011 OPGA Teacher of the Year. Scott combines cutting-edge technology with precise swing geometry, efficient biomechanics and maximizing human physiology to each individuals needs and capabilities. His continued work with PGA Tour players and Canada's top-ranked amateurs have brought Scott international attention, along with his continual research into motor skill development and implementation at the highest levels.",
+  },
+  {
+    imageSrc: fourteenthImg,
+    mainText: "KEN MACDONALD",
+    secondText: "GOLF DIGEST 50 BEST GOLF FITNESS TRAINER",
+    thirdText:
+      "Ken Macdonald is a Golf Digest Top 50 Fitness Instructor who owns and operates Lifetime Performance in Palm Beach Gardens, Florida – a golf- and tennis-specific training studio. Ken, a level 3 TPI Certified golf fitness professional, has a Masters degree in Human Movement and is a certified Corrective Exercise Specialist and Performance Enhancement Specialist through the National Academy of Sports Medicine. Ken played collegiate golf at the University of Richmond and 5 years of competitive professional golf, a career that is highlighted by numerous professional wins including the 1998 NJ Open Championships. His intricate knowledge of the biomechanics behind the most efficient golfswings, allows him to work effectively on improving the body’s ability to perform at a high level while limiting the potential for injury. He’s trained many tour players including but not limited to Raymond Floyd, Lee Westwood, Brad Faxon, Charles Howell, Anirban Lahiri, Ashleigh Buhai, Mel Reid, Morgan Pressel, and more.",
+  },
+  {
+    imageSrc: fifteenthImg,
+    mainText: "VISION54",
+    secondText: "PIA NILSSON & LYNN MARRIOTT",
+    thirdText:
+      "Lynn Marriott & Pia Nilsson are co-founders of VISION54, a breakthrough program and golf school based at Talking Stick Golf Club in Scottsdale, Arizona. Lynn and Pia are internationally recognized, are the two highest ranked female instructors in America, and are both regularly featured among Golf Digest's Top 50 Greatest Teachers. VISION54's Golf Schools, 54GOLF, have been awarded the 'Best Golf School in America' multiple times. VISION54's Coach Programs, 54COACH, have repeatedly received the highest marks by peers of training for teachers / coaches. Lynn and Pia have coached players to well over one hundred tour victories on the LPGA Tour, PGA Tour, European Tour, Ladies European Tour, and Japan Tour. They've coached ten different major winners and four #1 ranked players in the world.",
+  },
+  {
+    imageSrc: sixteenthImg,
+    mainText: "DEVAN BONEBRAKE",
+    secondText: "GOLF DIGEST BEST YOUNG TEACHER",
+    thirdText:
+      "Devan Bonebrake is currently the host of the #1 Golf Show on NBC GolfPass and NBC Peacock. He has brought the sport to millions, captivating audiences with his deep knowledge and infectious passion for the game. Devan's impact on golf extends far beyond the screen. He is the proud owner of Studio Golf and the Southern California Golf Academy, institutions revered for their commitment to developing top-notch golf talent. Devan's dedication to teaching the game has earned him the prestigious title of Golf Digest's 'Best Young Teachers in America' for an impressive 10 consecutive years. Devan's journey to becoming a golf luminary began with a pivotal role as Jim McLean's personal teaching assistant in 2009. During this time, he had the privilege of working with tour players such as Lexi Thompson, Keegan Bradley, and Greg Norman. Devan's talent was undeniable, leading to his appointment as a Master Instructor for Jim McLean from 2010 to 2016.",
   },
 ];
 
