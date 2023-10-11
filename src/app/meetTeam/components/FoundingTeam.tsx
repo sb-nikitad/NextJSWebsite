@@ -5,9 +5,9 @@ import clsx from "clsx";
 import "../../../app/globals.css";
 import { Lato, Anton } from "next/font/google";
 
-import firstImg from "../../../../public/images/ambassadors/Sean+Foley-Headshot.jpg";
-import secondImg from "../../../../public/images/ambassadors/Erika+Larkin.jpeg";
-import thirdImg from "../../../../public/images/ambassadors/Mike+Adams.jpeg";
+import firstImg from "../../../../public/images/team/jeehae.jpeg";
+import secondImg from "../../../../public/images/team/sam.jpg";
+import thirdImg from "../../../../public/images/team/philJPG.jpeg";
 
 import { CardPersonInfo } from "../../../components/PersonInfCard/CardPersonInfo";
 
@@ -16,25 +16,35 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 const ambassadors = [
   {
     imageSrc: firstImg,
-    mainText: "SEAN FOLEY",
-    secondText: "NO. 5 ON GOLF DIGEST'S 50 BEST TEACHERS, GOLF.COM TOP 100",
-    thirdText:
-      "Former #1 instructor in the world who has helped many pros including #1 in the world win many major tournaments including but not limited to: Tiger Woods, Justin Rose, Lydia Ko, Ben An, Sean O’haire, Stephen Ames, as well as other PGA and LPGA Tour players. Sean Foley is a world-renowned golf instructor based in Orlando, Florida. He has coached the likes of 2013 U.S. Open Champion and Olympic Gold Medalist Justin Rose, 2016 Masters champion Danny Willett, three-time PGA Tour champion Cameron Champ -- who captured last week's 3M Championship -- and worked with Tiger Woods from 2010 to 2014. He has been voted as the top golf teacher in the world by players on the PGA Tour. Foley also teaches former Women's World No. 1 and current No. 10 player Lydia Ko. Foley is a Golf Magazine Top 100 Instructor and is also ranked no. 5 on Golf Digest’s Top 50 Instructors in America.",
+    mainText: "JEEHAE LEE",
+    secondText: "CEO AND CO-FOUNDER",
+    thirdText: `
+    <p>Jeehae Lee is a former professional golfer on the LPGA Tour and an executive in the sports media entertainment industry. As the Founder & CEO of Sportsbox.ai, Jeehae is building products using 3D motion analysis technology that will transform the way people learn and improve skills in sports, starting with golf.</p>
+    <br>
+    <p>Prior to founding Sportsbox, she led strategy and new business development for various divisions at Topgolf, including Toptracer. Jeehae has a BA in Economics from Yale and an MBA from The Wharton School at University of Pennsylvania.</p>
+  `,
   },
   {
     imageSrc: secondImg,
-    mainText: "ERIKA LARKIN",
-    secondText:
-      "GOLF DIGEST 50 BEST TEACHER, GOLF DIGEST NO. 1 BEST TEACHER IN VIRGINIA",
-    thirdText:
-      "Erika Larkin is the Director of Instruction at The Club at Creighton Farms, in Aldie, Virgina, and she was recently honored as a 'Top 50 Teacher in America' (#46) by Golf Digest. Since 2014, Erika has been named Golf Digest's No. 1 Teacher in the State of Virginia. Erika wrote her first book, 'A True Swing', in May 2017 and has since grown a large following on social media with her #golfedutainment videos as @erikalarkingolf on IG / TikTok and YouTube. In 2020 she joined an amazing team of coaches with GolfFanatics.com to provide instructional content and destination golf experiences. In 2021 Erika attended her first PGA Tour events as a coach, with her player Larkin Gross (no relation), who was named 2022 PGA National Player of the Year.",
+    mainText: "SAM MENAKER",
+    secondText: "CTO AND CO-FOUNDER",
+    thirdText: `
+    <p> As SVP of Engineering at VoiceBox Technologies, Sam Menaker led teams in building solutions using AI and ML, which shipped in 100s of millions of mobile phones, consumer electronic products, and cars for companies such as Samsung, Toyota, Chrysler and BestBuy. Previous positions also include Senior Director at Nuance Communications and Software Architect at Amazon.</p> 
+    <br>
+    <p>Sam was born in Latvia and graduated from the University of Latvia with B.S. in Applied Math and an M.S. in Computer Science. In 1988, he emigrated from Latvia to the U.S., and started working in startup companies in New York, and later in Boston, MA, where he held key engineering positions at companies before they went private or were acquired, such as MathSoft and Planet All. Sam has worked on many patents in managing mathematical documents, voice recognition and natural language processing. In addition, he works as an advisor with the TK Foundation to restore and preserve memories of the Holocaust.</p>`,
   },
   {
     imageSrc: thirdImg,
-    mainText: "MIKE ADAMS",
-    secondText: "NO. 3 ON GOLF DIGEST'S 50 BEST TEACHERS, GOLF.COM TOP 100",
-    thirdText:
-      'Known as the "Swing Doctor" and "Teacher of Teachers", Mike Adams has been included on every GOLF Magazine Top 100 Instructor and Golf Digest Top 50 Teacher list since their inception. He is currently ranked no. 3 in Golf Digest\'s Top 50 Teacher list and is a member of the World Golf Teachers Hall of Fame. Mike, who has conducted extensive research on swing biomechanics, has written and co-written 18 golf instruction books, including two GOLF Magazine Instruction Books of the Year: Play Better Golf and The LAWs of the Golf Swing. His latest book, The Ultimate Golf Lesson, with Terry Rowles and Golf Digest\'s Matthew Rudy, will be released later this year. Mike spends his winters as the Director of Instruction at Medalist GC in Hobe Sound, Florida, and during the summer, he teaches at Fiddler\'s Elbow CC in Bedminster, New Jersey.',
+    mainText: "DR. PHIL CHEETHAM",
+    secondText: "CHIEF SCIENCE OFFICER",
+    thirdText: `
+    <p> Dr. Cheetham, who was previously the Director of Sports Technology and Innovation at the United States Olympic and Paralympic Committee and has been dubbed the "3D guy," has been an innovator in 3D Motion Analysis and Sports Biomechanics for over 30 years. </p>
+    <br>
+    <p> Dr. Cheetham, an Olympian in gymnastics, competed in the 1976 Montreal Olympic Games for Australia, also co-developed one of the first sports motion analysis systems while working as Head of Engineering Technology for the U.S. Olympic Committee's Sports Science Program in the 1980s. He has also co-developed several motion analysis systems for companies he has co-founded, including; Peak Performance Technologies Inc., Skill Technologies Inc. and Advanced Motion Measurement Inc. (AMM). </p>
+    <br>
+    <p> With his work as the Head Biomechanist and Director of the TPI Biomechanics Advisory Board, Dr. Cheetham co-developed TPI 3D, a motion analysis system that is specifically designed to measure golf swing motion and efficiency using a respected biomechanics principle called the Kinematic Sequence.</p> 
+    <br>
+    <p> Dr. Cheetham has worked on various research projects with elite golf coaches, such as Chris Como, Terry Rowles, Mike Adams, Greg Rose and Dave Phillips (TPI), Jeff Smith and Joe Mayo. He has also conducted 3D Motion Analysis Assessment on the best golfers in the world, including Phil Mickelson, Bryson DeChambeau, Aaron Baddeley, Mike Weir, Pat Perez, Scott Piercy, Brian Gay, Brandon Hagy, Kevin Tway, William McGirt, JJ Spaun, Aaron Wise, Wyndham Clark and Patrick Rogers.</p>`,
   },
 ];
 
