@@ -160,6 +160,7 @@ export function Ambassadors() {
             mainText={ambassador.mainText}
             secondText={ambassador.secondText}
             thirdText={ambassador.thirdText}
+            width="w-[22rem]"
           />
         ))}
       </div>

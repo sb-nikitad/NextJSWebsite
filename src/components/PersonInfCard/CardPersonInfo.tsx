@@ -16,6 +16,7 @@ type Props = {
   mainText?: string;
   secondText?: string;
   thirdText?: string;
+  width?: string;
 };
 
 export function CardPersonInfo({
@@ -23,13 +24,14 @@ export function CardPersonInfo({
   mainText,
   secondText,
   thirdText,
+  width,
 }: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div
       className={clsx(
-        "w-[22rem]",
+        width,
         "h-100%",
         "custom-hsl-background",
         "rounded-[25px]",
