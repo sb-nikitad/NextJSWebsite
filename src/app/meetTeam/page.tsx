@@ -1,6 +1,7 @@
 import { FoundingTeam } from "./components/FoundingTeam";
 import { Advisors } from "./components/Advisors";
 import { GolfAdvisors } from "./components/GolfAdvisors";
+import { SportsScienceAdvisors } from "./components/SportsScienceAdvisors";
 
 export default function MeetTeam() {
   return (
@@ -8,6 +9,7 @@ export default function MeetTeam() {
       <FoundingTeam />
       <Advisors />
       <GolfAdvisors />
+      <SportsScienceAdvisors />
     </div>
   );
 }
