@@ -3,8 +3,6 @@
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 import React, { useState } from "react";
-
-import "../../../src/app/globals.css";
 import { Lato, Anton } from "next/font/google";
 import s from "./CardPersonInfo.module.css";
 
@@ -16,6 +14,7 @@ type Props = {
   mainText?: string;
   secondText?: string;
   thirdText?: string;
+  width?: string;
 };
 
 export function CardPersonInfo({
@@ -23,13 +22,14 @@ export function CardPersonInfo({
   mainText,
   secondText,
   thirdText,
+  width,
 }: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div
       className={clsx(
-        "w-[22rem]",
+        width,
         "h-100%",
         "custom-hsl-background",
         "rounded-[25px]",
@@ -64,26 +64,29 @@ export function CardPersonInfo({
       >
         {secondText}
       </div>
-      <div
-        className={clsx(
-          "text-white",
-          "text-md",
-          "mb-8",
-          "text-justify",
-          "overflow-hidden",
-          isExpanded ? "max-h-[1200px]" : "max-h-[150px]",
-          "transition-max-height ease-in-out duration-300"
-        )}
-      >
-        {thirdText}
-      </div>
+      {thirdText && (
+        <>
+          <div
+            className={clsx(
+              "text-white",
+              "text-md",
+              "mb-8",
+              "text-justify",
+              "overflow-hidden",
+              isExpanded ? "max-h-[1200px]" : "max-h-[150px]",
+              "transition-max-height ease-in-out duration-300"
+            )}
+            dangerouslySetInnerHTML={{ __html: thirdText }}
+          />
 
-      <button
-        className={`${s.cardButton} self-start`}
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        {isExpanded ? "Read less" : "Read more"}{" "}
-      </button>
+          <button
+            className={`${s.cardButton} self-start`}
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            {isExpanded ? "Read less" : "Read more"}{" "}
+          </button>
+        </>
+      )}
     </div>
   );
 }
