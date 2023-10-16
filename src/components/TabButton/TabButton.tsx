@@ -33,8 +33,9 @@ export function TabButton({ text, width, height, subTabs }: Props) {
           isHovered ? "block" : "hidden",
           "absolute",
           "py-2",
-          "bg-sb-dark-blue",
-          "justify-self-start"
+          "bg-sb-darkblue",
+          "justify-self-start",
+          "text-[19px]"
         )}
         onMouseEnter={() => setIsHovered(true)} // Keep the dropdown open when hovering it
         onMouseLeave={() => setIsHovered(false)}

@@ -13,10 +13,15 @@ const Navbar = () => {
   const subTabsAbout = [
     <div className={clsx("relative", "block")}>
       {" "}
-      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
-      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
-      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
-      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
+      <SubTabButton text={"Company Info"} href={"/about"}></SubTabButton>
+      <SubTabButton text={"Product Demo"} href={"/demo"}></SubTabButton>
+      <SubTabButton text={"Meet The Teem"} href={"/meetTeam"}></SubTabButton>
+      <SubTabButton text={"Ambassadors"} href={"/ambassadors"}></SubTabButton>
+      <SubTabButton text={"In the News"} href={"/ambassadors"}></SubTabButton>
+      <SubTabButton
+        text={"Press Releases"}
+        href={"/ambassadors"}
+      ></SubTabButton>
     </div>,
   ];
 
