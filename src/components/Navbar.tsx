@@ -4,21 +4,26 @@ import Image from "next/image";
 import clsx from "clsx";
 import React from "react";
 import Link from "next/link";
+
 import { TabButton } from "././TabButton/TabButton";
 import { HoverButton } from "././HoverButton/HoverButton";
 import LogoImage from "../../public/images/Sportsbox3DGolf_logo_white.png";
+import { SubTabButton } from "././TabButton/SubTabButton";
 
 const Navbar = () => {
-  const subTabs = [
-    <Link href="#">
-      <div>TEST1</div>
-    </Link>,
-    <Link href="#">
-      <div>TEST2</div>
-    </Link>,
-    <Link href="#">
-      <div>TEST3</div>
-    </Link>,
+  const subTabsAbout = [
+    <div className={clsx("relative", "block")}>
+      {" "}
+      <SubTabButton text={"Company Info"} href={"/about"}></SubTabButton>
+      <SubTabButton text={"Product Demo"} href={"/demo"}></SubTabButton>
+      <SubTabButton text={"Meet The Teem"} href={"/meetTeam"}></SubTabButton>
+      <SubTabButton text={"Ambassadors"} href={"/ambassadors"}></SubTabButton>
+      <SubTabButton text={"In the News"} href={"/ambassadors"}></SubTabButton>
+      <SubTabButton
+        text={"Press Releases"}
+        href={"/ambassadors"}
+      ></SubTabButton>
+    </div>,
   ];
 
   return (
@@ -60,27 +65,13 @@ const Navbar = () => {
               "text-[18px]"
             )}
           >
-            <Link href={`/demo`}>
-              <TabButton text="About" subTabs={subTabs} />
-            </Link>
-            <Link href={`/demo`}>
-              <TabButton text="Education" />
-            </Link>
-            <Link href={`/demo`}>
-              <TabButton text="Pricing" />
-            </Link>
-            <Link href={`/demo`}>
-              <TabButton text="Need a Coach" />
-            </Link>
-            <Link href={`/demo`}>
-              <TabButton text="Pro Shop" />
-            </Link>
-            <Link href={`/demo`}>
-              <TabButton text="Support" />
-            </Link>
-            <Link href={`/demo`}>
-              <TabButton text="More" />
-            </Link>
+            <TabButton text="About" subTabs={subTabsAbout} />
+            <TabButton text="Education" subTabs={subTabsAbout} />
+            <TabButton text="Pricing" subTabs={subTabsAbout} />
+            <TabButton text="Find a Coach" subTabs={subTabsAbout} />
+            <TabButton text="Pro Shop" subTabs={subTabsAbout} />
+            <TabButton text="Support" subTabs={subTabsAbout} />
+            <TabButton text="More" subTabs={subTabsAbout} />
           </div>
         </div>
         <div
