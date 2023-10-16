@@ -7,18 +7,17 @@ import Link from "next/link";
 import { TabButton } from "././TabButton/TabButton";
 import { HoverButton } from "././HoverButton/HoverButton";
 import LogoImage from "../../public/images/Sportsbox3DGolf_logo_white.png";
+import { SubTabButton } from "././TabButton/SubTabButton";
 
 const Navbar = () => {
-  const subTabs = [
-    <Link href="#">
-      <div>TEST1</div>
-    </Link>,
-    <Link href="#">
-      <div>TEST2</div>
-    </Link>,
-    <Link href="#">
-      <div>TEST3</div>
-    </Link>,
+  const subTabsAbout = [
+    <div className={clsx("relative", "block")}>
+      {" "}
+      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
+      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
+      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
+      <SubTabButton text={"About"} href={"/about"}></SubTabButton>
+    </div>,
   ];
 
   return (
@@ -60,9 +59,8 @@ const Navbar = () => {
               "text-[18px]"
             )}
           >
-            <Link href={`/demo`}>
-              <TabButton text="About" subTabs={subTabs} />
-            </Link>
+            <TabButton text="About" subTabs={subTabsAbout} />
+
             <Link href={`/demo`}>
               <TabButton text="Education" />
             </Link>
