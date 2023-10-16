@@ -9,6 +9,18 @@ import { HoverButton } from "././HoverButton/HoverButton";
 import LogoImage from "../../public/images/Sportsbox3DGolf_logo_white.png";
 
 const Navbar = () => {
+  const subTabs = [
+    <Link href="#">
+      <div>TEST1</div>
+    </Link>,
+    <Link href="#">
+      <div>TEST2</div>
+    </Link>,
+    <Link href="#">
+      <div>TEST3</div>
+    </Link>,
+  ];
+
   return (
     <header className="">
       <nav
@@ -49,7 +61,7 @@ const Navbar = () => {
             )}
           >
             <Link href={`/demo`}>
-              <TabButton text="About" />
+              <TabButton text="About" subTabs={subTabs} />
             </Link>
             <Link href={`/demo`}>
               <TabButton text="Education" />
