@@ -12,8 +12,7 @@ import { SubTabButton } from "././TabButton/SubTabButton";
 
 const Navbar = () => {
   const subTabsAbout = [
-    <div className={clsx("relative", "block")}>
-      {" "}
+    <div key={1} className={clsx("relative", "block")}>
       <SubTabButton text={"Company Info"} href={"/about"}></SubTabButton>
       <SubTabButton text={"Product Demo"} href={"/demo"}></SubTabButton>
       <SubTabButton text={"Meet The Teem"} href={"/meetTeam"}></SubTabButton>
