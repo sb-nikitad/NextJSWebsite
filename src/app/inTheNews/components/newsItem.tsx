@@ -19,26 +19,26 @@ type Props = {
 export function NewsItem({ imageSrc, mainText, link }: Props) {
   return (
     <div
-      className={clsx(
-        "p-8",
-        "flex",
-        "flex-col",
-        "gap-y-4",
-        "items-center",
-        "text-center"
-      )}
+      className={clsx("flex", "flex-col", "gap-y-4", "items-left", "w-[330px]")}
     >
-      <Link href={link ?? "/"}>
-        <Image
-          src={imageSrc ? imageSrc.src : ""}
-          alt="Image Description"
-          className="h-[190px] w-[190px] rounded-[60%]"
-          width={190}
-          height={190}
-        />
-      </Link>
-      <span>
-        <span className={clsx("text-2xl", "text-black ")}>{mainText}</span>
+      <Image
+        src={imageSrc ? imageSrc.src : ""}
+        alt="Image Description"
+        className="h-[250px] w-[300px]"
+        width={190}
+        height={190}
+      />
+
+      <span
+        className={clsx(
+          "w-[100%]",
+          "text-left",
+          "font-bold",
+          "text-xl",
+          "text-black"
+        )}
+      >
+        {mainText}
       </span>
     </div>
   );

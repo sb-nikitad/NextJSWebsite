@@ -18,20 +18,45 @@ const newsItems = [
       "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
     link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
   },
+  {
+    imageSrc: firstImg,
+    mainText:
+      "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
+    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+  },
+  {
+    imageSrc: firstImg,
+    mainText:
+      "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
+    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+  },
+  {
+    imageSrc: firstImg,
+    mainText:
+      "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
+    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+  },
 ];
 
 export function NewsBlock() {
   return (
-    <div className={clsx("w-[100%]", "bg-white", "pt-20")}>
+    <div
+      className={clsx(
+        "flex",
+        "justify-center",
+        "w-[100%]",
+        "bg-white",
+        "pt-10"
+      )}
+    >
       <div
         className={clsx(
           "pl-4",
           "flex",
           "flex-col",
-          "justify-center",
           "items-center",
           "gap-y-8",
-          "w-[30%]"
+          "w-[25%]"
         )}
       >
         <span className={clsx("text-black", "text-4xl", anton.className)}>
@@ -44,7 +69,7 @@ export function NewsBlock() {
           width="w-[150px]"
         />
       </div>
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
+      <div className="w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-y-4">
         {newsItems.map((newsItem) => (
           <NewsItem
             imageSrc={newsItem.imageSrc}
