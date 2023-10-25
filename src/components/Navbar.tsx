@@ -18,7 +18,7 @@ const Navbar = () => {
       <SubTabButton text={"Product Demo"} href={"/demo"}></SubTabButton>
       <SubTabButton text={"Meet The Teem"} href={"/meetTeam"}></SubTabButton>
       <SubTabButton text={"Ambassadors"} href={"/ambassadors"}></SubTabButton>
-      <SubTabButton text={"In the News"} href={"/ambassadors"}></SubTabButton>
+      <SubTabButton text={"In the News"} href={"/inTheNews"}></SubTabButton>
       <SubTabButton
         text={"Press Releases"}
         href={"/ambassadors"}
