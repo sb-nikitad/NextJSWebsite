@@ -46,12 +46,12 @@ export function NewsBlock() {
         "justify-center",
         "w-[100%]",
         "bg-white",
-        "pt-10"
+        "pt-10",
+        "px-8"
       )}
     >
       <div
         className={clsx(
-          "pl-4",
           "flex",
           "flex-col",
           "items-center",
