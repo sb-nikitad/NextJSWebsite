@@ -19,13 +19,15 @@ type Props = {
 export function NewsItem({ imageSrc, mainText, link }: Props) {
   return (
     <div className={clsx("flex", "flex-col", "items-left", "w-[360px]")}>
-      <Image
-        src={imageSrc ? imageSrc.src : ""}
-        alt="Image Description"
-        className="h-[280px] w-[330px]"
-        width={190}
-        height={190}
-      />
+      <Link href={link ? link.toString() : ""}>
+        <Image
+          src={imageSrc ? imageSrc.src : ""}
+          alt="Image Description"
+          className="h-[280px] w-[330px]"
+          width={190}
+          height={190}
+        />
+      </Link>
 
       <span
         className={clsx(
