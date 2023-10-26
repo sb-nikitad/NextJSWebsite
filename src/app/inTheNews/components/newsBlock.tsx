@@ -6,6 +6,8 @@ import React, { useState } from "react";
 import { Lato, Anton } from "next/font/google";
 import { HoverButton } from "@/components/HoverButton/HoverButton";
 import { NewsItem } from "./newsItem";
+import { shadowStyles } from "@/app/misc/shadowStyles";
+
 const lato = Lato({ weight: "400", subsets: ["latin"] });
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -153,6 +155,7 @@ export function NewsBlock() {
           color="bg-sb-blue"
           height="h-[50px]"
           width="w-[150px]"
+          shadowColor={shadowStyles.black}
         />
       </div>
       <div className="w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-y-4">

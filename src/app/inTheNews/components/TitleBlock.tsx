@@ -8,7 +8,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export function TitleBlock() {
   return (
-    <div className="flex w-[100%] h-[500px] bg-blue justify-center items-center">
+    <div className="flex w-[100%] h-[500px] bg-sb-lowpurple justify-center items-center">
       <div className={clsx("w-[25%]", "text-center")}>
         <span className={clsx("text-white", "text-5xl", anton.className)}>
           THE LATEST NEWS FROM SPORTSBOX AI

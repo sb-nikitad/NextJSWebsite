@@ -6,12 +6,19 @@ import { useState } from "react";
 
 type Props = {
   text: string;
-  color: string;
+  color: "bg-sb-blue" | "bg-sb-purple" | "bg-sb-lowpurple";
   width?: string;
   height?: string;
+  shadowColor?: string;
 };
 
-export function HoverButton({ text, color, width, height }: Props) {
+export function HoverButton({
+  text,
+  color,
+  width,
+  height,
+  shadowColor = "shadow-[0px_0px_10px_rgba(255,255,255,0.6)]",
+}: Props) {
   return (
     <>
       <button
@@ -20,14 +27,14 @@ export function HoverButton({ text, color, width, height }: Props) {
           "flex",
           "justify-center",
           "items-center",
-          "shadow-[0px_0px_10px_rgba(255,255,255,0.6)]",
           "relative",
           "transition-bg duration-300",
           "rounded-[5px]",
           s.hoverButton,
           color,
           width,
-          height
+          height,
+          shadowColor
         )}
       >
         {text}
