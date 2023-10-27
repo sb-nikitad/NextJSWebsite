@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className}`}>
+      <body className={`${lato.className} bg-sb-darkblue text-white`}>
         <Navbar />
-        <div className="wrapper"> {children} </div>
+        <div className=""> {children} </div>
       </body>
     </html>
   );

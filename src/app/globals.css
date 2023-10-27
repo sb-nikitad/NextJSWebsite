@@ -10,11 +10,3 @@
   width: 1440px;
   margin: 0 auto;
 }
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background-color: #050a30;
-  color: white;
-}
