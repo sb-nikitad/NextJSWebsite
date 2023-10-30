@@ -1,5 +1,3 @@
-"use client";
-
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 import React, { useState } from "react";
@@ -18,7 +16,7 @@ type Props = {
 
 export function NewsItem({ imageSrc, mainText, link }: Props) {
   return (
-    <div className={clsx("flex", "flex-col", "items-left", "w-[360px]")}>
+    <div className="flex flex-col items-left w-[360px]">
       <Link href={link ? link.toString() : ""}>
         <Image
           src={imageSrc ? imageSrc.src : ""}

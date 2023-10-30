@@ -6,7 +6,11 @@ import { useState } from "react";
 
 type Props = {
   text: string;
-  color: "bg-sb-blue" | "bg-sb-purple" | "bg-sb-lowpurple";
+  color:
+    | "bg-sb-blue"
+    | "bg-sb-purple"
+    | "bg-sb-lowpurple"
+    | "bg-sb-lightpurple";
   width?: string;
   height?: string;
   shadowColor?: string;
