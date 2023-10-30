@@ -17,6 +17,7 @@ const config: Config = {
         "sb-darkblue": "#050A30",
         "sb-blue": "#3B46FF",
         "sb-lightpurple": "#8D9FFF",
+        "sb-lowpurple": "#5b41fd",
       },
       borderColor: {
         "sb-darkblue": "#050A30",
