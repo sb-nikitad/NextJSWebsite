@@ -9,11 +9,11 @@ import { TabButton } from "././TabButton/TabButton";
 import { HoverButton } from "././HoverButton/HoverButton";
 import LogoImage from "../../public/images/Sportsbox3DGolf_logo_white.png";
 import { SubTabButton } from "././TabButton/SubTabButton";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const subTabsAbout = [
-    <div className={clsx("relative", "block")}>
-      {" "}
+    <div key={1} className={clsx("relative", "block")}>
       <SubTabButton text={"Company Info"} href={"/about"}></SubTabButton>
       <SubTabButton text={"Product Demo"} href={"/demo"}></SubTabButton>
       <SubTabButton text={"Meet The Teem"} href={"/meet-team"}></SubTabButton>
@@ -26,19 +26,14 @@ const Navbar = () => {
     </div>,
   ];
 
+  const path = usePathname();
+
   return (
     <header className="">
       <nav
-        className={clsx(
-          "flex",
-          "box-border",
-          "items-center",
-          "justify-between",
-          "py-10",
-          "px-12",
-          "relative",
-          "w-[100%]"
-        )}
+        className={
+          "flex box-border items-center justify-between py-10 px-12 w-[100%] text-white absolute top-0"
+        }
       >
         <div
           className={clsx(
@@ -55,16 +50,7 @@ const Navbar = () => {
             width={300}
             height={50}
           />
-          <div
-            className={clsx(
-              "flex",
-              "flex-wrap",
-              "gap-x-4",
-              "justify-center",
-              "items-center",
-              "text-[18px]"
-            )}
-          >
+          <div className="flex flex-wrap gap-x-4 justify-center items-center text-[18px]">
             <TabButton text="About" subTabs={subTabsAbout} />
             <TabButton text="Education" subTabs={subTabsAbout} />
             <TabButton text="Pricing" subTabs={subTabsAbout} />

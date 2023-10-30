@@ -81,6 +81,7 @@ export function GolfAdvisors() {
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
         {ambassadors.map((ambassador) => (
           <CardPersonInfo
+            key={ambassador.mainText}
             imageSrc={ambassador.imageSrc}
             mainText={ambassador.mainText}
             secondText={ambassador.secondText}
