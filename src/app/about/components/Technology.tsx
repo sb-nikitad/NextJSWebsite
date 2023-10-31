@@ -10,7 +10,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export function Technology() {
   return (
     <div className="flex flex-col gap-y-16">
-      <div className="flex flex-col gap-y-8 flex justify-center items-center">
+      <div className="flex-col gap-y-8 flex justify-center items-center">
         <div
           className={`font-bold text-white ${anton.className}`}
           style={{ fontSize: "3rem" }}
@@ -30,7 +30,7 @@ export function Technology() {
       <div className={"flex gap-x-8 justify-center items-center"}>
         <div className="w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4 relative">
           <div
-            className={`text-4xl absolute -top-5 duration-300	hover:text-purple-700 ${anton.className} text-transparent cursor-default`}
+            className={`text-4xl absolute -top-5 duration-300 ${anton.className} text-transparent cursor-default`}
             style={{ WebkitTextStroke: "1px white" }}
           >
             01

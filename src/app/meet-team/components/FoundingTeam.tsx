@@ -12,7 +12,7 @@ import thirdImg from "../../../../public/images/team/philJPG.jpeg";
 import { CardPersonInfo } from "../../../components/PersonInfCard/CardPersonInfo";
 
 const lato = Lato({ weight: "400", subsets: ["latin"] });
-const anton = Anton({ weight: "400", subsets: ["latin"] });
+
 const ambassadors = [
   {
     imageSrc: firstImg,
@@ -51,17 +51,6 @@ const ambassadors = [
 export function FoundingTeam() {
   return (
     <div className="flex flex-col gap-y-12">
-      <div
-        className={clsx(anton.className, "flex", "items-center", "gap-x-52")}
-      >
-        <span className={clsx("border-b-4", "border-sb-blue", "text-4xl")}>
-          FOUNDING AND EXECUTIVE TEAM
-        </span>
-        <span className={clsx("text-2xl", "w-[550px]")}>
-          WE ARE A TEAM OF EXPERTS IN SPORTS, AI TECHNOLOGY, AND BIOMECHANICAL
-          SCIENCE.
-        </span>
-      </div>
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
         {ambassadors.map((ambassador) => (
           <CardPersonInfo

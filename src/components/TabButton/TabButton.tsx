@@ -32,7 +32,7 @@ export function TabButton({ text, width, height, subTabs }: Props) {
         className={clsx(
           isHovered ? "block" : "hidden",
           "absolute",
-          "py-2",
+          "p-5",
           "bg-sb-darkblue",
           "justify-self-start",
           "text-[19px]"
