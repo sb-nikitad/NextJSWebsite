@@ -8,6 +8,7 @@ import { WhatIs } from "./about/components/WhatIs";
 import { Separator } from "../components/Separator";
 import { Technology } from "./about/components/Technology";
 import { MainTeam } from "./components/MainTeam";
+import { MainTestimonialsCarousel } from "./components/MainTestimonialsCarousel";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <Separator height={100} />
       <Technology />
       <MainTeam />
+      {/* <MainTestimonialsCarousel /> */}
     </div>
   );
 }
