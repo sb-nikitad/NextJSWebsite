@@ -34,6 +34,8 @@ export function HoverButton({
           "relative",
           "transition-bg duration-300",
           "rounded-[5px]",
+          "font-bold",
+          "tracking-wider",
           s.hoverButton,
           color,
           width,
