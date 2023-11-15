@@ -44,20 +44,24 @@ const Navbar = () => {
             "text-sm"
           )}
         >
-          <Image
-            src={LogoImage}
-            alt="Sportsbox3DGolf Logo"
-            width={300}
-            height={50}
-          />
+          <Link href="/">
+            <Image
+              src={LogoImage}
+              alt="Sportsbox3DGolf Logo"
+              width={300}
+              height={50}
+            />
+          </Link>
           <div className="flex flex-wrap gap-x-4 justify-center items-center text-[18px]">
             <TabButton text="About" subTabs={subTabsAbout} />
-            <TabButton text="Education" subTabs={subTabsAbout} />
-            <TabButton text="Pricing" subTabs={subTabsAbout} />
-            <TabButton text="Find a Coach" subTabs={subTabsAbout} />
-            <TabButton text="Pro Shop" subTabs={subTabsAbout} />
-            <TabButton text="Support" subTabs={subTabsAbout} />
-            <TabButton text="More" subTabs={subTabsAbout} />
+            <Link href="/education">
+              <TabButton text="Education" />
+            </Link>
+            <TabButton text="Pricing" />
+            <TabButton text="Find a Coach" />
+            <TabButton text="Pro Shop" />
+            <TabButton text="Support" />
+            <TabButton text="More" />
           </div>
         </div>
         <div

@@ -40,7 +40,8 @@ export function HoverButton({
           color,
           width,
           height,
-          shadowColor
+          shadowColor,
+          "text-white"
         )}
       >
         {text}

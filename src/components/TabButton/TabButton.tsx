@@ -10,13 +10,19 @@ type Props = {
   subTabs?: any[];
 };
 
-export function TabButton({ text, width, height, subTabs }: Props) {
+export function TabButton({ text, width, height, subTabs = [] }: Props) {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = (state: boolean) => {
+    if (subTabs.length) {
+      setIsHovered(state);
+    }
+  };
 
   return (
     <div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => handleHover(true)}
+      onMouseLeave={() => handleHover(false)}
     >
       <button
         className={clsx("relative", "block", s.tabButton, width, height)}
@@ -37,8 +43,8 @@ export function TabButton({ text, width, height, subTabs }: Props) {
           "justify-self-start",
           "text-[19px]"
         )}
-        onMouseEnter={() => setIsHovered(true)} // Keep the dropdown open when hovering it
-        onMouseLeave={() => setIsHovered(false)}
+        onMouseEnter={() => handleHover(true)}
+        onMouseLeave={() => handleHover(false)}
       >
         {/* <div>rerqweqw</div> */}
         {subTabs}
