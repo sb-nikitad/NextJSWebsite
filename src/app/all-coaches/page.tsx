@@ -1,6 +1,7 @@
 import { Anton } from "next/font/google";
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 import { Separator } from "@/components/Separator";
+import { CoachItem } from "./components/CoachItem";
 
 export default function AllCoaches() {
   return (
@@ -22,6 +23,14 @@ export default function AllCoaches() {
 
       <div className="bg-white text-black flex flex-col items-center">
         <div className={`${anton.className} text-4xl p-10`}>All Coaches</div>
+        <div className="flex flex-wrap items-center justify-center">
+          <CoachItem
+            nameText="Coach 1"
+            infoText="info 1"
+            place="Kharkiv"
+            sendEmailBlock={[<div className="bg-black"> </div>]}
+          />
+        </div>
       </div>
     </div>
   );
