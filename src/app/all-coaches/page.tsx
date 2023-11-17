@@ -2,8 +2,36 @@ import { Anton } from "next/font/google";
 import { Separator } from "@/components/Separator";
 import { CoachItem } from "./components/CoachItem";
 import { MapEventButton } from "./components/MapEventButton";
+import { lazy } from "react";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
+
+const coachItems = [
+  {
+    nameText: "Jean Bartholomew",
+    infoText:
+      "Wanna be a champion \n 27824130215 \n https://wannabeachampion.com/ \n doug@wannabeachampion.com",
+    labelParts: <MapEventButton buttonText="something" />,
+    place: "South Africa",
+    placeLink: "https://www.google.com/maps?q=South+Africa",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+  {
+    nameText: "Douglas Wood",
+    infoText:
+      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+    labelParts: (
+      <div className="flex flex-row gap-4">
+        <MapEventButton buttonText="something" />{" "}
+        <MapEventButton buttonText="something" />
+      </div>
+    ),
+    place: "Florida",
+    placeLink:
+      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+];
 
 export default function AllCoaches() {
   return (
@@ -26,16 +54,16 @@ export default function AllCoaches() {
       <div className="bg-white text-black flex flex-col items-center">
         <div className={`${anton.className} text-4xl p-10`}>All Coaches</div>
         <div className="flex flex-wrap items-center justify-center">
-          <CoachItem
-            nameText="Douglas Wood"
-            infoText={
-              "Wanna be a champion \n 27824130215 \n https://wannabeachampion.com/ \n doug@wannabeachampion.com"
-            }
-            labelParts={<MapEventButton buttonText="something" />}
-            place="South Africa"
-            placeLink="https://www.google.com/maps?q=South+Africa"
-            sendEmailBlock={[<div className="bg-black w-[200wh]"> </div>]}
-          />
+          {coachItems.map((coach) => (
+            <CoachItem
+              nameText={coach.nameText}
+              infoText={coach.infoText}
+              labelParts={coach.labelParts}
+              place={coach.place}
+              placeLink={coach.placeLink}
+              sendEmailBlock={coach.sendEmailBlock}
+            />
+          ))}
         </div>
       </div>
     </div>
