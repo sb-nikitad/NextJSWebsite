@@ -1,7 +1,9 @@
 import { Anton } from "next/font/google";
-const anton = Anton({ weight: "400", subsets: ["latin"] });
 import { Separator } from "@/components/Separator";
 import { CoachItem } from "./components/CoachItem";
+import { MapEventButton } from "./components/MapEventButton";
+
+const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export default function AllCoaches() {
   return (
@@ -25,10 +27,14 @@ export default function AllCoaches() {
         <div className={`${anton.className} text-4xl p-10`}>All Coaches</div>
         <div className="flex flex-wrap items-center justify-center">
           <CoachItem
-            nameText="Coach 1"
-            infoText="info 1"
-            place="Kharkiv"
-            sendEmailBlock={[<div className="bg-black"> </div>]}
+            nameText="Douglas Wood"
+            infoText={
+              "Wanna be a champion \n 27824130215 \n https://wannabeachampion.com/ \n doug@wannabeachampion.com"
+            }
+            labelParts={<MapEventButton buttonText="something" />}
+            place="South Africa"
+            placeLink="https://www.google.com/maps?q=South+Africa"
+            sendEmailBlock={[<div className="bg-black w-[200wh]"> </div>]}
           />
         </div>
       </div>
