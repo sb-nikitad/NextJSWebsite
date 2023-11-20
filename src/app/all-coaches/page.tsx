@@ -3,6 +3,7 @@ import { Separator } from "@/components/Separator";
 import { CoachItem } from "./components/CoachItem";
 import { MapEventButton } from "./components/MapEventButton";
 import { lazy } from "react";
+import MapboxMap from "./components/MapBoxItem";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -14,6 +15,81 @@ const coachItems = [
     labelParts: <MapEventButton buttonText="something" />,
     place: "South Africa",
     placeLink: "https://www.google.com/maps?q=South+Africa",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+  {
+    nameText: "Douglas Wood",
+    infoText:
+      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+    labelParts: (
+      <div className="flex flex-row gap-4">
+        <MapEventButton buttonText="something" />{" "}
+        <MapEventButton buttonText="something" />
+      </div>
+    ),
+    place: "Florida",
+    placeLink:
+      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+  {
+    nameText: "Douglas Wood",
+    infoText:
+      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+    labelParts: (
+      <div className="flex flex-row gap-4">
+        <MapEventButton buttonText="something" />{" "}
+        <MapEventButton buttonText="something" />
+      </div>
+    ),
+    place: "Florida",
+    placeLink:
+      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+  {
+    nameText: "Douglas Wood",
+    infoText:
+      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+    labelParts: (
+      <div className="flex flex-row gap-4">
+        <MapEventButton buttonText="something" />{" "}
+        <MapEventButton buttonText="something" />
+      </div>
+    ),
+    place: "Florida",
+    placeLink:
+      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+  {
+    nameText: "Douglas Wood",
+    infoText:
+      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+    labelParts: (
+      <div className="flex flex-row gap-4">
+        <MapEventButton buttonText="something" />{" "}
+        <MapEventButton buttonText="something" />
+      </div>
+    ),
+    place: "Florida",
+    placeLink:
+      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+  },
+  {
+    nameText: "Douglas Wood",
+    infoText:
+      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+    labelParts: (
+      <div className="flex flex-row gap-4">
+        <MapEventButton buttonText="something" />{" "}
+        <MapEventButton buttonText="something" />
+      </div>
+    ),
+    place: "Florida",
+    placeLink:
+      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
   },
   {
@@ -52,8 +128,9 @@ export default function AllCoaches() {
       </div>
 
       <div className="bg-white text-black flex flex-col items-center">
+        <MapboxMap />;
         <div className={`${anton.className} text-4xl p-10`}>All Coaches</div>
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center gap-8">
           {coachItems.map((coach) => (
             <CoachItem
               nameText={coach.nameText}

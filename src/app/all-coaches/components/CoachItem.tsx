@@ -25,7 +25,7 @@ export function CoachItem({
   sendEmailBlock,
 }: Props) {
   return (
-    <div className="flex flex-col items-center justify-start min-h-[500px] w-[200wh] text-center">
+    <div className="flex flex-col items-center justify-start min-h-[250px] w-[200wh] text-center">
       <button>
         <span className="font-bold text-xl">{nameText}</span>
       </button>
