@@ -26,6 +26,19 @@ const Navbar = () => {
     </div>,
   ];
 
+  const subTabsFindCoach = [
+    <div key={1} className={clsx("relative", "block")}>
+      <SubTabButton
+        text={"All 3D Coaches"}
+        href={"/all-coaches"}
+      ></SubTabButton>
+      <SubTabButton
+        text={"Official Staff Members"}
+        href={"/all-coaches"}
+      ></SubTabButton>
+    </div>,
+  ];
+
   const path = usePathname();
 
   return (
@@ -58,7 +71,7 @@ const Navbar = () => {
               <TabButton text="Education" />
             </Link>
             <TabButton text="Pricing" />
-            <TabButton text="Find a Coach" />
+            <TabButton text="Find a Coach" subTabs={subTabsFindCoach} />
             <TabButton text="Pro Shop" />
             <TabButton text="Support" />
             <TabButton text="More" />

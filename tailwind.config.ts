@@ -16,7 +16,7 @@ const config: Config = {
         "sb-lightpurple": "#8D9FFF",
         "sb-lowpurple": "#5b41fd",
       },
-      textColor: { "sb-lowpurple": "#5b41fd" },
+      textColor: { "sb-lowpurple": "#5b41fd", "sb-blue": "#3B46FF" },
       borderColor: {
         "sb-darkblue": "#050A30",
         "sb-blue": "#3B46FF",
