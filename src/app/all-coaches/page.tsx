@@ -16,6 +16,7 @@ const coachItems = [
     place: "South Africa",
     placeLink: "https://www.google.com/maps?q=South+Africa",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
   {
     nameText: "Douglas Wood",
@@ -31,6 +32,7 @@ const coachItems = [
     placeLink:
       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
   {
     nameText: "Douglas Wood",
@@ -46,6 +48,7 @@ const coachItems = [
     placeLink:
       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
   {
     nameText: "Douglas Wood",
@@ -61,6 +64,7 @@ const coachItems = [
     placeLink:
       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
   {
     nameText: "Douglas Wood",
@@ -76,6 +80,7 @@ const coachItems = [
     placeLink:
       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
   {
     nameText: "Douglas Wood",
@@ -91,6 +96,7 @@ const coachItems = [
     placeLink:
       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
   {
     nameText: "Douglas Wood",
@@ -106,6 +112,7 @@ const coachItems = [
     placeLink:
       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+    coordinates: [9.19, 45.4642],
   },
 ];
 
@@ -128,6 +135,7 @@ export default function AllCoaches() {
       </div>
 
       <div className="bg-white text-black flex flex-col items-center">
+        <Separator height={130} />
         <MapboxMap />;
         <div className={`${anton.className} text-4xl p-10`}>All Coaches</div>
         <div className="flex flex-wrap items-center justify-center gap-8">

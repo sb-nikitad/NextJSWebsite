@@ -8,6 +8,13 @@ import "mapbox-gl/dist/mapbox-gl.css";
 export const MAPBOX_ACCESS_TOKEN =
   "pk.eyJ1IjoiYW5kcmlrbGs3NyIsImEiOiJjbHA2eDJybmcwcHF5MnBtcmtpdmg1M25zIn0.Cj8ZcUVHkpgN3mR5by_uZA";
 
+let mapboxMap: mapboxgl.Map | null = null;
+
+type Props = {
+  longtitude: number;
+  latitude: number;
+};
+
 export function MapboxMap() {
   // здесь будет хранится инстанс карты после инициализации
   const [map, setMap] = React.useState<mapboxgl.Map>();
@@ -27,7 +34,7 @@ export function MapboxMap() {
 
     // иначе создаем инстанс карты передавая ему ссылку на DOM ноду
     // а также accessToken для mapbox
-    const mapboxMap = new mapboxgl.Map({
+    mapboxMap = new mapboxgl.Map({
       container: node,
       accessToken: MAPBOX_ACCESS_TOKEN,
       style: "mapbox://styles/mapbox/streets-v11",
@@ -38,14 +45,43 @@ export function MapboxMap() {
     // и сохраняем созданный объект карты в React.useState
     setMap(mapboxMap);
 
+    new mapboxgl.Marker()
+      .setLngLat([-74.5, 40]) // Set the marker coordinates
+      .addTo(mapboxMap);
+    new mapboxgl.Marker()
+      .setLngLat([9, 2]) // Set the marker coordinates
+      .addTo(mapboxMap);
+    new mapboxgl.Marker()
+      .setLngLat([9.19, 45.4642]) // Set the marker coordinates
+      .addTo(mapboxMap);
+
     // чтобы избежать утечки памяти удаляем инстанс карты
     // когда компонент будет демонтирован
     return () => {
-      mapboxMap.remove();
+      if (mapboxMap) {
+        mapboxMap.remove();
+      }
     };
   }, []);
 
-  return <div ref={mapNode} className="w-[1000px] h-[500px]" />;
+  return <div ref={mapNode} className="w-[1200px] h-[500px]" />;
 }
+
+// Separate function to create a marker from the page
+export function createMarker({ longtitude, latitude }: Props) {
+  // Example coordinates for a marker in a different location
+  const markerCoordinates: [number, number] = [longtitude, latitude];
+
+  // Call the addMarker function with the specified coordinates
+  addMarker(markerCoordinates);
+}
+
+const addMarker = (coordinates: [number, number]) => {
+  if (mapboxMap) {
+    const marker = new mapboxgl.Marker()
+      .setLngLat(coordinates)
+      .addTo(mapboxMap);
+  }
+};
 
 export default MapboxMap;
