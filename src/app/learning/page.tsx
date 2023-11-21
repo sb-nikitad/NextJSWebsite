@@ -111,18 +111,33 @@ export default function Learning() {
         <Separator height={230} />
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-          <a
-            className="flex justify-center"
-            href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={firstImg}
-              alt="YouTube Video 2"
-              style={{ width: "95%", height: "70%", objectFit: "cover" }}
-            />
-          </a>
+          <div className="flex flex-col justify-center items-center w-full h-fit ">
+            <a
+              w-fit
+              h-fit
+              className=""
+              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={firstImg}
+                alt="YouTube Video 2"
+                style={{ width: "500px", height: "250px", objectFit: "cover" }}
+              />
+            </a>
+            <p>
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Text Link 1
+              </a>
+            </p>
+
+            <p>Text Link 1</p>
+          </div>
 
           <a
             className="flex justify-center"
