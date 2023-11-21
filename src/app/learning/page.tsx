@@ -1,16 +1,41 @@
 import { Anton } from "next/font/google";
 import { Separator } from "@/components/Separator";
 import { lazy } from "react";
+import { HoverButton } from "../../components/HoverButton/HoverButton";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export default function Learning() {
   return (
     <div className="p-32 w-full h-fit bg-sb-darkblue bg-center">
-      <Separator height={230} />
+      <Separator height={130} />
 
       <div className="w-full h-fit bg-cover flex flex-col items-center">
-        {/* First Video */}
+        <div className="flex flex-col justfy-center items-center">
+          <div
+            className={`font-bold text-white ${anton.className} mb-4`}
+            style={{ fontSize: "3rem" }}
+          >
+            <p className="border-b-4 border-blue-500 inline-block">LEARNING</p>
+          </div>
+          <p className={`text-xl text-white mb-4`}>
+            Here’s information on how we measure and what we measure.
+          </p>
+          <p className={`text-xl text-white mb-8`}>
+            More educational and learning resources are available to Sportsbox
+            3D Golf subscribers.
+          </p>
+          <HoverButton
+            text="Get Sportsbox Certified"
+            color="bg-sb-blue"
+            width="w-[270px]"
+            height="h-[60px]"
+          />
+        </div>
+        <Separator height={230} />
+        <div className={`font-bold text-5xl mb-8 ${anton.className}`}>
+          TUTORIALS FOR HOW-TO-USE THE SPORTSBOX 3D GOLF APP
+        </div>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           <iframe
             width="500px"
