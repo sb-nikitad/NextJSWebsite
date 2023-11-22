@@ -111,7 +111,7 @@ export default function Learning() {
         <Separator height={230} />
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center items-center w-full h-fit ">
+          <div className="flex flex-col justify-center items-center w-full h-fit gap-y-4">
             <a
               w-fit
               h-fit
@@ -123,60 +123,149 @@ export default function Learning() {
               <Image
                 src={firstImg}
                 alt="YouTube Video 2"
-                style={{ width: "500px", height: "250px", objectFit: "cover" }}
+                style={{ width: "500px", height: "350px", objectFit: "cover" }}
               />
             </a>
-            <p>
+
+            <p className={`text-xs text-white ${anton.className}`}>10/29/21</p>
+
+            <p className={`text-2xl text-white ${anton.className}`}>
               <a
                 href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Text Link 1
+                SPORTSBOX 3D GOLF APP: DO THIS, NOT THAT{" "}
               </a>
             </p>
 
-            <p>Text Link 1</p>
+            <p className="text-m border-b-[1px] border-white inline-block">
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read More{" "}
+              </a>
+            </p>
           </div>
 
-          <a
-            className="flex justify-center"
-            href="https://www.youtube.com/watch?v=dVZlPkzWkog&si=0v_htoJiOhnEhCPh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={secondImg}
-              alt="YouTube Video 3"
-              style={{ width: "95%", height: "80%", objectFit: "cover" }}
-            />
-          </a>
+          <div className="flex flex-col justify-center items-center w-full h-fit gap-y-4">
+            <a
+              w-fit
+              h-fit
+              className=""
+              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={secondImg}
+                alt="YouTube Video 2"
+                style={{ width: "500px", height: "350px", objectFit: "cover" }}
+              />
+            </a>
 
-          <a
-            className="flex justify-center"
-            href="https://www.youtube.com/watch?v=lrxqc_eejnY&si=5ZUooisc78WI_iQH"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={thirdImg}
-              alt="YouTube Video 4"
-              style={{ width: "95%", height: "80%", objectFit: "cover" }}
-            />
-          </a>
+            <p className={`text-xs text-white ${anton.className}`}>8/6/21</p>
 
-          <a
-            className="flex justify-center"
-            href="https://www.youtube.com/watch?v=DJKOxQm38tM&si=9a2WFYLp_rBnrFGh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={fourthImg}
-              alt="YouTube Video 5"
-              style={{ width: "95%", height: "95%", objectFit: "cover" }}
-            />
-          </a>
+            <p className={`text-2xl text-white ${anton.className}`}>
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SPORTSBOX GOLF: SIX DEGREES OF FREEDOM PRIMER{" "}
+              </a>
+            </p>
+
+            <p className="text-m border-b-[1px] border-white inline-block">
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read More{" "}
+              </a>
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center w-full h-fit gap-y-4">
+            <a
+              w-fit
+              h-fit
+              className=""
+              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={thirdImg}
+                alt="YouTube Video 2"
+                style={{ width: "500px", height: "350px", objectFit: "cover" }}
+              />
+            </a>
+
+            <p className={`text-xs text-white ${anton.className}`}>8/6/21</p>
+
+            <p className={`text-2xl text-white ${anton.className}`}>
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SPORTSBOX 3DGOLF: VISUALS AND TRACKER DEFINITIONS{" "}
+              </a>
+            </p>
+
+            <p className="text-m border-b-[1px] border-white inline-block">
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read More{" "}
+              </a>
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center w-full h-fit gap-y-4">
+            <a
+              w-fit
+              h-fit
+              className=""
+              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={fourthImg}
+                alt="YouTube Video 2"
+                style={{ width: "500px", height: "350px", objectFit: "cover" }}
+              />
+            </a>
+
+            <p className={`text-xs text-white ${anton.className}`}>8/6/21</p>
+
+            <p className={`text-2xl text-white ${anton.className}`}>
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SPORTSBOX GOLF: KEY SWING POSITIONS{" "}
+              </a>
+            </p>
+
+            <p className="text-m border-b-[1px] border-white inline-block">
+              <a
+                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read More{" "}
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
