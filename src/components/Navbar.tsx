@@ -39,6 +39,17 @@ const Navbar = () => {
     </div>,
   ];
 
+  const subTabsSupport = [
+    <div key={1} className={clsx("relative", "block")}>
+      <SubTabButton text={"Help Center"} href={"/all-coaches"}></SubTabButton>
+      <SubTabButton
+        text={"Webinar Series"}
+        href={"/all-coaches"}
+      ></SubTabButton>
+      <SubTabButton text={"Learning"} href={"/learning"}></SubTabButton>
+    </div>,
+  ];
+
   const path = usePathname();
 
   return (
@@ -73,7 +84,7 @@ const Navbar = () => {
             <TabButton text="Pricing" />
             <TabButton text="Find a Coach" subTabs={subTabsFindCoach} />
             <TabButton text="Pro Shop" />
-            <TabButton text="Support" />
+            <TabButton text="Support" subTabs={subTabsSupport} />
             <TabButton text="More" />
           </div>
         </div>

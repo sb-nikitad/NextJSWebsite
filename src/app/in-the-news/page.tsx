@@ -1,4 +1,4 @@
-import { NewsBlock } from "./components/newsBlock";
+import { NewsBlock } from "./components/NewsBlock";
 import { TitleBlock } from "./components/TitleBlock";
 
 export default function InTheNews() {
