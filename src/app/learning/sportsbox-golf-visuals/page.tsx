@@ -3,6 +3,7 @@ import { Separator } from "@/components/Separator";
 import { lazy } from "react";
 import { HoverButton } from "../../../components/HoverButton/HoverButton";
 import Image from "next/image";
+import arrowImg from "../../../../public/images/arrow-icon.png";
 import s from "../../../components/PersonInfCard/CardPersonInfo.module.css";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
@@ -12,7 +13,9 @@ export default function LearningGolfVisuals() {
     <div className="p-16 w-full h-fit bg-sb-darkblue bg-center flex flex-col items-center">
       <Separator height={100} />
       <div className="w-[70%] h-fit bg-cover mb-8 flex flex-col items-start gap-y-8">
-        <h1 className={`font-bold text-4xl text-white ${anton.className} mb-4`}>
+        <h1
+          className={`font-bold text-[46px] text-white ${anton.className} mb-4`}
+        >
           SPORTSBOX 3DGOLF: VISUALS AND TRACKER DEFINITIONS
         </h1>
         <span
@@ -34,9 +37,9 @@ export default function LearningGolfVisuals() {
 
       <div className="w-[70%] h-fit flex border-b-2 border-white mb-8 "></div>
 
-      <div className="w-[70%] h-fit flex flex-col">
+      <div className="w-[70%] h-fit flex flex-col mb-8">
         <p className="mb-2 text-[20px]">RELATED POSTS:</p>
-        <ul className="pl-4 list-disc text-[18px]">
+        <ul className="pl-8 list-disc text-[18px]">
           <li className="pb-4">
             {" "}
             <a
@@ -56,6 +59,35 @@ export default function LearningGolfVisuals() {
             </a>{" "}
           </li>
         </ul>
+      </div>
+
+      <div className="w-[100%] flex justify-between h-fit mt-36">
+        <a
+          className="flex gap-x-4 justify-center items-center"
+          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+        >
+          <Image
+            src={arrowImg}
+            alt="Arrow"
+            className="w-12 h-12 transform rotate-180"
+          />
+          <span
+            className={`font-bold text-[26px] text-white ${anton.className}`}
+          >
+            SPORTSBOX GOLF: SIX DEGREES OF FREEDOM PRIMER{" "}
+          </span>
+        </a>
+        <a
+          className="flex gap-x-4 justify-center items-center"
+          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+        >
+          <span
+            className={`font-bold text-[26px] text-white ${anton.className}`}
+          >
+            SPORTSBOX GOLF: KEY SWING POSITIONS{" "}
+          </span>
+          <Image src={arrowImg} alt="Arrow" className="w-12 h-12" />
+        </a>
       </div>
     </div>
   );
