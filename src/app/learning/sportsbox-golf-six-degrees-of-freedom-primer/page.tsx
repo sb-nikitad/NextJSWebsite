@@ -119,7 +119,7 @@ export default function LearningSixDegrees() {
       <div className="w-[100%] flex justify-between h-fit mt-36">
         <a
           className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+          href="sportsbox-3d-golf-app-do-this-not-that"
         >
           <Image
             src={arrowImg}
@@ -134,7 +134,7 @@ export default function LearningSixDegrees() {
         </a>
         <a
           className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+          href="sportsbox-golf-visuals"
         >
           <span
             className={`font-bold text-[26px] text-white ${anton.className}`}

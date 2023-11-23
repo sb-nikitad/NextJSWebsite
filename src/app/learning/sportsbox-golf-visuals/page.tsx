@@ -64,7 +64,7 @@ export default function LearningGolfVisuals() {
       <div className="w-[100%] flex justify-between h-fit mt-36">
         <a
           className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+          href="sportsbox-golf-six-degrees-of-freedom-primer"
         >
           <Image
             src={arrowImg}
@@ -79,7 +79,7 @@ export default function LearningGolfVisuals() {
         </a>
         <a
           className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+          href="sportsbox-golf-app-key-swing-positions"
         >
           <span
             className={`font-bold text-[26px] text-white ${anton.className}`}

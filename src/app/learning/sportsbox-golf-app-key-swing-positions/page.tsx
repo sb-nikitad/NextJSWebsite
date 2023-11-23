@@ -93,7 +93,7 @@ export default function LearningGolfVisuals() {
       <div className="w-[100%] flex justify-between h-fit mt-36">
         <a
           className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+          href="sportsbox-golf-visuals"
         >
           <Image
             src={arrowImg}

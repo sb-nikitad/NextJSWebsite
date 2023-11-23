@@ -35,12 +35,12 @@ export default function LearningGolfVisuals() {
       <div className="w-[100%] flex justify-end h-fit mt-36">
         <a
           className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
+          href="sportsbox-golf-six-degrees-of-freedom-primer"
         >
           <span
             className={`font-bold text-[26px] text-white ${anton.className}`}
           >
-            SPORTSBOX GOLF: KEY SWING POSITIONS{" "}
+            SPORTSBOX GOLF: SIX DEGREES OF FREEDOM PRIMER{" "}
           </span>
           <Image src={arrowImg} alt="Arrow" className="w-12 h-12" />
         </a>
