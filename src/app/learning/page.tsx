@@ -116,7 +116,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              href="learning/sportsbox-3d-golf-app-do-this-not-that"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -131,7 +131,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -141,7 +141,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -155,7 +155,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              href="learning/sportsbox-3d-golf-app-do-this-not-that"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -170,7 +170,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -180,7 +180,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -194,7 +194,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              href="learning/sportsbox-3d-golf-app-do-this-not-that"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -209,7 +209,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -219,7 +219,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -233,7 +233,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+              href="learning/sportsbox-3d-golf-app-do-this-not-that"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -248,7 +248,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -258,7 +258,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="https://www.youtube.com/watch?v=ZobbJiGzBAM&si=EagNj18VCCM8cTRk"
+                href="learning/sportsbox-3d-golf-app-do-this-not-that"
                 target="_blank"
                 rel="noopener noreferrer"
               >
