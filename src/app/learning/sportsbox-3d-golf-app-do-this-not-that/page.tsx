@@ -5,6 +5,7 @@ import { HoverButton } from "../../../components/HoverButton/HoverButton";
 import Image from "next/image";
 import arrowImg from "../../../../public/images/arrow-icon.png";
 import s from "../../../components/PersonInfCard/CardPersonInfo.module.css";
+import { ImageCarousel } from "./components/LearningImageCarousel";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -27,22 +28,11 @@ export default function LearningGolfVisuals() {
         </span>
       </div>
 
-      <div className="w-[100%] flex justify-between h-fit mt-36">
-        <a
-          className="flex gap-x-4 justify-center items-center"
-          href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
-        >
-          <Image
-            src={arrowImg}
-            alt="Arrow"
-            className="w-12 h-12 transform rotate-180"
-          />
-          <span
-            className={`font-bold text-[26px] text-white ${anton.className}`}
-          >
-            SPORTSBOX GOLF: SIX DEGREES OF FREEDOM PRIMER{" "}
-          </span>
-        </a>
+      <div className="w-[70%] h-fit flex mb-8 ">
+        <ImageCarousel />
+      </div>
+
+      <div className="w-[100%] flex justify-end h-fit mt-36">
         <a
           className="flex gap-x-4 justify-center items-center"
           href="https://help.sportsbox.ai/what-is-a-tracker-in-the-sportsbox-3dgolf-app"
