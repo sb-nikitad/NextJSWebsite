@@ -1,8 +1,7 @@
 import { HoverButton } from "../../components/HoverButton/HoverButton";
 import clsx from "clsx";
-import ImageSlider from ".././components/ImageSlider";
 import { CoachThumbnail } from "./components/CoachThumbnail";
-import { MainVideoFlow } from ".././components/MainVideoFlow";
+import { CoachVideoFlow } from "./components/CoachVideoFlow";
 import { MainCoachPlayerRedirect } from ".././components/MainCoachPlayerRedirect";
 import { WhatIs } from ".././about/components/WhatIs";
 import { Separator } from "../../components/Separator";
@@ -14,8 +13,7 @@ export default function HomePage() {
   return (
     <div className="">
       <CoachThumbnail />
-      <ImageSlider />
-      <MainVideoFlow />
+      <CoachVideoFlow />
       <MainCoachPlayerRedirect />
       <div className="px-[250px]">
         <WhatIs />
