@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import { TabButton } from "../TabButton/TabButton";
 import { HoverButton } from "../HoverButton/HoverButton";
-import LogoImage from "../../public/images/Sportsbox3DGolf_logo_white.png";
+import LogoImage from "../../../public/images/Sportsbox3DGolf_logo_white.png";
 import { SubTabButton } from "../TabButton/SubTabButton";
 import { usePathname } from "next/navigation";
 

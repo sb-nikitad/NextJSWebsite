@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/images/mini-logo.png";
+import logo from "../../../public/images/mini-logo.png";
 import { ArrowRight, Menu } from "react-feather";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
