@@ -5,10 +5,10 @@ import clsx from "clsx";
 import React from "react";
 import Link from "next/link";
 
-import { TabButton } from "./TabButton/TabButton";
-import { HoverButton } from "./HoverButton/HoverButton";
+import { TabButton } from "../TabButton/TabButton";
+import { HoverButton } from "../HoverButton/HoverButton";
 import LogoImage from "../../public/images/Sportsbox3DGolf_logo_white.png";
-import { SubTabButton } from "./TabButton/SubTabButton";
+import { SubTabButton } from "../TabButton/SubTabButton";
 import { usePathname } from "next/navigation";
 
 export const DesktopNavbar = () => {

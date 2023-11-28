@@ -1,6 +1,6 @@
 "use client";
 import { useMediaQuery } from "react-responsive";
-import { DesktopNavbar } from "../DesktopNavbar";
+import { DesktopNavbar } from "./DesktopNavbar";
 import { MobileNavbar } from "../MobileNavbar";
 import { useEffect, useState } from "react";
 
