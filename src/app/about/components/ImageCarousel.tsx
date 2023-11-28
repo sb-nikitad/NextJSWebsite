@@ -28,25 +28,21 @@ export function ImageCarousel() {
   };
 
   return (
-    <div className="flex justify-between items-center ">
+    <div className="flex justify-between items-center w-full lg:px-[300px]">
       <Image
         src={arrowImg}
         alt="Arrow"
-        className="w-12 h-12 transform rotate-180"
+        className="w-6 h-6 transform rotate-180"
         onClick={() => handleImageChange("backward")}
       />
-      <Image
-        src={imageArray[selectedImage]}
-        alt="image"
-        width="1000"
-        height="500"
-        className=""
-      />
+      <div className="w-2/3 h-40 lg:h-[500px] relative">
+        <Image src={imageArray[selectedImage]} alt="image" fill className="" />
+      </div>
 
       <Image
         src={arrowImg}
         alt="Arrow"
-        className="w-12 h-12"
+        className="w-6 h-6 "
         onClick={() => handleImageChange("forward")}
       />
     </div>

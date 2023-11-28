@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-hsl-background {
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+/* .custom-hsl-background {
   background-color: hsl(233, 81%, 20%);
 }
 
 .wrapper {
   width: 100%;
   margin: 0 auto;
-}
+} */

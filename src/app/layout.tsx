@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Navbar } from "../components/Navbar/Navbar";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${lato.className} bg-sb-darkblue text-white`}>
         <Navbar />
         <div className=""> {children} </div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

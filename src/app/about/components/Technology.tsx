@@ -27,8 +27,8 @@ export function Technology() {
         </div>
       </div>
 
-      <div className={"flex gap-x-8 justify-center items-center"}>
-        <div className="w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4 relative">
+      <div className={"flex gap-x-8 justify-center items-center flex-wrap"}>
+        <div className="lg:w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full ">
           <div
             className={`text-4xl absolute -top-5 duration-300 ${anton.className} text-transparent cursor-default`}
             style={{ WebkitTextStroke: "1px white" }}
@@ -45,7 +45,7 @@ export function Technology() {
             video
           </div>
         </div>
-        <div className="w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4">
+        <div className="lg:w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4  sm:w-full">
           <div className={`font-bold text-2xl text-white ${anton.className}`}>
             VISUALIZE
           </div>
@@ -56,7 +56,7 @@ export function Technology() {
             Above and Below
           </div>
         </div>
-        <div className="w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4">
+        <div className="lg:w-[22rem] h-[24rem] custom-hsl-background rounded-[25px] p-8 flex flex-col gap-y-4  sm:w-full">
           <div className={`font-bold text-2xl text-white ${anton.className}`}>
             HIGHLY ACCURATE 3D BIOMECHANICAL MEASUREMENTS{" "}
           </div>
