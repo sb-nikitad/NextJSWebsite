@@ -47,6 +47,7 @@ const Navbar = () => {
         href={"/all-coaches"}
       ></SubTabButton>
       <SubTabButton text={"Learning"} href={"/learning"}></SubTabButton>
+      <SubTabButton text={"Contact"} href={"/contact"}></SubTabButton>
     </div>,
   ];
 

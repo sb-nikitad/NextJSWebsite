@@ -1,0 +1,8 @@
+.iconLink {
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.iconLink:hover {
+  color: #3498db; /* Set the desired blue color for hover */
+}
