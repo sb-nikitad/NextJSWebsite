@@ -46,7 +46,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="flex justify-between px-[230px] py-[100px]">
+    <div className="flex justify-between gap-20 px-10 lg:px-[230px] py-[100px] flex-wrap lg:flex-nowrap">
       <div>
         <div className="h-[5px] w-full bg-sb-blue" />
         <div
@@ -61,7 +61,7 @@ const ImageSlider = () => {
         </div>
       </div>
       <div>
-        <div className="relative w-[50vw] overflow-hidden h-full">
+        <div className="relative w-[80vw] lg:w-[50vw] overflow-hidden h-full">
           <div
             className="flex transition-transform duration-300 gap-5"
             style={{

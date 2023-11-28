@@ -26,6 +26,9 @@ const config: Config = {
       transitionProperty: {
         bg: "background-color",
       },
+      boxShadow: {
+        "sb-blue": "0 5px 20px #30419e",
+      },
     },
   },
   plugins: [],

@@ -159,7 +159,7 @@ export const MobileNavbar = () => {
   return (
     <header suppressHydrationWarning>
       <div>
-        <nav className="flex absolute top-0 w-screen text-white justify-between p-6 bg-sb-darkblue">
+        <nav className="flex absolute top-0 w-full text-white justify-between p-6 bg-sb-darkblue box-border">
           <Link href="/">
             <Image src={logo} alt="Logo" width={25} height={25} />
           </Link>

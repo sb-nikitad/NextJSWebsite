@@ -5,6 +5,7 @@ import s from "./HoverButton.module.css";
 import { useState } from "react";
 
 type Props = {
+  className?: string;
   text: string;
   color:
     | "bg-sb-blue"
@@ -21,7 +22,8 @@ export function HoverButton({
   color,
   width,
   height,
-  shadowColor = "shadow-[0px_0px_10px_rgba(255,255,255,0.6)]",
+  className,
+  shadowColor = "shadow-sb-blue",
 }: Props) {
   return (
     <>
@@ -41,7 +43,8 @@ export function HoverButton({
           width,
           height,
           shadowColor,
-          "text-white"
+          "text-white",
+          className
         )}
       >
         {text}

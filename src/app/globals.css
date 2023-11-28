@@ -2,12 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
+  line-height: 1.15; /* Prevent adjustments of font size after orientation changes in iOS */
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in Chrome on Windows */
+  height: 100%; /* Full height */
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* body {
   margin: 0;
   padding: 0;
   width: 100vw;
   overflow-x: scroll;
-}
+} */
 
 /* .custom-hsl-background {
   background-color: hsl(233, 81%, 20%);

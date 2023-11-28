@@ -1,23 +1,18 @@
 import Image from "next/image";
-import imagePath from "../../../../public/images/what-is-1.png";
-import "../../../app/globals.css";
-import { ABOUT_WHATIS__URL } from "../../URL's";
+import { ABOUT_WHATIS__URL } from "../URL's";
 
 import { Lato, Anton } from "next/font/google";
 
-const lato = Lato({ weight: "400", subsets: ["latin"] });
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
-export function WhatIs() {
+export function MainWhatIs() {
   return (
-    <div className="flex flex-col gap-y-8 md:gap-y-16 items-center lg:px-[250px]">
-      <div className="flex flex-col md:flex-row gap-x-0 md:gap-x-12 gap-y-8 md:gap-y-0">
+    <div className="flex flex-col gap-y-16 items-center px-10 lg:px-[250px]">
+      <div className="flex flex-col gap-x-12 gap-y-8 items-center text-center">
         <h2
           className={`font-bold text-white text-4xl md:text-5xl lg:text-5xl ${anton.className} w-full md:w-1/2`}
         >
-          <span className="border-b-4 border-sb-blue pb-2  inline-block">
-            WHAT IS SPORTSBOX AI?
-          </span>
+          WHAT IS SPORTSBOX AI?
         </h2>
         <p className="text-white text-base md:text-lg lg:text-xl w-full md:w-1/2">
           Founded in 2020, Sportsbox AI is an AI-powered technology company that
@@ -36,9 +31,9 @@ export function WhatIs() {
           your mobile phone and at a fraction of the cost of existing 3D Motion
           Capture Systems.
         </p>
-        <div className="w-[90%] md:w-[45%]">
+        <div className="lg:w-[45%]">
           <Image
-            src={ABOUT_WHATIS__URL} // Assuming imagePath is correct and imported
+            src={ABOUT_WHATIS__URL}
             alt="Image Description"
             className="rounded-[30px]"
             layout="responsive"

@@ -5,19 +5,19 @@ import clsx from "clsx";
 import React from "react";
 import Link from "next/link";
 
-import { HoverButton } from "././HoverButton/HoverButton";
+import { HoverButton } from "../HoverButton/HoverButton";
 import { Anton } from "next/font/google";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "react-feather";
 
-import appStore from "../../public/images/footer/app-store.svg";
-import playMarket from "../../public/images/footer/play-market.svg";
-import logo from "../../public/images/footer/logo.png";
+import appStore from "../../../public/images/footer/app-store.svg";
+import playMarket from "../../../public/images/footer/play-market.svg";
+import logo from "../../../public/images/footer/logo.png";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
-const Footer = () => {
+export const DesktopFooter = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div suppressHydrationWarning className="flex flex-col items-center">
       <div className="m-[100px]">
         <Image src={logo} width={280} height={60} alt="logo" />
       </div>
@@ -55,5 +55,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

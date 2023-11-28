@@ -9,6 +9,7 @@ import { Separator } from "../components/Separator";
 import { Technology } from "./about/components/Technology";
 import { MainTeam } from "./components/MainTeam";
 import { MainTestimonialsCarousel } from "./components/MainTestimonialsCarousel";
+import { MainWhatIs } from "./components/MainWhatIs";
 
 export default function HomePage() {
   return (
@@ -17,12 +18,11 @@ export default function HomePage() {
       <ImageSlider />
       <MainVideoFlow />
       <MainCoachPlayerRedirect />
-      <div className="px-[250px]">
-        <WhatIs />
-      </div>
+      <MainWhatIs />
+
       <Separator height={100} />
       <Technology />
-      <MainTeam />
+      {/* <MainTeam /> */}
       {/* <MainTestimonialsCarousel /> */}
     </div>
   );

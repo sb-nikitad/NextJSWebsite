@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
-import Footer from "../components/Footer";
+import { Footer } from "../components/Footer/Footer";
 import { Navbar } from "../components/Navbar/Navbar";
 
 const lato = Lato({
@@ -21,10 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lato.className} bg-sb-darkblue text-white`}>
+      <body
+        className={`${lato.className} box-border w-screen h-full bg-sb-darkblue text-white`}
+      >
         <Navbar />
-        <div className=""> {children} </div>
-        {/* <Footer /> */}
+        <div>{children}</div>
+        <Footer />
       </body>
     </html>
   );
