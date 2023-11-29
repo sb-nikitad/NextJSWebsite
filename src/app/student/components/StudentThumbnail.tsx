@@ -1,5 +1,7 @@
 import { HoverButton } from "../../../components/HoverButton/HoverButton";
 import { Anton } from "next/font/google";
+import Image from "next/image";
+
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export const StudentThumbnail = () => {
@@ -98,7 +100,7 @@ export const StudentThumbnail = () => {
       <div className="bg-sb-darkblue flex justify-center w-full px-[200px] pb-[200px] gap-x-32">
         <div className="w-fit">
           <video autoPlay muted loop className="w-[430px]">
-            <source src="videos/student/3.mp4" type="video/mp4" />{" "}
+            <source src="videos/student/4.mp4" type="video/mp4" />{" "}
           </video>
         </div>
         <div className="flex flex-col gap-y-8 w-[80%] justify-center">
@@ -113,6 +115,57 @@ export const StudentThumbnail = () => {
             <li className="pb">TOUR VALIDATED 3D TECHNOLOGY</li>
             <li className="pb">ACCESS TO LPGA & PGA TOUR RANGES</li>
           </ul>
+        </div>
+      </div>
+      <div className="bg-sb-darkblue flex justify-center w-full px-[130px] pb-[200px] gap-x-32">
+        <div className="w-fit">
+          <Image
+            src={"images/student/map.png"} // Assuming imagePath is correct and imported
+            alt="Image Description"
+            className=""
+            layout=""
+            width={1000}
+            height={100}
+          />
+        </div>
+        <div className="flex flex-col gap-y-8 w-[85%] justify-center">
+          <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
+            {"FIND A"}
+            <span className="text-blue-500"> COACH</span>
+          </div>
+          <ul className="flex flex-col gap-y-[6px] pl-4 list-disc text-[20px] font-light">
+            <li className="pb">IN-PERSON OR DIGITAL LESSONS</li>
+            <li className="pb">
+              USE SPORTSBOX INBOX TO COMMUNICATE BETWEEN LESSONS
+            </li>
+          </ul>
+          <HoverButton
+            color="bg-sb-blue"
+            text="Start here"
+            width="w-[175px]"
+            height="h-[60px]"
+          />
+        </div>
+      </div>
+      <div className="bg-sb-darkblue bg-cover bg-center flex justify-between w-full px-[130px] pb-[100px] items-center">
+        <div className="flex flex-col gap-10">
+          <div className={`${anton.className} text-6xl whitespace-pre-wrap `}>
+            {"WATCH HOW THE"}
+            <span className="text-blue-500"> PROS </span>
+            {"\nARE USING SPORTSBOX"}
+          </div>
+
+          <HoverButton
+            color="bg-sb-blue"
+            text="Let's Go"
+            width="w-[150px]"
+            height="h-[60px]"
+          />
+        </div>
+        <div className="flex w-fil gap-x-4">
+          <video controls muted className="w-[550px]">
+            <source src="videos/student/5.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </>
