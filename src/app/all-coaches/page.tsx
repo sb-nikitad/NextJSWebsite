@@ -151,6 +151,7 @@ export default function AllCoaches() {
           ))}
         </div>
       </div>
+      <Separator height={130} />
     </div>
   );
 }

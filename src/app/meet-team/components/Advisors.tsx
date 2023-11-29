@@ -64,7 +64,7 @@ export function Advisors() {
             mainText={ambassador.mainText}
             secondText={ambassador.secondText}
             thirdText={ambassador.thirdText}
-            width="w-[440px]"
+            width="max-w-[440px]"
           />
         ))}
       </div>

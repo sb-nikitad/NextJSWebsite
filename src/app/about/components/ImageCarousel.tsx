@@ -28,7 +28,7 @@ export function ImageCarousel() {
   };
 
   return (
-    <div className="flex justify-center items-center w-full lg:px-[300px]">
+    <div className="flex justify-center items-center w-full lg:px-[200px]">
       <Image
         src={arrowImg}
         alt="Arrow"

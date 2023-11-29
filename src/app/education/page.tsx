@@ -5,20 +5,21 @@ import img1 from "../../../public/images/education/img-1.png";
 import img2 from "../../../public/images/education/img-2.png";
 import Image from "next/image";
 import { HoverButton } from "../../components/HoverButton/HoverButton";
+import { Separator } from "../../components/Separator";
 
 export default function EducationPage() {
   return (
-    <div className="w-full h-fit">
-      <div className="w-full h-[80vh] bg-[url('/images/education/thumbnail.png')] bg-cover bg-center"></div>
+    <div className="w-full h-fit leading-relaxed">
+      <div className="w-full h-[30vh] lg:h-[80vh] lg:py-0 bg-[url('/images/education/thumbnail.png')] bg-cover bg-center"></div>
 
-      <div className="bg-white text-black flex flex-col items-center">
+      <div className="bg-white text-black flex flex-col items-center ">
         <div className={`${anton.className} text-4xl p-10`}>
           SPORTSBOX 3D BOOT CAMP.
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly flex-wrap">
           <Image src={img1} width={500} height={500} alt="register" />
-          <div className="w-1/2 flex flex-col items-center">
+          <div className="p-10 lg:p-0 lg:w-1/2 flex flex-col items-center">
             <div>
               <p>
                 The Sportsbox Boot Camp will train and educate you in becoming
@@ -59,10 +60,10 @@ export default function EducationPage() {
           SPORTSBOX 3D LEVEL 1 CERTIFICATION
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly flex-wrap">
           <Image src={img2} width={500} height={500} alt="register" />
 
-          <div className="w-1/2 flex flex-col items-center">
+          <div className="p-10 lg:p-0 lg:w-1/2 flex flex-col items-center ">
             <div>
               As you work through the level 1 certification you will gain
               knowledge on how to navigate the app and use the various features
@@ -87,6 +88,7 @@ export default function EducationPage() {
             <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
           </div>
         </div>
+        <Separator height={100} />
       </div>
     </div>
   );

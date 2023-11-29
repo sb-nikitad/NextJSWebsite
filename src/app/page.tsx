@@ -8,8 +8,10 @@ import { WhatIs } from "./about/components/WhatIs";
 import { Separator } from "../components/Separator";
 import { Technology } from "./about/components/Technology";
 import { MainTeam } from "./components/MainTeam";
-import { MainTestimonialsCarousel } from "./components/MainTestimonialsCarousel";
 import { MainWhatIs } from "./components/MainWhatIs";
+import { MainTestimonialsCarousel } from "./components/MainTestimonialsCarousel";
+import Image from "next/image";
+import logo from "../../public/images/footer/logo.png";
 
 export default function HomePage() {
   return (
@@ -23,7 +25,10 @@ export default function HomePage() {
       <Separator height={100} />
       <Technology />
       {/* <MainTeam /> */}
-      {/* <MainTestimonialsCarousel /> */}
+      <MainTestimonialsCarousel />
+      <div className="flex justify-center py-[150px]">
+        <Image src={logo} width={280} height={60} alt="logo" />
+      </div>
     </div>
   );
 }

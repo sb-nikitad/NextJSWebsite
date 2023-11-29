@@ -28,7 +28,7 @@ export function Technology() {
       </div>
 
       <div className="flex gap-10 justify-center items-center flex-wrap ">
-        <div className="lg:w-[22rem] h-[24rem] rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full bg-blue-900 bg-opacity-30">
+        <div className="lg:w-[22rem] h-[24rem] rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full bg-sb-lightdarkblue">
           <div
             className={`text-4xl absolute -top-5 duration-300 ${anton.className} text-transparent cursor-default`}
             style={{ WebkitTextStroke: "1px white" }}
@@ -45,7 +45,7 @@ export function Technology() {
             video
           </div>
         </div>
-        <div className="lg:w-[22rem] h-[24rem] rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full bg-blue-900 bg-opacity-30">
+        <div className="lg:w-[22rem] h-[24rem] rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full bg-sb-lightdarkblue">
           <div
             className={`text-4xl absolute -top-5 duration-300 ${anton.className} text-transparent cursor-default`}
             style={{ WebkitTextStroke: "1px white" }}
@@ -62,7 +62,7 @@ export function Technology() {
             Above and Below
           </div>
         </div>
-        <div className="lg:w-[22rem] h-[24rem] rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full bg-blue-900 bg-opacity-30">
+        <div className="lg:w-[22rem] h-[24rem] rounded-[25px] p-8 flex flex-col gap-y-4 relative sm:w-full bg-sb-lightdarkblue">
           <div
             className={`text-4xl absolute -top-5 duration-300 ${anton.className} text-transparent cursor-default`}
             style={{ WebkitTextStroke: "1px white" }}

@@ -23,8 +23,6 @@ const ImageSlider = () => {
     setSlideAmount((prev) => (prev >= MAX_SCROLL ? prev : prev + 1));
   };
 
-  console.log((slideAmount / MAX_SCROLL) * 100);
-
   const genPictures = () => {
     const arr = [];
     for (let i = 0; i < 15; i++) {
@@ -35,11 +33,20 @@ const ImageSlider = () => {
       <div className="">
         <div className="relative h-[330px] w-[330px] overflow-hidden">
           <Image
-            className=" object-cover object-center "
+            className=" object-cover object-center z-0"
             src={el}
             fill
             alt="img"
           />
+        </div>
+        <div
+          style={{ bottom: "0px" }}
+          className="absolute w-[330px] z-20 p-5 bg-black bg-opacity-30"
+        >
+          <div className={` text-xl ${anton.className}`}>Sean Folley</div>
+          <div className={`  `}>
+            No. 5 on Golf Digest's 50 Best Teachers, GOLF.com Top 100
+          </div>
         </div>
       </div>
     ));

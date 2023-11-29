@@ -11,16 +11,12 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "react-feather";
 
 import appStore from "../../../public/images/footer/app-store.svg";
 import playMarket from "../../../public/images/footer/play-market.svg";
-import logo from "../../../public/images/footer/logo.png";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export const DesktopFooter = () => {
   return (
     <div suppressHydrationWarning className="flex flex-col items-center">
-      <div className="m-[100px]">
-        <Image src={logo} width={280} height={60} alt="logo" />
-      </div>
       <HoverButton color="bg-sb-blue" text="Sign Up For Updates" />
       <div className="flex gap-[200px] p-10">
         <div>

@@ -16,7 +16,7 @@ type Props = {
 
 export function NewsItem({ imageSrc, mainText, link }: Props) {
   return (
-    <div className="flex flex-col items-left w-[360px]">
+    <div className="flex flex-col items-left lg:w-[360px]">
       <Link href={link ? link.toString() : ""}>
         <Image
           src={imageSrc ? imageSrc.src : ""}

@@ -12,6 +12,7 @@ export default function About() {
       <ImageCarousel />
       <Separator height={100} />
       <Technology />
+      <Separator height={100} />
     </div>
   );
 }

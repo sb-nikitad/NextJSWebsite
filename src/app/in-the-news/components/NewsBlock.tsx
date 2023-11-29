@@ -1,11 +1,9 @@
-"use client";
-
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 import React, { useState } from "react";
 import { Lato, Anton } from "next/font/google";
 import { HoverButton } from "@/components/HoverButton/HoverButton";
-import { NewsItem } from "./newsItem";
+import { NewsItem } from "./NewsItem";
 import { shadowStyles } from "@/app/misc/shadowStyles";
 
 const lato = Lato({ weight: "400", subsets: ["latin"] });
@@ -128,14 +126,9 @@ const newsItems = [
 export function NewsBlock() {
   return (
     <div
-      className={clsx(
-        "flex",
-        "justify-center",
-        "w-[100%]",
-        "bg-white",
-        "pt-10",
-        "px-8"
-      )}
+      className={
+        "flex justify-between gap-10 w-full bg-white py-20 px-10 flex-wrap"
+      }
     >
       <div
         className={clsx(
@@ -144,10 +137,10 @@ export function NewsBlock() {
           "items-center",
           "gap-y-8",
           "gap-x-4",
-          "w-[25%]"
+          "w-[300px]"
         )}
       >
-        <span className={clsx("text-black", "text-4xl", anton.className)}>
+        <span className={clsx("text-black", "text-5xl", anton.className)}>
           IN THE NEWS
         </span>
         <HoverButton
@@ -158,7 +151,7 @@ export function NewsBlock() {
           shadowColor={shadowStyles.black}
         />
       </div>
-      <div className="w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-y-4">
+      <div className="w-full lg:w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-5">
         {newsItems.map((newsItem) => (
           <NewsItem
             imageSrc={newsItem.imageSrc}

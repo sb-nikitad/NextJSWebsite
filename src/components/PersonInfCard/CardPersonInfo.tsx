@@ -30,8 +30,7 @@ export function CardPersonInfo({
     <div
       className={clsx(
         width,
-        "h-100%",
-        "custom-hsl-background",
+        "bg-sb-lightdarkblue",
         "rounded-[25px]",
         "p-8",
         "flex",

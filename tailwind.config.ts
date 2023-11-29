@@ -12,6 +12,7 @@ const config: Config = {
       backgroundColor: {
         "sb-main-dark-blue": "#0B1123",
         "sb-darkblue": "#050A30",
+        "sb-lightdarkblue": "#0A135C",
         "sb-blue": "#3B46FF",
         "sb-lightpurple": "#8D9FFF",
         "sb-lowpurple": "#5b41fd",

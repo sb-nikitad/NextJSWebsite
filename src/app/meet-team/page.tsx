@@ -11,17 +11,17 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export default function MeetTeam() {
   return (
     <div className="flex flex-col items-center gap-y-24 p-8">
-      <Separator height={200} />
+      <Separator height={200} mobileHeight={1} />
       <div
-        className={clsx(anton.className, "flex", "items-center", "gap-x-52")}
+        className={`${anton.className} flex items-center gap-y-10 gap-x-52 flex-wrap`}
       >
-        <span className="border-b-4 border-sb-blue text-4xl">
+        <div className="border-b-4 border-sb-blue text-4xl">
           FOUNDING AND EXECUTIVE TEAM
-        </span>
-        <span className="text-2xl w-[550px]">
+        </div>
+        <div className="text-2xl lg:w-[550px]">
           WE ARE A TEAM OF EXPERTS IN SPORTS, AI TECHNOLOGY, AND BIOMECHANICAL
           SCIENCE.
-        </span>
+        </div>
       </div>
       <FoundingTeam />
       <Advisors />
