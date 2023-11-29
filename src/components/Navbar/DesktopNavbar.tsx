@@ -50,6 +50,13 @@ export const DesktopNavbar = () => {
     </div>,
   ];
 
+  const subTabsMore = [
+    <div key={1} className={clsx("relative", "block")}>
+      <SubTabButton text={"For Coaches"} href={"/coach"}></SubTabButton>
+      <SubTabButton text={"For Students"} href={"/student"}></SubTabButton>
+    </div>,
+  ];
+
   const path = usePathname();
 
   return (
@@ -85,7 +92,7 @@ export const DesktopNavbar = () => {
             <TabButton text="Find a Coach" subTabs={subTabsFindCoach} />
             <TabButton text="Pro Shop" />
             <TabButton text="Support" subTabs={subTabsSupport} />
-            <TabButton text="More" />
+            <TabButton text="More" subTabs={subTabsMore} />
           </div>
         </div>
         <div
