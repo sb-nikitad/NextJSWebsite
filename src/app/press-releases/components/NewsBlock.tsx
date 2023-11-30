@@ -13,13 +13,14 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 import firstImg from "../../../../public/images/press-releases/1.gif";
 import secondImg from "../../../../public/images/press-releases/2.gif";
+import thirdImg from "../../../../public/images/press-releases/3.png";
 import { debug } from "console";
 
 const pressItems = [
   {
     imageSrc: firstImg,
     mainText:
-      "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
+      "SPORTSBOX AI UNVEILS PARTNERSHIP WITH FORESIGHT SPORTS TO INTEGRATE LAUNCH MONITOR DATA INTO ITS 3DGOLF APP",
     secondText:
       "Sportsbox Ai and Foresight Sports are joining forces to create the first-ever app with 3D body motion data as well as club and ball data from a launch monitor.",
     dateText: "12/14/22",
@@ -28,19 +29,18 @@ const pressItems = [
   {
     imageSrc: secondImg,
     mainText:
-      "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
+      "SPORTSBOX AI LAUNCHES FIRST VERSION OF CONSUMER APP 3D PRACTICE WITH CONTENT FROM TOP 100 COACHES AND TRAINING AID PARTNERS",
     secondText:
-      "Sportsbox Ai and Foresight Sports are joining forces to create the first-ever app with 3D body motion data as well as club and ball data from a launch monitor.",
+      "3D Practice provides golfers of all abilities to benefit from data-driven Practice Guides – with or without a coach.",
     dateText: "12/14/22",
     link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
   },
   {
-    imageSrc: firstImg,
+    imageSrc: thirdImg,
     mainText:
-      "Golf Digest: Two of golf's most innovative companies are joining forces. Here's what it means for golfers",
+      "SPORTSBOX AI CLOSES SEED ROUND LED BY EP GOLF VENTURES, AN INVESTMENT PARTNERSHIP BETWEEN ELYSIAN PARK VENTURES AND THE PGA OF AMERICA",
     secondText:
-      "Sportsbox Ai and Foresight Sports are joining forces to create the first-ever app with 3D body motion data as well as club and ball data from a launch monitor.",
-    dateText: "12/14/22",
+      "Sportsbox AI closes first seed round, bringing the company’s total amount raised to more than $5.5 million to date.",
     link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
   },
   {
@@ -178,12 +178,13 @@ export function NewsBlock() {
           <PressItem
             imageSrc={pressItem.imageSrc}
             mainText={pressItem.mainText}
+            secondText={pressItem.secondText}
             dateText={pressItem.dateText}
             link={pressItem.link}
           />
         ))}
       </div>
-      <div className="grid grid-cols-2 text-black w-[80%]">
+      <div className="grid row-start-auto text-black w-[80%]">
         {page > 1 && (
           <div
             className="flex place-self-start text-[20px]"

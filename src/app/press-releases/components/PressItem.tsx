@@ -11,11 +11,18 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 type Props = {
   imageSrc?: StaticImageData;
   mainText?: string;
+  secondText?: string;
   dateText?: string;
   link?: Url;
 };
 
-export function PressItem({ imageSrc, mainText, dateText, link }: Props) {
+export function PressItem({
+  imageSrc,
+  mainText,
+  secondText,
+  dateText,
+  link,
+}: Props) {
   return (
     // <Link href={link ? link.toString() : ""}>
     <div className="flex flex-col justify-center items-center h-fit gap-y-4 text-black">
@@ -53,7 +60,7 @@ export function PressItem({ imageSrc, mainText, dateText, link }: Props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {mainText}
+            {secondText}
           </a>
         </p>
 
