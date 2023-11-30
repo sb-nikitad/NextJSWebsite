@@ -183,11 +183,24 @@ export function NewsBlock() {
           />
         ))}
       </div>
-      <div className="flex justify-between text-black">
-        {page + 1 <= totalPages && (
-          <div onClick={handleReadOlder}>Read older</div>
+      <div className="grid grid-cols-2 text-black w-[80%]">
+        {page > 1 && (
+          <div
+            className="flex place-self-start text-[20px]"
+            onClick={handleReadNewer}
+          >
+            {" "}
+            {"< Newer Posts"}
+          </div>
         )}
-        {page > 1 && <div onClick={handleReadNewer}>Read newer</div>}
+        {page + 1 <= totalPages && (
+          <div
+            className="flex place-self-end text-[20px]"
+            onClick={handleReadOlder}
+          >
+            {"Older Posts >"}
+          </div>
+        )}
       </div>
     </div>
   );
