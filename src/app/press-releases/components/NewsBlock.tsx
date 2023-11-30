@@ -173,7 +173,7 @@ export function NewsBlock() {
         "flex flex-col justify-center items-center gap-10 w-full bg-white py-20 px-10 flex-wrap"
       }
     >
-      <div className="w-[80%] lg:w-[80%] grid grid-cols-1 xl:grid-cols-2 gap-[30px] row-start-auto">
+      <div className="w-[70%] lg:w-[75%] grid grid-cols-1 xl:grid-cols-2 gap-[30px] row-start-auto">
         {pressItems.slice(pageToIndex, pageToIndex + limit).map((pressItem) => (
           <PressItem
             imageSrc={pressItem.imageSrc}
