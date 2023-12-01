@@ -14,6 +14,7 @@ type Props = {
   secondText?: string;
   dateText?: string;
   link?: Url;
+  customContent?: any[];
 };
 
 export function PressItem({
@@ -22,6 +23,7 @@ export function PressItem({
   secondText,
   dateText,
   link,
+  customContent,
 }: Props) {
   return (
     // <Link href={link ? link.toString() : ""}>
@@ -42,7 +44,18 @@ export function PressItem({
       </a>
 
       <div className="flex flex-col justify-center text-center items-center gap-y-4">
-        <p className={`text-xs ${anton.className}`}>{dateText}</p>
+        <p className={`flex text-xs ${anton.className}`}>
+          {customContent?.map((content, index) => (
+            <div>
+              <a key={index} href={content.redirect}>
+                {content.title}
+              </a>
+
+              <span> &#8226; </span>
+            </div>
+          ))}
+          {dateText}
+        </p>
 
         <p className={`text-2xl ${anton.className}`}>
           <a
