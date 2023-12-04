@@ -140,11 +140,11 @@ export const MobileNavbar = () => {
         return [
           {
             title: "For Coaches",
-            onClick: () => redirect("/"),
+            onClick: () => redirect("/coach"),
           },
           {
             title: "For Players",
-            onClick: () => redirect("/"),
+            onClick: () => redirect("/student"),
           },
           {
             title: "Login",
