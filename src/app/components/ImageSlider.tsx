@@ -30,7 +30,7 @@ const ImageSlider = () => {
     }
 
     return arr.map((el, i) => (
-      <div className="">
+      <div key={i}>
         <div className="relative h-[330px] w-[330px] overflow-hidden">
           <Image
             className=" object-cover object-center z-0"
@@ -45,7 +45,7 @@ const ImageSlider = () => {
         >
           <div className={` text-xl ${anton.className}`}>Sean Folley</div>
           <div className={`  `}>
-            No. 5 on Golf Digest's 50 Best Teachers, GOLF.com Top 100
+            No. 5 on Golf Digest&apos;s 50 Best Teachers, GOLF.com Top 100
           </div>
         </div>
       </div>

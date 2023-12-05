@@ -40,11 +40,11 @@ export default function EducationPage() {
                 <li>Receive 6 PDR credits</li>
               </ul>
               <p>
-                Upon completion of the 5-week program, you'll receive a sizable
-                discount on your annual Sportsbox subscription, available
-                exclusively to program participants. Plus, PGA members will earn
-                6 PDR credits. Don't miss this opportunity to enhance your
-                skills and take your coaching to the next level.
+                Upon completion of the 5-week program, you&apos;ll receive a
+                sizable discount on your annual Sportsbox subscription,
+                available exclusively to program participants. Plus, PGA members
+                will earn 6 PDR credits. Don&apos;t miss this opportunity to
+                enhance your skills and take your coaching to the next level.
               </p>
             </div>
             <div

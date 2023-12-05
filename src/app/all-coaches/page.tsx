@@ -7,114 +7,116 @@ import MapboxMap from "./components/MapBoxItem";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
-const coachItems = [
-  {
-    nameText: "Jean Bartholomew",
-    infoText:
-      "Wanna be a champion \n 27824130215 \n https://wannabeachampion.com/ \n doug@wannabeachampion.com",
-    labelParts: <MapEventButton buttonText="something" />,
-    place: "South Africa",
-    placeLink: "https://www.google.com/maps?q=South+Africa",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-  {
-    nameText: "Douglas Wood",
-    infoText:
-      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
-    labelParts: (
-      <div className="flex flex-row gap-4">
-        <MapEventButton buttonText="something" />{" "}
-        <MapEventButton buttonText="something" />
-      </div>
-    ),
-    place: "Florida",
-    placeLink:
-      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-  {
-    nameText: "Douglas Wood",
-    infoText:
-      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
-    labelParts: (
-      <div className="flex flex-row gap-4">
-        <MapEventButton buttonText="something" />{" "}
-        <MapEventButton buttonText="something" />
-      </div>
-    ),
-    place: "Florida",
-    placeLink:
-      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-  {
-    nameText: "Douglas Wood",
-    infoText:
-      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
-    labelParts: (
-      <div className="flex flex-row gap-4">
-        <MapEventButton buttonText="something" />{" "}
-        <MapEventButton buttonText="something" />
-      </div>
-    ),
-    place: "Florida",
-    placeLink:
-      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-  {
-    nameText: "Douglas Wood",
-    infoText:
-      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
-    labelParts: (
-      <div className="flex flex-row gap-4">
-        <MapEventButton buttonText="something" />{" "}
-        <MapEventButton buttonText="something" />
-      </div>
-    ),
-    place: "Florida",
-    placeLink:
-      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-  {
-    nameText: "Douglas Wood",
-    infoText:
-      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
-    labelParts: (
-      <div className="flex flex-row gap-4">
-        <MapEventButton buttonText="something" />{" "}
-        <MapEventButton buttonText="something" />
-      </div>
-    ),
-    place: "Florida",
-    placeLink:
-      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-  {
-    nameText: "Douglas Wood",
-    infoText:
-      "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
-    labelParts: (
-      <div className="flex flex-row gap-4">
-        <MapEventButton buttonText="something" />{" "}
-        <MapEventButton buttonText="something" />
-      </div>
-    ),
-    place: "Florida",
-    placeLink:
-      "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
-    sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
-    coordinates: [9.19, 45.4642],
-  },
-];
+const coachItems: any[] = [];
+
+// const coachItems = [
+//   {
+//     nameText: "Jean Bartholomew",
+//     infoText:
+//       "Wanna be a champion \n 27824130215 \n https://wannabeachampion.com/ \n doug@wannabeachampion.com",
+//     labelParts: <MapEventButton buttonText="something" />,
+//     place: "South Africa",
+//     placeLink: "https://www.google.com/maps?q=South+Africa",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+//   {
+//     nameText: "Douglas Wood",
+//     infoText:
+//       "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+//     labelParts: (
+//       <div className="flex flex-row gap-4">
+//         <MapEventButton buttonText="something" />{" "}
+//         <MapEventButton buttonText="something" />
+//       </div>
+//     ),
+//     place: "Florida",
+//     placeLink:
+//       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+//   {
+//     nameText: "Douglas Wood",
+//     infoText:
+//       "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+//     labelParts: (
+//       <div className="flex flex-row gap-4">
+//         <MapEventButton buttonText="something" />{" "}
+//         <MapEventButton buttonText="something" />
+//       </div>
+//     ),
+//     place: "Florida",
+//     placeLink:
+//       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+//   {
+//     nameText: "Douglas Wood",
+//     infoText:
+//       "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+//     labelParts: (
+//       <div className="flex flex-row gap-4">
+//         <MapEventButton buttonText="something" />{" "}
+//         <MapEventButton buttonText="something" />
+//       </div>
+//     ),
+//     place: "Florida",
+//     placeLink:
+//       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+//   {
+//     nameText: "Douglas Wood",
+//     infoText:
+//       "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+//     labelParts: (
+//       <div className="flex flex-row gap-4">
+//         <MapEventButton buttonText="something" />{" "}
+//         <MapEventButton buttonText="something" />
+//       </div>
+//     ),
+//     place: "Florida",
+//     placeLink:
+//       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+//   {
+//     nameText: "Douglas Wood",
+//     infoText:
+//       "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+//     labelParts: (
+//       <div className="flex flex-row gap-4">
+//         <MapEventButton buttonText="something" />{" "}
+//         <MapEventButton buttonText="something" />
+//       </div>
+//     ),
+//     place: "Florida",
+//     placeLink:
+//       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+//   {
+//     nameText: "Douglas Wood",
+//     infoText:
+//       "PGA National Resort, Engineers \n Country Club \n 5616034569 \n Engineerscc.com \n meanlean66@aol.com",
+//     labelParts: (
+//       <div className="flex flex-row gap-4">
+//         <MapEventButton buttonText="something" />{" "}
+//         <MapEventButton buttonText="something" />
+//       </div>
+//     ),
+//     place: "Florida",
+//     placeLink:
+//       "https://www.google.com/maps?q=Palm+Beach+Gardens+Florida+United+States",
+//     sendEmailBlock: [<div className="bg-black w-[200wh]"> </div>],
+//     coordinates: [9.19, 45.4642],
+//   },
+// ];
 
 export default function AllCoaches() {
   return (
@@ -141,6 +143,7 @@ export default function AllCoaches() {
         <div className="flex flex-wrap items-center justify-center gap-8">
           {coachItems.map((coach) => (
             <CoachItem
+              key={coach.nameText}
               nameText={coach.nameText}
               infoText={coach.infoText}
               labelParts={coach.labelParts}

@@ -154,6 +154,7 @@ export function NewsBlock() {
       <div className="w-full lg:w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-5">
         {newsItems.map((newsItem) => (
           <NewsItem
+            key={newsItem.mainText}
             imageSrc={newsItem.imageSrc}
             mainText={newsItem.mainText}
             link={newsItem.link}

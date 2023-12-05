@@ -109,7 +109,7 @@ export const MainTestimonialsCarousel = () => {
         onSwiper={(swiper) => console.log(swiper)}
       >
         {testimonials.map((testimonial, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={testimonial.name}>
             <div
               key={index}
               className="inline-block w-full bg-sb-lightdarkblue rounded-3xl "
