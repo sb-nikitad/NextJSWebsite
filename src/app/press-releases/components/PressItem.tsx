@@ -80,7 +80,7 @@ export function PressItem({
         <p className="text-m border-b-[1px] border-white inline-block">
           <a
             href={link ? link.toString() : ""}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             Read More{" "}
