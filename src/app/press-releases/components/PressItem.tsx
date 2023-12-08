@@ -77,13 +77,20 @@ export function PressItem({
           </a>
         </p>
 
-        <p className="text-m border-b-[1px] border-white inline-block">
+        <p className="text-m text-purple">
           <a
             href={link ? link.toString() : ""}
             target="_self"
             rel="noopener noreferrer"
+            style={{
+              borderBottomWidth: "1px",
+              borderBottomColor:
+                "hsla(261.6494845360825, 96.03960396039604%, 60.3921568627451%, 1)",
+              color:
+                "hsla(261.6494845360825, 96.03960396039604%, 60.3921568627451%, 1)",
+            }}
           >
-            Read More{" "}
+            Read More
           </a>
         </p>
       </div>

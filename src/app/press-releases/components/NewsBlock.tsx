@@ -392,7 +392,7 @@ export function NewsBlock() {
       <div className="bg-white flex justify-between text-black w-full px-24 pb-24">
         {page > 1 ? (
           <div
-            className="flex place-self-start text-[20px]"
+            className="flex place-self-start text-[20px] cursor-pointer"
             onClick={handleReadNewer}
           >
             {" "}
@@ -403,7 +403,7 @@ export function NewsBlock() {
         )}
         {page + 1 <= totalPages ? (
           <div
-            className="flex place-self-end text-[20px]"
+            className="flex place-self-end text-[20px] cursor-pointer"
             onClick={handleReadOlder}
           >
             {"Older Posts >"}
