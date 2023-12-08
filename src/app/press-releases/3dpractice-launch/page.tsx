@@ -4,7 +4,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export default function Page() {
   return (
-    <div className="bg-white mt-[130px] text-black lg:px-[300px]">
+    <div className="bg-white mt-[100px] text-black lg:px-[300px]">
       <div className={`${anton.className} pt-10 text-6xl`}>
         SPORTSBOX AI LAUNCHES FIRST VERSION OF CONSUMER APP 3D PRACTICE WITH
         CONTENT FROM TOP 100 COACHES AND TRAINING AID PARTNERS

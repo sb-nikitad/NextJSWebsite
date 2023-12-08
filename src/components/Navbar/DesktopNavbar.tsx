@@ -19,7 +19,10 @@ export const DesktopNavbar = () => {
       <SubTabButton text={"Meet The Teem"} href={"/meet-team"}></SubTabButton>
       <SubTabButton text={"Ambassadors"} href={"/ambassadors"}></SubTabButton>
       <SubTabButton text={"In the News"} href={"/in-the-news"}></SubTabButton>
-      <SubTabButton text={"Press Releases"} href={"/press"}></SubTabButton>
+      <SubTabButton
+        text={"Press Releases"}
+        href={"/press-releases"}
+      ></SubTabButton>
     </div>,
   ];
 
@@ -79,7 +82,7 @@ export const DesktopNavbar = () => {
               <TabButton text="Education" />
             </Link>
             <TabButton text="Pricing" />
-            <TabButton text="Find a Coach" subTabs={subTabsFindCoach} />
+            {/* <TabButton text="Find a Coach" subTabs={subTabsFindCoach} /> */}
             <TabButton text="Pro Shop" />
             <TabButton text="Support" subTabs={subTabsSupport} />
             <TabButton text="More" />

@@ -31,7 +31,7 @@ export function PressItem({
       <a
         className="flex justify-center items-center"
         href={link ? link.toString() : ""}
-        target="_blank"
+        target="_self"
         rel="noopener noreferrer"
       >
         <Image
@@ -60,7 +60,7 @@ export function PressItem({
         <p className={`text-2xl ${anton.className}`}>
           <a
             href={link ? link.toString() : ""}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             {mainText}
@@ -70,7 +70,7 @@ export function PressItem({
         <p className={`text-l font-normal`}>
           <a
             href={link ? link.toString() : ""}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             {secondText}
