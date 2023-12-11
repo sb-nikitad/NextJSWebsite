@@ -50,7 +50,7 @@ const pressItems = [
     secondText:
       "Sportsbox Ai and Foresight Sports are joining forces to create the first-ever app with 3D body motion data as well as club and ball data from a launch monitor.",
     dateText: "12/14/22",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsbox-ai-unveils-partnership-with-foresight-sports-to-integrate-launch-monitor-data-into-its-3dgolf-app",
   },
   {
     imageSrc: secondImg,
@@ -59,7 +59,7 @@ const pressItems = [
     secondText:
       "3D Practice provides golfers of all abilities to benefit from data-driven Practice Guides – with or without a coach.",
     dateText: "12/14/22",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/3dpractice-launch",
   },
   {
     imageSrc: thirdImg,
@@ -67,7 +67,7 @@ const pressItems = [
       "SPORTSBOX AI CLOSES SEED ROUND LED BY EP GOLF VENTURES, AN INVESTMENT PARTNERSHIP BETWEEN ELYSIAN PARK VENTURES AND THE PGA OF AMERICA",
     secondText:
       "Sportsbox AI closes first seed round, bringing the company’s total amount raised to more than $5.5 million to date.",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsbox-closes-seed-round",
     dateText: "Press Releases  8/4/22",
     customContent: [
       {
@@ -82,7 +82,7 @@ const pressItems = [
     mainText: "FIVE IRON GOLF ENTERS THE WORLD OF 3D AI SWING ANALYSIS",
     secondText: "",
     dateText: "Press Releases, Partnerships  6/27/22",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/five-iron-golf-enters-the-world-of-3d-ai-swing-analysis",
   },
   {
     imageSrc: fifthImg,
@@ -90,7 +90,7 @@ const pressItems = [
       "PGA OF AMERICA HONORARY PRESIDENT SUZY WHALEY JOINS SPORTSBOX AI AS AN ADVISOR",
     secondText: "",
     dateText: "3/17/22",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/pga-of-america-honorary-president-suzy-whaley-joins-sportsbox-ai-as-an-advisor",
   },
   {
     imageSrc: sixthImg,
@@ -98,7 +98,7 @@ const pressItems = [
       "SPORTSBOX AI WELCOMES SEA ISLAND GOLF PERFORMANCE CENTER AS AN OFFICIAL PARTNER",
     secondText: "",
     dateText: "Press Releases  1/19/22",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsboxaiwelcomesseaislandasanofficialpartner",
   },
   {
     imageSrc: seventhImg,
@@ -106,20 +106,20 @@ const pressItems = [
       "SPORTSBOX AI WELCOMES LEADBETTER GOLF ACADEMY AS AN OFFICIAL PARTNER",
     secondText: "",
     dateText: "Press Releases  1/18/22",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsboxaiwelcomesleadbettergolfacademyasanofficialpartner",
   },
   {
     imageSrc: eighthImg,
     mainText: "DR. PHIL CHEETHAM JOINS SPORTSBOX AS CHIEF SCIENCE OFFICER",
     secondText: "",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/phil-cheetham-joins-sportsbox-as-chief-scientific-officer",
   },
   {
     imageSrc: ningthImg,
     mainText: "HAPPY HOLIDAYS FROM SPORTSBOX!",
     secondText: "",
     dateText: "12/22/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/happy-holidays-from-sportsbox",
   },
   {
     imageSrc: tenthImg,
@@ -127,7 +127,7 @@ const pressItems = [
       "LPGA TOUR PRO MARINA ALEX BECOMES THE NEWEST SPORTSBOX AI INVESTOR",
     secondText: "",
     dateText: "Press Releases  11/17/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/lpga-tour-pro-marina-alex-signs-with-sportsbox-ai-as-an-investor-and-advisor",
   },
   {
     imageSrc: eleventhImg,
@@ -135,7 +135,7 @@ const pressItems = [
       "MAJOR CHAMPION MICHELLE WIE WEST JOINS SPORTSBOX AI AS INVESTOR AND ADVISOR",
     secondText: "",
     dateText: "Press Releases  10/22/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/major-champion-michelle-wie-west-joins-sportsbox-ai-as-investor-and-advisor",
   },
   {
     imageSrc: twelfthImg,
@@ -143,21 +143,21 @@ const pressItems = [
       "SPORTTECHIE: SPORTSBOX AI TO LAUNCH 3D GOLF ON MONDAY, DELIVERS SLO-MO BIOMECHANICS TO SMARTPHONES",
     secondText: "",
     dateText: "News  10/10/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sporttechie-sportsbox-ai-to-launch-3d-golf-on-monday-delivers-slo-mo-biomechanics-to-smartphones",
   },
   {
     imageSrc: thirteenthImg,
     mainText: "SPORTSBOX 3D GOLF HOSTS VIRTUAL LAUNCH EVENT",
     secondText: "",
     dateText: "10/7/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsbox-3d-golf-hosts-virtual-launch-event",
   },
   {
     imageSrc: fourteenthImg,
     mainText: "SPORTSBOX AI ADDS DAVID LEADBETTER AS AN INVESTOR AND ADVISOR",
     secondText: "",
     dateText: "9/23/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsbox-ai-adds-david-leadbetter-as-an-investor-and-advisor",
     customContent: [
       {
         title: "Press Releases",
@@ -172,7 +172,7 @@ const pressItems = [
       "SPORTTECHIE: SPORTSBOX AI CEO: ANY GOLFER CAN GET A SWING ANALYSIS AND RECOMMENDED TIPS",
     secondText: "",
     dateText: " 9/7/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sporttechie-sportsbox-ai-ceo-any-golfer-can-get-a-swing-analysis-and-recommended-tips",
     customContent: [
       {
         title: "News",
@@ -187,7 +187,7 @@ const pressItems = [
       "SGOLF.COM: NEW TECH SHOWS EXACTLY HOW MUCH BRYSON TURNS ON HIS BACKSWING",
     secondText: "",
     dateText: "8/30/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/new-tech-shows-exactly-how-much-bryson-turns-on-his-backswing",
     customContent: [
       {
         title: "News",
@@ -202,7 +202,7 @@ const pressItems = [
       "RANDI ZUCKERBERG SIGNS ON WITH SPORTSBOX AI AS AN INVESTOR AND ADVISOR",
     secondText: "",
     dateText: "8/11/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/randi-zuckerberg-joins-sportsbox-ai-as-an-investor-and-advisor",
     customContent: [
       {
         title: "Press Releases",
@@ -216,7 +216,7 @@ const pressItems = [
     mainText: "SEAN FOLEY JOINS SPORTSBOX AI AS AN INVESTOR AND ADVISOR",
     secondText: "",
     dateText: "7/30/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sean-foley-joins-sportsbox-ai-as-an-investor-and-advisor",
     customContent: [
       {
         title: "Press Releases",
@@ -231,7 +231,7 @@ const pressItems = [
       "USA TODAY: FORMER LPGA PLAYER JEEHAE LEE SHOWS OFF NEW GOLF APP THAT TURNS 2D VIDEO INTO 3D",
     secondText: "",
     dateText: "7/15/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/former-lpga-player-jeihae-lee-shows-off-new-golf-app-that-turns-2d-video-into-3d",
     customContent: [
       {
         title: "News",
@@ -246,7 +246,7 @@ const pressItems = [
       "GENERATING MORE SPEED WITH EFFICIENT TURNS IN YOUR BACKSWING AND DOWNSWING",
     secondText: "",
     dateText: "4/27/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/generating-more-speed-with-effective-turns-in-your-backswing-and-downswing",
     customContent: [
       {
         title: "Blogs",
@@ -260,7 +260,7 @@ const pressItems = [
     mainText: "CAN AI APPS HELP YOUR GOLF SWING? - WSJ",
     secondText: "",
     dateText: "4/21/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/can-ai-apps-help-your-golf-swing-wsj",
     customContent: [
       {
         title: "News",
@@ -274,7 +274,7 @@ const pressItems = [
     mainText: "LEARN MORE ABOUT OUR GOLF ADVISORS",
     secondText: "",
     dateText: "3/25/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/learn-more-about-our-golf-advisors",
     customContent: [
       {
         title: "Press Releases",
@@ -289,7 +289,7 @@ const pressItems = [
       "SPORTSBOX AI PLANS BETA TEST LAUNCH FOR AI-POWERED GOLF TRAINING MOBILE APP THAT CAN CAPTURE, MEASURE AND ANALYZE THE SWING IN 3D AND IN REAL TIME",
     secondText: "",
     dateText: "3/11/21",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/sportsbox-ai-plans-beta-test-launch-for-ai-powered-golf-training-mobile-app-that-can-capture-measure-and-analyze-the-swing-in-3d-and-in-real-time",
     customContent: [
       {
         title: "Press Releases",
@@ -304,7 +304,7 @@ const pressItems = [
       "LEADING SPORTS BIOMECHANIST DR. PHIL CHEETHAM JOINS SPORTSBOX AI AS A CONSULTANT",
     secondText: "",
     dateText: "12/1/20",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/leading-sports-biomechanist-dr-phil-cheetham-joins-sportsbox-ai-as-a-consultant",
     customContent: [
       {
         title: "Press Releases",
@@ -319,7 +319,7 @@ const pressItems = [
       "SPORTSBOX AI NAMES FORMER TOPGOLF EXECUTIVE AND LPGA PLAYER JEEHAE LEE AS PRESIDENT AND CEO",
     secondText: "",
     dateText: "11/2/20",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/former-topgolf-exec-joins-sportsbox-ai-as-president-and-ceo",
     customContent: [
       {
         title: "Press Releases",
@@ -333,7 +333,7 @@ const pressItems = [
     mainText: "AITHINKTANK ANNOUNCES FORMATION OF SPORTSBOX AI",
     secondText: "",
     dateText: "9/1/20",
-    link: "https://www.golfdigest.com/story/foresight-sports-sportsbox-partnership",
+    link: "press-releases/aithinktank-announces-launch-of-sportsboxai",
     customContent: [
       {
         title: "Press Releases",
@@ -392,7 +392,7 @@ export function NewsBlock() {
       <div className="bg-white flex justify-between text-black w-full px-24 pb-24">
         {page > 1 ? (
           <div
-            className="flex place-self-start text-[20px]"
+            className="flex place-self-start text-[20px] cursor-pointer"
             onClick={handleReadNewer}
           >
             {" "}
@@ -403,7 +403,7 @@ export function NewsBlock() {
         )}
         {page + 1 <= totalPages ? (
           <div
-            className="flex place-self-end text-[20px]"
+            className="flex place-self-end text-[20px] cursor-pointer"
             onClick={handleReadOlder}
           >
             {"Older Posts >"}
