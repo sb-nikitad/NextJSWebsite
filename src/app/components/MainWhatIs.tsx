@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ABOUT_WHATIS__URL } from "../URL's";
+import imagePath from "../../../public/images/about/image.jpg";
 
 import { Lato, Anton } from "next/font/google";
 
@@ -33,7 +33,7 @@ export function MainWhatIs() {
         </p>
         <div className="lg:w-[45%]">
           <Image
-            src={ABOUT_WHATIS__URL}
+            src={imagePath}
             alt="Image Description"
             className="rounded-[30px]"
             layout="responsive"

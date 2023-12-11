@@ -1,7 +1,6 @@
 import Image from "next/image";
-import imagePath from "../../../../public/images/what-is-1.png";
+import imagePath from "../../../../public/images/about/image.jpg";
 import "../../../app/globals.css";
-import { ABOUT_WHATIS__URL } from "../../URL's";
 
 import { Lato, Anton } from "next/font/google";
 
@@ -38,7 +37,7 @@ export function WhatIs() {
         </p>
         <div className="w-[90%] md:w-[45%]">
           <Image
-            src={ABOUT_WHATIS__URL} // Assuming imagePath is correct and imported
+            src={imagePath}
             alt="Image Description"
             className="rounded-[30px]"
             layout="responsive"

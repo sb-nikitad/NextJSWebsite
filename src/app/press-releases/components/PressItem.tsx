@@ -46,10 +46,8 @@ export function PressItem({
       <div className="flex flex-col justify-center text-center items-center gap-y-4">
         <p className={`flex text-xs ${anton.className}`}>
           {customContent?.map((content, index) => (
-            <div>
-              <a key={index} href={content.redirect}>
-                {content.title}
-              </a>
+            <div key={index}>
+              <a href={content.redirect}>{content.title}</a>
 
               <span> &#8226; </span>
             </div>

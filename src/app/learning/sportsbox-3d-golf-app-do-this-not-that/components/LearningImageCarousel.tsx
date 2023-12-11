@@ -50,7 +50,7 @@ export function ImageCarousel() {
 
     // Cleanup function to clear the interval on component unmount
     return () => clearInterval(intervalId);
-  }, [selectedImage]);
+  }, [selectedImage, handleImageChange]);
 
   return (
     <div className="flex flex-col items-center">

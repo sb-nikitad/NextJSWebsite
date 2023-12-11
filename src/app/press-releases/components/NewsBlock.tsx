@@ -379,6 +379,7 @@ export function NewsBlock() {
             .slice(pageToIndex, pageToIndex + limit)
             .map((pressItem) => (
               <PressItem
+                key={pressItem.link}
                 imageSrc={pressItem.imageSrc}
                 mainText={pressItem.mainText}
                 secondText={pressItem.secondText}
