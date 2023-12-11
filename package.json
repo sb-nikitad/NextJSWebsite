@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export && firebase deploy"
+    "deploy": "next build && next export && npx firebase deploy"
   },
   "dependencies": {
     "@fontsource/lato": "^5.0.12",
@@ -19,6 +19,7 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
     "firebase": "^10.5.0",
+    "firebase-tools": "^13.0.1",
     "mapbox-gl": "^2.15.0",
     "next": "13.5.1",
     "postcss": "8.4.30",
