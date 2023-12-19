@@ -30,23 +30,27 @@ export const DesktopNavbar = () => {
     <div key={1} className={clsx("relative", "block")}>
       <SubTabButton
         text={"All 3D Coaches"}
-        href={"/all-coaches"}
+        href={"/find-coach/all-coaches"}
       ></SubTabButton>
       <SubTabButton
         text={"Official Staff Members"}
-        href={"/all-coaches"}
+        href={"/find-coach/staff-coaches"}
       ></SubTabButton>
     </div>,
   ];
 
   const subTabsSupport = [
     <div key={1} className={clsx("relative", "block")}>
-      <SubTabButton text={"Help Center"} href={"/all-coaches"}></SubTabButton>
+      <SubTabButton
+        text={"Help Center"}
+        href={"https://help.sportsbox.ai/"}
+      ></SubTabButton>
       <SubTabButton
         text={"Webinar Series"}
-        href={"/all-coaches"}
+        href={"https://app.hubspot.com"}
       ></SubTabButton>
       <SubTabButton text={"Learning"} href={"/learning"}></SubTabButton>
+      <SubTabButton text={"Contact"} href={"/contact"}></SubTabButton>
     </div>,
   ];
 
@@ -63,7 +67,7 @@ export const DesktopNavbar = () => {
     <header suppressHydrationWarning>
       <nav
         className={
-          "flex box-border items-center justify-between py-10 px-12 w-[100%] text-white absolute top-0"
+          "flex box-border justify-between py-10 px-12 w-[100%] text-white absolute top-0"
         }
       >
         <div
@@ -83,14 +87,19 @@ export const DesktopNavbar = () => {
               height={50}
             />
           </Link>
-          <div className="flex flex-wrap gap-x-4 justify-center items-center text-[18px]">
+          <div className="flex flex-wrap gap-x-4  text-[18px]">
             <TabButton text="About" subTabs={subTabsAbout} />
             <Link href="/education">
               <TabButton text="Education" />
             </Link>
-            <TabButton text="Pricing" />
-            {/* <TabButton text="Find a Coach" subTabs={subTabsFindCoach} /> */}
-            <TabButton text="Pro Shop" />
+            <Link href="https://3dgolf.sportsbox.ai/sign-up">
+              <TabButton text="Pricing" />
+            </Link>
+            <TabButton text="Find a Coach" subTabs={subTabsFindCoach} />
+            <Link href="https://shop.sportsbox.ai/">
+              <TabButton text="Pro Shop" />
+            </Link>
+
             <TabButton text="Support" subTabs={subTabsSupport} />
             <TabButton text="More" subTabs={subTabsMore} />
           </div>
@@ -104,18 +113,22 @@ export const DesktopNavbar = () => {
             "text-[16px]"
           )}
         >
-          <HoverButton
-            text="Book A Demo"
-            color="bg-sb-lightpurple"
-            height="h-[50px]"
-            width="w-[180px]"
-          />
-          <HoverButton
-            text="Start your free trial"
-            color="bg-sb-blue"
-            height="h-[50px]"
-            width="w-[220px]"
-          />
+          <Link href={"https://meetings.hubspot.com/rcrawley/product-demo"}>
+            <HoverButton
+              text="Book A Demo"
+              color="bg-sb-lightpurple"
+              height="h-[50px]"
+              width="w-[180px]"
+            />
+          </Link>
+          <Link href={"https://3dgolf.sportsbox.ai/sign-up"}>
+            <HoverButton
+              text="Start your free trial"
+              color="bg-sb-blue"
+              height="h-[50px]"
+              width="w-[220px]"
+            />
+          </Link>
         </div>
       </nav>
     </header>

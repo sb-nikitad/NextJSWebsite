@@ -11,12 +11,14 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "react-feather";
 
 import appStore from "../../../public/images/footer/app-store.svg";
 import playMarket from "../../../public/images/footer/play-market.svg";
+import { Separator } from "../Separator";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export const DesktopFooter = () => {
   return (
     <div suppressHydrationWarning className="flex flex-col items-center">
+      <Separator height={50} />
       <HoverButton color="bg-sb-blue" text="Sign Up For Updates" />
       <div className="flex gap-[200px] p-10">
         <div>

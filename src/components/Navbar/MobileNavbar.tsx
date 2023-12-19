@@ -109,11 +109,11 @@ export const MobileNavbar = () => {
         return [
           {
             title: "All 3DGolf Coaches",
-            onClick: () => redirect("/all-coaches"),
+            onClick: () => redirect("/find-coach/all-coaches"),
           },
           {
             title: "Official Staff Members",
-            onClick: () => redirect("/all-coaches"),
+            onClick: () => redirect("/find-coach/staff-coaches"),
           },
         ];
       case "support":
@@ -128,11 +128,11 @@ export const MobileNavbar = () => {
           },
           {
             title: "Learning",
-            onClick: () => redirect("/"),
+            onClick: () => redirect("/learning"),
           },
           {
             title: "Contact",
-            onClick: () => redirect("/"),
+            onClick: () => redirect("/contact"),
           },
         ];
 
