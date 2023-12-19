@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import clsx from "clsx";
 import React from "react";
-import Link from "next/link";
+import s from "../../components/PersonInfCard/CardPersonInfo.module.css";
 
 import { HoverButton } from "../HoverButton/HoverButton";
 import { Anton } from "next/font/google";
@@ -26,17 +25,21 @@ export const DesktopFooter = () => {
         link="https://share.hsforms.com/1RZI6wdeEQfK2DVwvyf_XOAcucdi?__hstc=120525143.51943252b308feda35ce5f507577e48e.1694781859480.1702917663702.1702999848044.52&__hssc=120525143.8.1702999848044&__hsfp=2851389664"
       />
       <div className="flex gap-[200px] p-10">
-        <div>
-          <div className={`${anton.className} underline-offset-1 text-2xl`}>
-            CONTACT@SPORTSBOX.AI
+        <div className="flex flex-col gap-y-[4px]">
+          <div className={`${anton.className} text-2xl`}>
+            <a href="mailto:contact@sportsbox.ai" className={`${s.cardButton}`}>
+              CONTACT@SPORTSBOX.AI{" "}
+            </a>
           </div>
-          <div className={`${anton.className} underline-offset-1 text-2xl`}>
-            SUPPORT@SPORTSBOX.AI
+          <div className={`${anton.className} text-2xl`}>
+            <a href="mailto:support@sportsbox.ai" className={`${s.cardButton}`}>
+              SUPPORT@SPORTSBOX.AI
+            </a>
           </div>
         </div>
         <div className="flex gap-5">
           <a
-            href="https://twitter.com"
+            href="https://twitter.com/sportsboxai"
             target="_blank"
             rel="noopener noreferrer"
             className={`${linkStyle.iconLink}`}
@@ -44,7 +47,7 @@ export const DesktopFooter = () => {
             <Twitter />
           </a>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/SportsboxAI/"
             target="_blank"
             rel="noopener noreferrer"
             className={`${linkStyle.iconLink}`}
@@ -52,7 +55,7 @@ export const DesktopFooter = () => {
             <Facebook />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/sportsboxai/"
             target="_blank"
             rel="noopener noreferrer"
             className={`${linkStyle.iconLink}`}
@@ -60,7 +63,7 @@ export const DesktopFooter = () => {
             <Instagram />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/sportsbox-ai"
             target="_blank"
             rel="noopener noreferrer"
             className={`${linkStyle.iconLink}`}
@@ -68,7 +71,7 @@ export const DesktopFooter = () => {
             <Linkedin />
           </a>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/channel/UCFwvVj4P1DLph9oJlPN0MfQ"
             target="_blank"
             rel="noopener noreferrer"
             className={`${linkStyle.iconLink}`}
@@ -86,8 +89,22 @@ export const DesktopFooter = () => {
           including, but not limited to: 11,640,725; 11,620,858; 11,615,648
         </div>
         <div className="flex gap-5">
-          <Image src={appStore} width={180} height={30} alt="app-store" />
-          <Image src={playMarket} width={180} height={30} alt="app-store" />
+          <a
+            href="https://apps.apple.com/us/app/sportsbox-3d-golf/id1578921026"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <Image src={appStore} width={180} height={30} alt="app-store" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sportsbox.golfai&pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <Image src={playMarket} width={180} height={30} alt="app-store" />
+          </a>
         </div>
       </div>
     </div>
