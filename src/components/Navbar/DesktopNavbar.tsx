@@ -119,6 +119,7 @@ export const DesktopNavbar = () => {
               color="bg-sb-lightpurple"
               height="h-[50px]"
               width="w-[180px]"
+              link="https://meetings.hubspot.com/edwin-fuh/product-demo"
             />
           </Link>
           <Link href={"https://3dgolf.sportsbox.ai/sign-up"}>
@@ -127,6 +128,7 @@ export const DesktopNavbar = () => {
               color="bg-sb-blue"
               height="h-[50px]"
               width="w-[220px]"
+              link="https://3dgolf.sportsbox.ai/sign-up"
             />
           </Link>
         </div>

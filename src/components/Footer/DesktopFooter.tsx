@@ -12,6 +12,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "react-feather";
 import appStore from "../../../public/images/footer/app-store.svg";
 import playMarket from "../../../public/images/footer/play-market.svg";
 import { Separator } from "../Separator";
+import linkStyle from "../Footer/footer.module.css";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -19,7 +20,11 @@ export const DesktopFooter = () => {
   return (
     <div suppressHydrationWarning className="flex flex-col items-center">
       <Separator height={50} />
-      <HoverButton color="bg-sb-blue" text="Sign Up For Updates" />
+      <HoverButton
+        color="bg-sb-blue"
+        text="Sign Up For Updates"
+        link="https://share.hsforms.com/1RZI6wdeEQfK2DVwvyf_XOAcucdi?__hstc=120525143.51943252b308feda35ce5f507577e48e.1694781859480.1702917663702.1702999848044.52&__hssc=120525143.8.1702999848044&__hsfp=2851389664"
+      />
       <div className="flex gap-[200px] p-10">
         <div>
           <div className={`${anton.className} underline-offset-1 text-2xl`}>
@@ -30,11 +35,46 @@ export const DesktopFooter = () => {
           </div>
         </div>
         <div className="flex gap-5">
-          <Twitter />
-          <Facebook />
-          <Instagram />
-          <Linkedin />
-          <Youtube />
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${linkStyle.iconLink}`}
+          >
+            <Twitter />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${linkStyle.iconLink}`}
+          >
+            <Facebook />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${linkStyle.iconLink}`}
+          >
+            <Instagram />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${linkStyle.iconLink}`}
+          >
+            <Linkedin />
+          </a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${linkStyle.iconLink}`}
+          >
+            <Youtube />
+          </a>
         </div>
         <div className={`${anton.className} text-2xl`}>
           SPORTSBOX.AI INC., © 2023
