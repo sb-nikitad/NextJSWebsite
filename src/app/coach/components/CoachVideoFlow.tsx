@@ -1,5 +1,6 @@
 import { Anton } from "next/font/google";
 import { HoverButton } from "../../../components/HoverButton/HoverButton";
+import Link from "next/link";
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export const CoachVideoFlow = () => {
@@ -34,12 +35,14 @@ export const CoachVideoFlow = () => {
               "SEND LESSON NOTES WITH\nSCREEN RECORDINGS + VOICE-\nOVERS TO YOUR STUDENTS"
             }
           </div>
-          <HoverButton
-            color="bg-sb-blue"
-            text="Become a 3D Expert"
-            width="w-[250px]"
-            height="h-[60px]"
-          />
+          <Link href="https://meetings.hubspot.com/edwin-fuh/product-demo">
+            <HoverButton
+              color="bg-sb-blue"
+              text="Become a 3D Expert"
+              width="w-[250px]"
+              height="h-[60px]"
+            />
+          </Link>
         </div>
         <div className="">
           <video autoPlay muted loop className="w-[300px]">

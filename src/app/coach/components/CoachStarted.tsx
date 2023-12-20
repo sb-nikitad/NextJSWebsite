@@ -1,5 +1,6 @@
 import { Anton } from "next/font/google";
 import { HoverButton } from "../../../components/HoverButton/HoverButton";
+import Link from "next/link";
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export const CoachStarted = () => {
@@ -15,12 +16,14 @@ export const CoachStarted = () => {
               "Communicate more clearly with 3D data to teach more\n effectively - remote or live"
             }
           </div>
-          <HoverButton
-            color="bg-sb-blue"
-            text="Get Started"
-            width="w-[240px]"
-            height="h-[65px]"
-          />
+          <Link href="https://3dgolf.sportsbox.ai/sign-up">
+            <HoverButton
+              color="bg-sb-blue"
+              text="Get Started"
+              width="w-[240px]"
+              height="h-[65px]"
+            />
+          </Link>
         </div>
       </div>
     </>
