@@ -66,7 +66,7 @@ export const InstagramPosts = () => {
       </div>
       <div className="w-full  lg:px-[400px] px-[100px] flex flex-wrap justify-center gap-[30px]">
         {arr.map((el) => {
-          return <InstagramPost {...el} />;
+          return <InstagramPost key={el.link} {...el} />;
         })}
       </div>
     </>
