@@ -69,17 +69,17 @@ export const DesktopNavbar = () => {
   return (
     <div>
       {showBanner ? (
-        <Link
-          href={
-            "https://sportsbox-21571110.hs-sites.com/3dstudio?__hstc=120525143.4fef867f6150e3eb0c496cca45a2185a.1703079104662.1703079104662.1703079104662.1&__hssc=120525143.1.1703079104662&__hsfp=467677067"
-          }
-        >
-          <div className="flex justify-between items-center w-full bg-sb-blue px-10 py-3 relative z-20">
-            <div></div>
+        <div className="flex justify-between items-center w-full bg-sb-blue px-10 py-3 relative z-20">
+          <div></div>
+          <Link
+            href={
+              "https://sportsbox-21571110.hs-sites.com/3dstudio?__hstc=120525143.4fef867f6150e3eb0c496cca45a2185a.1703079104662.1703079104662.1703079104662.1&__hssc=120525143.1.1703079104662&__hsfp=467677067"
+            }
+          >
             <div>SPORTSBOX STUDIO IS HERE! CLICK HERE TO BOOK A DEMO</div>
-            <X onClick={() => setShowBanner(false)} />
-          </div>
-        </Link>
+          </Link>
+          <X onClick={() => setShowBanner(false)} />
+        </div>
       ) : (
         <></>
       )}
