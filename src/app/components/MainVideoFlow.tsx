@@ -105,7 +105,12 @@ export const MainVideoFlow = () => {
           <div className={`${anton.className}  text-3xl lg:text-7xl `}>
             AUTO SWING DETECTION RECORDS AND CUTS YOUR SWING VIDEOS FOR YOU
           </div>
-          <HoverButton color="bg-sb-blue" text="Get Started" width="w-fit" />
+          <HoverButton
+            color="bg-sb-blue"
+            text="Get Started"
+            width="w-fit"
+            link="https://3dgolf.sportsbox.ai/sign-up"
+          />
         </div>
       </div>
 

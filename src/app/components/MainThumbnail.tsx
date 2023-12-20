@@ -15,11 +15,13 @@ export const MainThumbnail = () => {
               className="w-10/12 lg:w-52"
               color="bg-sb-blue"
               text="For Players"
+              link="/student"
             />
             <HoverButton
               className="w-10/12 lg:w-52"
               color="bg-sb-blue"
               text="For Coaches"
+              link="/coach"
             />
           </div>
         </div>
