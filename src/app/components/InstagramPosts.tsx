@@ -24,9 +24,12 @@ const InstagramPost = ({ image, link }: { image: any; link: string }) => {
           alt="instagram post"
         />
       </div>
-      <div className=" relative bottom-1/2 left-[47%] z-20">
-        <Play width={30} height={30} />
-      </div>
+
+      <Play
+        className="w-fit  relative bottom-1/2 left-[47%] z-20"
+        width={30}
+        height={30}
+      />
     </Link>
   );
 };
@@ -64,7 +67,7 @@ export const InstagramPosts = () => {
       <div className={`text-5xl text-center my-[100px] ${anton.className}`}>
         FOLLOW OUR UPDATES ON INSTAGRAM
       </div>
-      <div className="w-full  lg:px-[400px] px-[100px] flex flex-wrap justify-center gap-[30px]">
+      <div className="w-full lg:px-[400px] px-[100px] flex flex-wrap justify-center gap-[30px]">
         {arr.map((el) => {
           return <InstagramPost key={el.link} {...el} />;
         })}
