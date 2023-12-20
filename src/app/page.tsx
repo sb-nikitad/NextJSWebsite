@@ -12,6 +12,7 @@ import { MainWhatIs } from "./components/MainWhatIs";
 import { MainTestimonialsCarousel } from "./components/MainTestimonialsCarousel";
 import Image from "next/image";
 import logo from "../../public/images/footer/logo.png";
+import { InstagramPosts } from "./components/InstagramPosts";
 
 export default function HomePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomePage() {
       <Technology />
       {/* <MainTeam /> */}
       <MainTestimonialsCarousel />
+      <InstagramPosts />
       <div className="flex justify-center py-[150px]">
         <Image src={logo} width={280} height={60} alt="logo" />
       </div>

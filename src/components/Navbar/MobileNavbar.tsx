@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/images/mini-logo.png";
-import { ArrowRight, Menu } from "react-feather";
+import { ArrowRight, Menu, X } from "react-feather";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -32,6 +32,7 @@ const Tab = ({
 export const MobileNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [selectedSubTabs, setSelectedSubTabs] = useState<null | string>(null);
+  const [showBanner, setShowBanner] = useState(true);
   const router = useRouter();
 
   const redirect = (url: string) => {
@@ -157,39 +158,61 @@ export const MobileNavbar = () => {
   };
 
   return (
-    <header suppressHydrationWarning>
-      <div>
-        <nav className="flex absolute top-0 w-full text-white justify-between p-6 bg-sb-darkblue box-border">
-          <Link href="/">
-            <Image src={logo} alt="Logo" width={25} height={25} />
-          </Link>
-
-          <Menu onClick={() => setShowMenu((prev) => !prev)} />
-        </nav>
-      </div>
-      {showMenu ? (
-        <div className=" inset-0 bg-sb-darkblue z-50 flex justify-center items-center w-screen h-screen flex-col text-[32px] box-border">
-          {selectedSubTabs ? (
-            <>
-              <Tab
-                hasSubContent={false}
-                isCurrent={false}
-                onClick={() => setSelectedSubTabs(null)}
-                title="Back"
-              />
-              {subTabs(selectedSubTabs).map((el) => {
-                return <Tab key={el.title} {...el} isCurrent={false} />;
-              })}
-            </>
-          ) : (
-            mainTabs.map((el) => {
-              return <Tab key={el.title} {...el} isCurrent={false} />;
-            })
-          )}
-        </div>
+    <div>
+      {showBanner ? (
+        <Link
+          href={
+            "https://sportsbox-21571110.hs-sites.com/3dstudio?__hstc=120525143.4fef867f6150e3eb0c496cca45a2185a.1703079104662.1703079104662.1703079104662.1&__hssc=120525143.1.1703079104662&__hsfp=467677067"
+          }
+        >
+          <div className="flex justify-between items-center w-full bg-sb-blue px-10 py-3 relative z-20">
+            <div></div>
+            <div>SPORTSBOX STUDIO IS HERE! CLICK HERE TO BOOK A DEMO</div>
+            <X onClick={() => setShowBanner(false)} />
+          </div>
+        </Link>
       ) : (
-        ""
+        <></>
       )}
-    </header>
+
+      <header suppressHydrationWarning>
+        <div>
+          <nav
+            className={`flex absolute top-0 w-full text-white justify-between p-6 bg-sb-darkblue box-border ${
+              showBanner ? "mt-16" : ""
+            }`}
+          >
+            <Link href="/">
+              <Image src={logo} alt="Logo" width={25} height={25} />
+            </Link>
+
+            <Menu onClick={() => setShowMenu((prev) => !prev)} />
+          </nav>
+        </div>
+        {showMenu ? (
+          <div className=" inset-0 bg-sb-darkblue z-50 flex justify-center items-center w-screen h-screen flex-col text-[32px] box-border">
+            {selectedSubTabs ? (
+              <>
+                <Tab
+                  hasSubContent={false}
+                  isCurrent={false}
+                  onClick={() => setSelectedSubTabs(null)}
+                  title="Back"
+                />
+                {subTabs(selectedSubTabs).map((el) => {
+                  return <Tab key={el.title} {...el} isCurrent={false} />;
+                })}
+              </>
+            ) : (
+              mainTabs.map((el) => {
+                return <Tab key={el.title} {...el} isCurrent={false} />;
+              })
+            )}
+          </div>
+        ) : (
+          ""
+        )}
+      </header>
+    </div>
   );
 };
