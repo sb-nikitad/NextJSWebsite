@@ -169,7 +169,7 @@ export const MobileNavbar = () => {
           >
             <div>SPORTSBOX STUDIO IS HERE! CLICK HERE TO BOOK A DEMO</div>
           </Link>
-          <X onClick={() => setShowBanner(false)} />
+          <X className="cursor-pointer" onClick={() => setShowBanner(false)} />
         </div>
       ) : (
         <></>
