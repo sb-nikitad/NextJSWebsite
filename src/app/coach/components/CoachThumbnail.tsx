@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HoverButton } from "../../../components/HoverButton/HoverButton";
 import { Anton } from "next/font/google";
 const anton = Anton({ weight: "400", subsets: ["latin"] });
@@ -17,18 +18,22 @@ export const CoachThumbnail = () => {
             <li className="pb">Track progress with quantifiable data</li>
           </ul>
           <div className="flex justify-between w-[510px]">
-            <HoverButton
-              color="bg-sb-blue"
-              text="Become a 3D expert"
-              width="w-[230px]"
-              height="h-[60px]"
-            />
-            <HoverButton
-              color="bg-sb-blue"
-              text="Start your free trial"
-              width="w-[230px]"
-              height="h-[60px]"
-            />
+            <Link href="https://meetings.hubspot.com/edwin-fuh/product-demo">
+              <HoverButton
+                color="bg-sb-blue"
+                text="Become a 3D expert"
+                width="w-[230px]"
+                height="h-[60px]"
+              />
+            </Link>
+            <Link href="https://3dgolf.sportsbox.ai/sign-up">
+              <HoverButton
+                color="bg-sb-blue"
+                text="Start your free trial"
+                width="w-[230px]"
+                height="h-[60px]"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex">

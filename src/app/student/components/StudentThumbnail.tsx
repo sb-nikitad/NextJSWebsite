@@ -1,6 +1,7 @@
 import { HoverButton } from "../../../components/HoverButton/HoverButton";
 import { Anton } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -18,12 +19,14 @@ export const StudentThumbnail = () => {
             <span className="text-[24px]">DO YOU PRACTICE TO IMPROVE</span>
             <span className="text-[24px]">OR DO YOU JUST HIT BALLS?</span>
           </div>
-          <HoverButton
-            color="bg-sb-blue"
-            text="Get Started"
-            width="w-[230px]"
-            height="h-[60px]"
-          />
+          <Link href="https://3dgolf.sportsbox.ai/sign-up?plansType=players">
+            <HoverButton
+              color="bg-sb-blue"
+              text="Get Started"
+              width="w-[230px]"
+              height="h-[60px]"
+            />
+          </Link>
         </div>
         <div className="flex w-fil gap-x-4">
           <video autoPlay muted loop className="w-[300px]">
@@ -70,12 +73,14 @@ export const StudentThumbnail = () => {
                 MEASURABLE GOAL AND HELP YOU TRAIN WITH DATA.
               </span>
             </div>
-            <HoverButton
-              color="bg-sb-blue"
-              text="Get Started"
-              width="w-[175px]"
-              height="h-[60px]"
-            />
+            <Link href="https://3dgolf.sportsbox.ai/sign-up?plansType=players">
+              <HoverButton
+                color="bg-sb-blue"
+                text="Get Started"
+                width="w-[175px]"
+                height="h-[60px]"
+              />
+            </Link>
           </div>
           <div className="flex flex-col gap-y-8 w-[50%] justify-center items-center text-center pl-8 py-36">
             <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
@@ -88,12 +93,14 @@ export const StudentThumbnail = () => {
                 FREE 3D SWING ANALYSIS AND PERSONALIZED GOAL TO GET YOU STARTED.
               </span>
             </div>
-            <HoverButton
-              color="bg-sb-blue"
-              text="Sign Up"
-              width="w-[175px]"
-              height="h-[60px]"
-            />
+            <Link href="https://3dgolf.sportsbox.ai/swing-analysis-offer">
+              <HoverButton
+                color="bg-sb-blue"
+                text="Sign Up"
+                width="w-[175px]"
+                height="h-[60px]"
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -139,12 +146,14 @@ export const StudentThumbnail = () => {
               USE SPORTSBOX INBOX TO COMMUNICATE BETWEEN LESSONS
             </li>
           </ul>
-          <HoverButton
-            color="bg-sb-blue"
-            text="Start here"
-            width="w-[175px]"
-            height="h-[60px]"
-          />
+          <Link href="/find-coach/all-coaches">
+            <HoverButton
+              color="bg-sb-blue"
+              text="Start here"
+              width="w-[175px]"
+              height="h-[60px]"
+            />
+          </Link>
         </div>
       </div>
       <div className="bg-sb-darkblue bg-cover bg-center flex justify-between w-full px-[130px] pb-[100px] items-center">
@@ -154,13 +163,14 @@ export const StudentThumbnail = () => {
             <span className="text-blue-500"> PROS </span>
             {"\nARE USING SPORTSBOX"}
           </div>
-
-          <HoverButton
-            color="bg-sb-blue"
-            text="Let's Go"
-            width="w-[150px]"
-            height="h-[60px]"
-          />
+          <Link href="https://3dgolf.sportsbox.ai/sign-up?plansType=players">
+            <HoverButton
+              color="bg-sb-blue"
+              text="Let's Go"
+              width="w-[150px]"
+              height="h-[60px]"
+            />
+          </Link>
         </div>
         <div className="flex w-fil gap-x-4">
           <video controls muted className="w-[550px]">
