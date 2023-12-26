@@ -22,28 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <Script id="my-script" strategy="lazyOnload">
+      <Script id="my-script">
         {`
-          (function() {
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://cfapi.communitybox.co/bootstrap/revision", true);
-            xhr.onload = function() {
-              if (xhr.readyState === 4 && xhr.status === 200) {
-                var returnObj = JSON.parse(xhr.responseText);
-                if (returnObj.hasOwnProperty("err")) {
-                  console.error(returnObj.err);
-                } else {
-                  var r = returnObj.revision;
-                  var l = document.createElement("script");
-                  l.src = "https://dashboard.communitybox.co/embed/"+r+"/cbebloader-"+r+".js";
-                  document.head.appendChild(l);
-                }
-              }
-            };
-            xhr.send("2480bc81-3988-4aea-ace5-d344b7c6f8fd");
-          })();
+         ( function() { xhr = new XMLHttpRequest(); xhr.open( "POST", "https://cfapi.communitybox.co/bootstrap/revision", true ); xhr.onload = function() { if (xhr.readyState === 4 && xhr.status === 200) { var returnObj = JSON.parse(xhr.responseText); if( returnObj.hasOwnProperty("err") ) { console.error(returnObj.err); } else { var r = returnObj.revision; var l = document.createElement("script"); l.src = "https://dashboard.communitybox.co/embed/"+r+"/cbebloader-"+r+".js"; document.head.appendChild( l ); }; }; }; xhr.send( "2480bc81-3988-4aea-ace5-d344b7c6f8fd" ); })(); 
         `}
-      </Script> */}
+      </Script>
       <body
         className={`${lato.className} box-border w-full h-full bg-sb-darkblue text-white`}
       >

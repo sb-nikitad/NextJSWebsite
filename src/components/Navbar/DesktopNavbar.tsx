@@ -78,7 +78,9 @@ export const DesktopNavbar = () => {
           >
             <div>SPORTSBOX STUDIO IS HERE! CLICK HERE TO BOOK A DEMO</div>
           </Link>
-          <X onClick={() => setShowBanner(false)} />
+          <span className="cursor-pointer">
+            <X onClick={() => setShowBanner(false)} />
+          </span>
         </div>
       ) : (
         <></>
