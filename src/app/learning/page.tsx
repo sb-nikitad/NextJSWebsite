@@ -117,7 +117,6 @@ export default function Learning() {
               h-fit
               className=""
               href="learning/sportsbox-3d-golf-app-do-this-not-that"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <Image
@@ -132,7 +131,6 @@ export default function Learning() {
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
                 href="learning/sportsbox-3d-golf-app-do-this-not-that"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 SPORTSBOX 3D GOLF APP: DO THIS, NOT THAT{" "}
@@ -142,7 +140,6 @@ export default function Learning() {
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
                 href="learning/sportsbox-3d-golf-app-do-this-not-that"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Read More{" "}
@@ -155,8 +152,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="learning/sportsbox-golf-six-degrees-of-freedom-primert"
-              target="_blank"
+              href="learning/sportsbox-golf-six-degrees-of-freedom-primer"
               rel="noopener noreferrer"
             >
               <Image
@@ -171,7 +167,6 @@ export default function Learning() {
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
                 href="learning/sportsbox-golf-six-degrees-of-freedom-primer"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 SPORTSBOX GOLF: SIX DEGREES OF FREEDOM PRIMER{" "}
@@ -181,7 +176,6 @@ export default function Learning() {
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
                 href="learning/sportsbox-golf-six-degrees-of-freedom-primer"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Read More{" "}
@@ -195,7 +189,6 @@ export default function Learning() {
               h-fit
               className=""
               href="learning/sportsbox-golf-visuals"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <Image
@@ -210,7 +203,6 @@ export default function Learning() {
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
                 href="learning/sportsbox-golf-visuals"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 SPORTSBOX 3DGOLF: VISUALS AND TRACKER DEFINITIONS{" "}
@@ -220,7 +212,6 @@ export default function Learning() {
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
                 href="learning/sportsbox-golf-visuals"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Read More{" "}
@@ -233,8 +224,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="sportsbox-golf-app-key-swing-positions"
-              target="_blank"
+              href="learning/sportsbox-golf-app-key-swing-positions"
               rel="noopener noreferrer"
             >
               <Image
@@ -249,7 +239,6 @@ export default function Learning() {
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
                 href="learning/sportsbox-golf-app-key-swing-positions"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 SPORTSBOX GOLF: KEY SWING POSITIONS{" "}
@@ -259,7 +248,6 @@ export default function Learning() {
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
                 href="learning/sportsbox-golf-app-key-swing-positions"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Read More{" "}
