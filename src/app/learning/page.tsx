@@ -31,11 +31,13 @@ export default function Learning() {
             More educational and learning resources are available to Sportsbox
             3D Golf subscribers.
           </p>
+
           <HoverButton
             text="Get Sportsbox Certified"
             color="bg-sb-blue"
             width="w-[270px]"
             height="h-[60px]"
+            link="https://sportsbox-ai.teachable.com/p/sportsbox-ai-level-1-certification"
           />
         </div>
         <Separator height={230} />
