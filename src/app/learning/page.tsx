@@ -8,6 +8,7 @@ import firstImg from "../../../public/images/learning/1.png";
 import secondImg from "../../../public/images/learning/2.png";
 import thirdImg from "../../../public/images/learning/3.png";
 import fourthImg from "../../../public/images/learning/4.png";
+import Link from "next/link";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -31,12 +32,14 @@ export default function Learning() {
             More educational and learning resources are available to Sportsbox
             3D Golf subscribers.
           </p>
-          <HoverButton
-            text="Get Sportsbox Certified"
-            color="bg-sb-blue"
-            width="w-[270px]"
-            height="h-[60px]"
-          />
+          <Link href="https://sportsbox-ai.teachable.com/p/sportsbox-ai-level-1-certification">
+            <HoverButton
+              text="Get Sportsbox Certified"
+              color="bg-sb-blue"
+              width="w-[270px]"
+              height="h-[60px]"
+            />
+          </Link>
         </div>
         <Separator height={230} />
         <div className={`font-bold text-5xl mb-8 ${anton.className}`}>
@@ -155,7 +158,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="learning/sportsbox-3d-golf-app-do-this-not-that"
+              href="learning/sportsbox-golf-six-degrees-of-freedom-primer"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -170,7 +173,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="learning/sportsbox-3d-golf-app-do-this-not-that"
+                href="learning/sportsbox-golf-six-degrees-of-freedom-primer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -180,7 +183,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="learning/sportsbox-3d-golf-app-do-this-not-that"
+                href="learning/sportsbox-golf-six-degrees-of-freedom-primer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -194,7 +197,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="learning/sportsbox-3d-golf-app-do-this-not-that"
+              href="learning/sportsbox-golf-visuals"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -209,7 +212,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="learning/sportsbox-3d-golf-app-do-this-not-that"
+                href="learning/sportsbox-golf-visuals"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -219,7 +222,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="learning/sportsbox-3d-golf-app-do-this-not-that"
+                href="learning/sportsbox-golf-visuals"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -233,7 +236,7 @@ export default function Learning() {
               w-fit
               h-fit
               className=""
-              href="learning/sportsbox-3d-golf-app-do-this-not-that"
+              href="learning/sportsbox-golf-app-key-swing-positions"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -248,7 +251,7 @@ export default function Learning() {
 
             <p className={`text-2xl text-white ${anton.className}`}>
               <a
-                href="learning/sportsbox-3d-golf-app-do-this-not-that"
+                href="learning/sportsbox-golf-app-key-swing-positions"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -258,7 +261,7 @@ export default function Learning() {
 
             <p className="text-m border-b-[1px] border-white inline-block">
               <a
-                href="learning/sportsbox-3d-golf-app-do-this-not-that"
+                href="learning/sportsbox-golf-app-key-swing-positions"
                 target="_blank"
                 rel="noopener noreferrer"
               >

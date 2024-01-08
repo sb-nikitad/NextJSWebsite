@@ -17,10 +17,10 @@ export default function LearningGolfVisuals() {
         <h1
           className={`font-bold text-[46px] text-white ${anton.className} mb-4`}
         >
-          SPORTSBOX 3DGOLF: VISUALS AND TRACKER DEFINITIONS
+          SPORTSBOX 3D GOLF APP: DO THIS, NOT THAT
         </h1>
         <span className={`text-xs text-white ${anton.className} mb-4`}>
-          AUG 4{" "}
+          Oct 29{" "}
         </span>
         <span className={`text-[18px] text-white mb-4`}>
           Check out our photo gallery of helpful tips for ensuring good captures

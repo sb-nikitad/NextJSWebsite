@@ -6,6 +6,7 @@ import img2 from "../../../public/images/education/img-2.png";
 import Image from "next/image";
 import { HoverButton } from "../../components/HoverButton/HoverButton";
 import { Separator } from "../../components/Separator";
+import Link from "next/link";
 
 export default function EducationPage() {
   return (
@@ -52,7 +53,9 @@ export default function EducationPage() {
             >
               $400
             </div>
-            <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
+            <Link href="https://sportsbox-ai.teachable.com/p/sportsboxbootcamp">
+              <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
+            </Link>
           </div>
         </div>
 
@@ -85,7 +88,9 @@ export default function EducationPage() {
             >
               $400
             </div>
-            <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
+            <Link href="https://sportsbox-ai.teachable.com/p/sportsbox-ai-level-1-certification">
+              <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
+            </Link>
           </div>
         </div>
         <Separator height={100} />

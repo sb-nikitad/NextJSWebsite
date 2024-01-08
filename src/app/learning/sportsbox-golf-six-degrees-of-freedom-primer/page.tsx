@@ -109,10 +109,10 @@ export default function LearningSixDegrees() {
               Sportsbox Golf: Visuals and Tracker Definitions
             </a>{" "}
           </li>
-          <li className="pb-4">
+          {/* <li className="pb-4">
             Sportsbox Golf: Guide to Tracker Ranges and Tolerances for Men and
             Women Professionals
-          </li>
+          </li> */}
         </ul>
       </div>
 

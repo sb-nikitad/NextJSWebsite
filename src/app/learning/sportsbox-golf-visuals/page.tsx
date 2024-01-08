@@ -1,7 +1,7 @@
 import { Anton } from "next/font/google";
 import { Separator } from "@/components/Separator";
 import { lazy } from "react";
-import { HoverButton } from "../../../components/HoverButton/HoverButton";
+import thirdImg from "../../../../public/images/learning/3.png";
 import Image from "next/image";
 import arrowImg from "../../../../public/images/arrow-icon.png";
 import s from "../../../components/PersonInfCard/CardPersonInfo.module.css";
@@ -23,6 +23,12 @@ export default function LearningGolfVisuals() {
         >
           AUG 4{" "}
         </span>
+        <Image
+          className="mb-4"
+          src={thirdImg}
+          alt="YouTube Video 2"
+          style={{ width: "100%", height: "600px", objectFit: "cover" }}
+        />
         <span className={`text-[18px] text-white mb-4`}>
           Please{" "}
           <a
