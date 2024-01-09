@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import { useMediaQuery } from "react-responsive";
 import { Anton } from "next/font/google";
 import img1 from "../../../public/images/ambassadors/Sean+Foley-Headshot.jpg";
 import img2 from "../../../public/images/ambassadors/Erika+Larkin.jpeg";
@@ -27,8 +27,9 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 const ImageSlider = () => {
   const [slideAmount, setSlideAmount] = useState(0);
+  const isMobile = useMediaQuery({ query: "(max-width: 1180px)" });
 
-  const IMAGE_DIMENSIONS = 330;
+  const IMAGE_DIMENSIONS = isMobile ? 350 : 330;
   const MAX_SCROLL = 14;
 
   const handleSlideRight = () => {
@@ -179,7 +180,7 @@ const ImageSlider = () => {
             {genPictures()}
           </div>
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-0 lg:gap-5 items-center">
           <div className="bg-gray-400 w-full h-1 rounded">
             <div
               className="bg-white h-full rounded"

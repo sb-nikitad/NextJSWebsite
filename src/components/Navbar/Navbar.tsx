@@ -4,7 +4,7 @@ import { DesktopNavbar } from "./DesktopNavbar";
 import { MobileNavbar } from "./MobileNavbar";
 
 export const Navbar = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1180px)" });
 
   return <div>{isMobile ? <MobileNavbar /> : <DesktopNavbar />}</div>;
 };

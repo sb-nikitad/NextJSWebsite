@@ -6,14 +6,16 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export const CoachVideoFlow = () => {
   return (
     <>
-      <div className="bg-sb-darkblue flex justify-center w-full px-[200px] py-[20px] gap-x-32">
+      <div className="bg-sb-darkblue flex justify-center w-full flex-col-reverse lg:flex-row px-[20px] lg:px-[200px]  py-[20px] lg:py-[100px] gap-x-32 gap-y-12 flex-wrap lg:flex-nowrap">
         <div className="w-fit">
           <video autoPlay muted loop className="w-[330px]">
             <source src="videos/coach/Coach_2.mp4" type="video/mp4" />{" "}
           </video>
         </div>
-        <div className="flex flex-col gap-y-8 w-[70%] justify-center">
-          <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
+        <div className="flex flex-col gap-y-8 lg:w-[70%] justify-center">
+          <div
+            className={`${anton.className} text-4xl lg:text-6xl whitespace-pre-wrap`}
+          >
             {"TAKE A SWING VIDEO\n"}
             <span className="text-blue-500">ANYWHERE</span>
             {" AND CONVERT\nINTO 3D "}
@@ -25,12 +27,14 @@ export const CoachVideoFlow = () => {
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-start w-full px-[180px] py-[20px] gap-x-4">
-        <div className="flex flex-col gap-10 w-2/3 justify-center">
-          <div className="bg-sb-blue px-3 w-fit text-[12px]">
+      <div className="bg-sb-darkblue flex justify-center lg:justify-start w-full px-[20px] lg:px-[180px]  py-[20px] lg:py-[100px] gap-x-4 gap-y-12 flex-wrap">
+        <div className="flex flex-col gap-10 lg:w-2/3 items-center">
+          <div className="bg-sb-blue p-2 w-fit text-[12px]">
             REMOTE COACHING{" "}
           </div>
-          <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
+          <div
+            className={`${anton.className} text-4xl lg:text-6xl whitespace-pre-wrap text-center lg:text-start`}
+          >
             {
               "SEND LESSON NOTES WITH\nSCREEN RECORDINGS + VOICE-\nOVERS TO YOUR STUDENTS"
             }
@@ -44,21 +48,23 @@ export const CoachVideoFlow = () => {
             />
           </Link>
         </div>
-        <div className="">
+        <div>
           <video autoPlay muted loop className="w-[300px]">
             <source src="videos/coach/Coach_3.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-center w-full px-[200px] py-[20px] gap-x-32">
+      <div className="bg-sb-darkblue flex justify-center w-full px-[20px] lg:px-[200px]  py-[20px] lg:py-[100px] gap-x-32 gap-y-12 flex-wrap flex-col-reverse lg:flex-row">
         <div className="">
           <video autoPlay muted loop className="w-[350px]">
             <source src="videos/coach/Coach_3.mp4" type="video/mp4" />{" "}
           </video>
         </div>
-        <div className="flex flex-col gap-y-8 w-2/3 justify-center">
-          <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
+        <div className="flex flex-col gap-y-8 lg:w-2/3 justify-center">
+          <div
+            className={`${anton.className} text-4xl lg:text-6xl whitespace-pre-wrap text-center lg:text-start`}
+          >
             {
               "CREATE CUSTOM WATCHLISTS FOR YOUR STUDENTS AND TRACK THEIR PROGRESS\n"
             }
@@ -66,9 +72,11 @@ export const CoachVideoFlow = () => {
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-start w-full px-[180px] py-[20px] gap-x-4">
-        <div className="flex flex-col gap-4 w-2/3 justify-center">
-          <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
+      <div className="bg-sb-darkblue flex justify-center lg:justify-start w-full px-[20px] lg:px-[180px]  py-[20px] lg:py-[100px] gap-x-4 gap-y-12 flex-wrap">
+        <div className="flex flex-col gap-4 lg:w-2/3 justify-center">
+          <div
+            className={`${anton.className} text-4xl lg:text-6xl whitespace-pre-wrap text-center lg:text-start`}
+          >
             {"IMPORT AND ANALYZE VIDEOS FROM YOUR INBOX"}
           </div>
           <div className="text-[18px] font-light">
@@ -83,10 +91,10 @@ export const CoachVideoFlow = () => {
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex flex-col justify-center items-center w-full px-[180px] py-[20px] gap-y-12 pb-16">
+      <div className="bg-sb-darkblue flex flex-col justify-center items-center w-full px-[20px] lg:px-[180px] py-[20px] lg:py-[100px] gap-y-12 pb-16">
         <div className="flex flex-col gap-y-4 w-fit justify-center items-center">
           <div
-            className={`${anton.className} text-6xl whitespace-pre-wrap text-center	`}
+            className={`${anton.className} text-4xl lg:text-6xl whitespace-pre-wrap text-center lg:text-start`}
           >
             {"COMPARE TWO SWINGS WITH\n 3D MOTION DATA"}
           </div>

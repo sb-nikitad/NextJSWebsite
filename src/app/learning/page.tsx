@@ -1,3 +1,5 @@
+"use client";
+
 import { Anton } from "next/font/google";
 import { Separator } from "@/components/Separator";
 import { lazy } from "react";
@@ -9,12 +11,15 @@ import secondImg from "../../../public/images/learning/2.png";
 import thirdImg from "../../../public/images/learning/3.png";
 import fourthImg from "../../../public/images/learning/4.png";
 import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export default function Learning() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
-    <div className="p-32 w-full h-fit bg-sb-darkblue bg-center">
+    <div className="p-12 lg:p-32 w-full h-fit bg-sb-darkblue bg-center">
       <Separator height={230} />
 
       <div className="w-full h-fit bg-cover flex flex-col items-center">
@@ -45,18 +50,18 @@ export default function Learning() {
         <div className={`font-bold text-5xl mb-8 ${anton.className}`}>
           TUTORIALS FOR HOW-TO-USE THE SPORTSBOX 3D GOLF APP
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 pt-[100px]">
           <iframe
-            width="500px"
-            height="250px"
+            width={isMobile ? "300px" : "500px"}
+            height={isMobile ? "200px" : "250px"}
             src="https://www.youtube.com/embed/0y39gWWREMo?si=LzqQlmDvD882gueq"
             title="YouTube Video 1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
           <iframe
-            width="500px"
-            height="250px"
+            width={isMobile ? "300px" : "500px"}
+            height={isMobile ? "200px" : "250px"}
             src="https://www.youtube.com/embed/ZobbJiGzBAM?si=EagNj18VCCM8cTRk"
             title="YouTube Video 2"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -64,8 +69,8 @@ export default function Learning() {
           ></iframe>
 
           <iframe
-            width="500px"
-            height="250px"
+            width={isMobile ? "300px" : "500px"}
+            height={isMobile ? "200px" : "250px"}
             src="https://www.youtube.com/embed/dVZlPkzWkog?si=0v_htoJiOhnEhCPh"
             title="YouTube Video 3"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,8 +78,8 @@ export default function Learning() {
           ></iframe>
 
           <iframe
-            width="500px"
-            height="250px"
+            width={isMobile ? "300px" : "500px"}
+            height={isMobile ? "200px" : "250px"}
             src="https://www.youtube.com/embed/lrxqc_eejnY?si=5ZUooisc78WI_iQH"
             title="YouTube Video 4"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -82,8 +87,8 @@ export default function Learning() {
           ></iframe>
 
           <iframe
-            width="500px"
-            height="250px"
+            width={isMobile ? "300px" : "500px"}
+            height={isMobile ? "200px" : "250px"}
             src="https://www.youtube.com/embed/DJKOxQm38tM?si=9a2WFYLp_rBnrFGh"
             title="YouTube Video 4"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -102,8 +107,9 @@ export default function Learning() {
           </div>
 
           <iframe
-            width="700px"
-            height="400px"
+            className="pt-[100px]"
+            width={isMobile ? "300px" : "700px"}
+            height={isMobile ? "200px" : "400px"}
             src="https://www.youtube.com/embed/2vlbCyjLzLU?si=ETJYv3caWcNGnix4"
             title="YouTube Video 3"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

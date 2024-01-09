@@ -7,6 +7,8 @@ import { ReactNode } from "react";
 type Props = {
   className?: string;
   text: string;
+  hoverTextColor?: "hover:text-white" | "hover:text-black";
+  fontColor?: "text-white" | "text-black";
   color:
     | "bg-sb-blue"
     | "bg-sb-purple"
@@ -21,11 +23,13 @@ type Props = {
 export function HoverButton({
   text,
   color,
+  fontColor = "text-white",
   width,
   height,
   className,
   shadowColor = "shadow-sb-blue",
   link,
+  hoverTextColor = "hover:text-white",
 }: Props) {
   const buttonContent = (
     <button
@@ -40,11 +44,12 @@ export function HoverButton({
         "font-bold",
         "tracking-normalr",
         s.hoverButton,
+        hoverTextColor,
         color,
         width,
         height,
         shadowColor,
-        "text-white",
+        fontColor,
         className
       )}
     >

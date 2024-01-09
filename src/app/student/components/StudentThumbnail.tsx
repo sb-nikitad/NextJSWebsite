@@ -8,7 +8,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export const StudentThumbnail = () => {
   return (
     <>
-      <div className="bg-sb-darkblue bg-cover bg-center flex justify-between w-full px-[80px] pt-[200px] pb-[100px] items-center">
+      <div className="bg-sb-darkblue bg-cover bg-center flex justify-between w-full px-[20px] lg:px-[80px] pt-[100px] lg:pt-[200px] lg:pb-[100px] items-center flex-wrap gap-y-10">
         <div className="flex flex-col gap-10">
           <div className={`${anton.className} text-6xl whitespace-pre-wrap `}>
             {"KNOW YOUR NUMBERS,\nMAKE"}
@@ -28,16 +28,16 @@ export const StudentThumbnail = () => {
             />
           </Link>
         </div>
-        <div className="flex w-fil gap-x-4">
-          <video autoPlay muted loop className="w-[300px]">
+        <div className="flex w-fil gap-x-4 flex-wrap">
+          <video autoPlay muted loop className="w-[170px] lg:w-[300px]">
             <source src="videos/student/1.mp4" type="video/mp4" />
           </video>
-          <video autoPlay muted loop className="w-[300px]">
+          <video autoPlay muted loop className="w-[170px] lg:w-[300px]">
             <source src="videos/student/2.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
-      <div className="bg-sb-darkblue flex justify-center w-full px-[200px] pb-[200px] gap-x-32">
+      <div className="bg-sb-darkblue flex justify-center w-full py-[100px] lg:pt-[0px] lg:px-[200px] lg:pb-[200px] px-[20px] gap-32 flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap ">
         <div className="w-fit">
           <video autoPlay muted loop className="w-[430px]">
             <source src="videos/student/3.mp4" type="video/mp4" />{" "}
@@ -60,9 +60,9 @@ export const StudentThumbnail = () => {
           </div>
         </div>
       </div>
-      <div className="bg-sb-darkblue flex justify-center w-full px-[200px] pb-[200px] gap-x-32">
-        <div className="flex flex-row items-center justify-center">
-          <div className="flex flex-col gap-y-8 w-[50%] justify-center items-center text-center border-r-2 border-white pr-8 py-36">
+      <div className="bg-sb-darkblue flex justify-center w-full lg:px-[200px] lg:pb-[200px] gap-x-32 ">
+        <div className="flex lg:flex-row items-center justify-center flex-col flex-wrap px-[20px]">
+          <div className="flex flex-col gap-y-8 lg:w-[50%] justify-center items-center text-center lg:border-r-2 lg:border-white lg:pr-8 lg:py-36">
             <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
               {"READY TO TRAIN"}
               <span className="text-blue-500"> SOLO?</span>
@@ -82,7 +82,7 @@ export const StudentThumbnail = () => {
               />
             </Link>
           </div>
-          <div className="flex flex-col gap-y-8 w-[50%] justify-center items-center text-center pl-8 py-36">
+          <div className="flex flex-col gap-y-8 lg:w-[50%] justify-center items-center text-center lg:pl-8 py-36">
             <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
               NEED A<span className="text-blue-500"> FREE </span>
               SWING ASSESSMENT?
@@ -104,7 +104,7 @@ export const StudentThumbnail = () => {
           </div>
         </div>
       </div>
-      <div className="bg-sb-darkblue flex justify-center w-full px-[200px] pb-[200px] gap-x-32">
+      <div className="bg-sb-darkblue flex justify-center w-full px-[20px] lg:px-[200px] pb-[100px] lg:pb-[200px] gap-32 flex-wrap lg:flex-nowrap">
         <div className="w-fit">
           <video autoPlay muted loop className="w-[430px]">
             <source src="videos/student/4.mp4" type="video/mp4" />{" "}
@@ -124,7 +124,7 @@ export const StudentThumbnail = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-sb-darkblue flex justify-center w-full px-[130px] pb-[200px] gap-x-32">
+      <div className="bg-sb-darkblue flex justify-center w-full px-[20px] lg:px-[130px] pb-[100px] lg:pb-[200px] gap-32 flex-wrap lg:flex-nowrap">
         <div className="w-fit">
           <Image
             src={"images/student/map.png"} // Assuming imagePath is correct and imported
@@ -135,7 +135,7 @@ export const StudentThumbnail = () => {
             height={100}
           />
         </div>
-        <div className="flex flex-col gap-y-8 w-[85%] justify-center">
+        <div className="flex flex-col gap-y-8 w-[85%] justify-center ">
           <div className={`${anton.className} text-6xl whitespace-pre-wrap`}>
             {"FIND A"}
             <span className="text-blue-500"> COACH</span>
@@ -156,7 +156,7 @@ export const StudentThumbnail = () => {
           </Link>
         </div>
       </div>
-      <div className="bg-sb-darkblue bg-cover bg-center flex justify-between w-full px-[130px] pb-[100px] items-center">
+      <div className="bg-sb-darkblue bg-cover bg-center flex justify-between w-full px-[20px] lg:px-[130px] pb-[100px] gap-12 items-center flex-wrap">
         <div className="flex flex-col gap-10">
           <div className={`${anton.className} text-6xl whitespace-pre-wrap `}>
             {"WATCH HOW THE"}

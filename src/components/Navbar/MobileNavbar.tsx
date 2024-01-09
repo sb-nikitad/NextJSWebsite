@@ -190,7 +190,7 @@ export const MobileNavbar = () => {
           </nav>
         </div>
         {showMenu ? (
-          <div className=" inset-0 bg-sb-darkblue z-50 flex justify-center items-center w-screen h-screen flex-col text-[32px] box-border">
+          <div className=" inset-0 bg-sb-darkblue z-50 flex justify-center items-center w-full h-screen flex-col text-[32px] box-border">
             {selectedSubTabs ? (
               <>
                 <Tab

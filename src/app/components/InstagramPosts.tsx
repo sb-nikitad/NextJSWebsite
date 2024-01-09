@@ -36,10 +36,10 @@ const InstagramPost = ({ image, link }: { image: any; link: string }) => {
 
 export const InstagramPosts = () => {
   const arr = [
-    {
-      image: image1,
-      link: "https://www.instagram.com/reel/Csb32hYroEr/embed/?autoplay=1",
-    },
+    // {
+    //   image: image1,
+    //   link: "https://www.instagram.com/reel/Csb32hYroEr/embed/?autoplay=1",
+    // },
     {
       image: image2,
       link: "https://www.instagram.com/reel/CsZI9wxLCLR/embed/?autoplay=1",

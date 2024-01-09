@@ -103,12 +103,12 @@ const newsItems = [
       "Ex-golf pro links with Seattle-area AI experts on app that uses 3D motion analysis to improve game",
     link: "https://www.geekwire.com/2022/ex-golf-pro-links-with-seattle-area-ai-experts-on-app-that-uses-3d-motion-analysis-to-improve-game/",
   },
-  {
-    imageSrc: fourteenthImg,
-    mainText:
-      "BEYOND THE FAIRWAY: Sportsbox 3D Golf visualizes swings and motions",
-    link: "https://www.nbcsports.com/video/sportsbox-ais-sportbox-3d-golf-visualizes-swings-coach-players",
-  },
+  // {
+  //   imageSrc: fourteenthImg,
+  //   mainText:
+  //     "BEYOND THE FAIRWAY: Sportsbox 3D Golf visualizes swings and motions",
+  //   link: "https://www.nbcsports.com/video/sportsbox-ais-sportbox-3d-golf-visualizes-swings-coach-players",
+  // },
   {
     imageSrc: fifteenthImg,
     mainText:
@@ -143,15 +143,15 @@ export function NewsBlock() {
         <span className={clsx("text-black", "text-5xl", anton.className)}>
           IN THE NEWS
         </span>
-        <HoverButton
+        {/* <HoverButton
           text="Read More"
           color="bg-sb-blue"
           height="h-[50px]"
           width="w-[150px]"
           shadowColor={shadowStyles.black}
-        />
+        /> */}
       </div>
-      <div className="w-full lg:w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-5">
+      <div className="w-full 2xl:w-[75%] grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-5">
         {newsItems.map((newsItem) => (
           <NewsItem
             key={newsItem.mainText}

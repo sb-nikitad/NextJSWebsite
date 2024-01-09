@@ -54,7 +54,11 @@ export default function EducationPage() {
               $400
             </div>
             <Link href="https://sportsbox-ai.teachable.com/p/sportsboxbootcamp">
-              <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
+              <HoverButton
+                text="SIGN UP NOW"
+                color="bg-sb-blue"
+                hoverTextColor="hover:text-black"
+              />
             </Link>
           </div>
         </div>
@@ -89,7 +93,11 @@ export default function EducationPage() {
               $400
             </div>
             <Link href="https://sportsbox-ai.teachable.com/p/sportsbox-ai-level-1-certification">
-              <HoverButton text="SIGN UP NOW" color="bg-sb-blue" />
+              <HoverButton
+                text="SIGN UP NOW"
+                color="bg-sb-blue"
+                hoverTextColor="hover:text-black"
+              />
             </Link>
           </div>
         </div>

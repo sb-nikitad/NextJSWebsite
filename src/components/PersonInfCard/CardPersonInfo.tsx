@@ -78,12 +78,14 @@ export function CardPersonInfo({
             dangerouslySetInnerHTML={{ __html: thirdText }}
           />
 
-          <button
-            className={`${s.cardButton} self-start`}
-            onClick={() => setIsExpanded(!isExpanded)}
-          >
-            {isExpanded ? "Read less" : "Read more"}{" "}
-          </button>
+          {thirdText.length > 350 && (
+            <button
+              className={`${s.cardButton} self-start`}
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {isExpanded ? "Read less" : "Read more"}{" "}
+            </button>
+          )}
         </>
       )}
     </div>
