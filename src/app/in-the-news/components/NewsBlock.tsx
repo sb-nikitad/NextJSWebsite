@@ -149,6 +149,7 @@ export function NewsBlock() {
           height="h-[50px]"
           width="w-[150px]"
           shadowColor={shadowStyles.black}
+          link={"/in-the-news"}
         />
       </div>
       <div className="w-full lg:w-[75%] grid grid-cols-1 xl:grid-cols-3 gap-5">
