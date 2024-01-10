@@ -11,6 +11,7 @@ export default function AllCoachesPage() {
   useEffect(() => {
     router.refresh();
   }, []);
+
   return (
     <div className="bg-white">
       {/* <Script id="my-script">

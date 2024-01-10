@@ -28,11 +28,11 @@ export const StudentThumbnail = () => {
             />
           </Link>
         </div>
-        <div className="flex w-fil gap-x-4 flex-wrap">
-          <video autoPlay muted loop className="w-[170px] lg:w-[300px]">
+        <div className="flex w-fill gap-x-4 flex-wrap">
+          <video autoPlay muted loop className="w-[160px] lg:w-[300px]">
             <source src="videos/student/1.mp4" type="video/mp4" />
           </video>
-          <video autoPlay muted loop className="w-[170px] lg:w-[300px]">
+          <video autoPlay muted loop className="w-[160px] lg:w-[300px]">
             <source src="videos/student/2.mp4" type="video/mp4" />
           </video>
         </div>

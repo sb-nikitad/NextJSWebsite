@@ -4,7 +4,7 @@ import { MobileFooter } from "./MobileFooter";
 import { DesktopFooter } from "./DesktopFooter";
 
 export const Footer = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 1180px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1366px)" });
 
   return <div>{isMobile ? <MobileFooter /> : <DesktopFooter />}</div>;
 };

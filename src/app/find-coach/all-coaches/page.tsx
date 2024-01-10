@@ -10,9 +10,9 @@ import { useEffect } from "react";
 export default function AllCoachesPage() {
   const router = useRouter();
 
-  useEffect(() => {
-    router.refresh();
-  }, []);
+  // useEffect(() => {
+  //   router.refresh();
+  // }, []);
 
   return (
     <div className="bg-white">
