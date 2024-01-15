@@ -35,7 +35,7 @@ export function CardPersonInfo({
         "p-8",
         "flex",
         "flex-col",
-        "gap-y-4",
+        "gap-y-6",
         "items-center",
         "text-center"
       )}
@@ -70,8 +70,10 @@ export function CardPersonInfo({
               "text-white",
               "text-md",
               "mb-8",
-              "text-justify",
+              "text-start",
+              "tracking-wider",
               "overflow-hidden",
+              "leading-normal",
               isExpanded ? "max-h-[1200px]" : "max-h-[150px]",
               "transition-max-height ease-in-out duration-300"
             )}

@@ -88,7 +88,7 @@ export const DesktopNavbar = () => {
 
       <header suppressHydrationWarning>
         <nav
-          className={`flex box-border justify-between py-10 px-12 w-[100%] text-white absolute top-0 ${
+          className={`flex box-border justify-between py-10 px-10 w-[100%] text-white absolute top-0 ${
             showBanner ? "mt-10" : ""
           }`}
         >
@@ -96,7 +96,7 @@ export const DesktopNavbar = () => {
             className={clsx(
               "flex",
               "flex-nowrap",
-              "gap-x-12",
+              "gap-x-8",
               "items-center",
               "text-sm"
             )}
@@ -109,7 +109,7 @@ export const DesktopNavbar = () => {
                 height={50}
               />
             </Link>
-            <div className="flex flex-wrap gap-x-4  text-[18px]">
+            <div className="flex flex-wrap gap-x-4 gap-y-6 text-[18px]">
               <TabButton text="About" subTabs={subTabsAbout} />
               <Link href="/education">
                 <TabButton text="Education" />

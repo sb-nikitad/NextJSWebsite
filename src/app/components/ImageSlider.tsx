@@ -29,7 +29,7 @@ const ImageSlider = () => {
   const [slideAmount, setSlideAmount] = useState(0);
   const isMobile = useMediaQuery({ query: "(max-width: 1180px)" });
 
-  const IMAGE_DIMENSIONS = isMobile ? 350 : 330;
+  const IMAGE_DIMENSIONS = isMobile ? 350 : 350;
   const MAX_SCROLL = 14;
 
   const handleSlideRight = () => {

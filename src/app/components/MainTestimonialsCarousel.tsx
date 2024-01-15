@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "react-feather";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 import img1 from "../../../public/images/ambassadors/Austin+Na.jpg";
 import img2 from "../../../public/images/ambassadors/David+Leadbetter.png";
 import img3 from "../../../public/images/ambassadors/Sean+Foley-Headshot.jpg";
@@ -14,6 +15,7 @@ import img8 from "../../../public/images/ambassadors/Jeff+Smith.jpeg";
 import img9 from "../../../public/images/ambassadors/Jorge+Parada.jpg";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
+import { Pagination } from "swiper/modules";
 
 import { Anton } from "next/font/google";
 
@@ -99,17 +101,22 @@ const testimonials = [
 
 export const MainTestimonialsCarousel = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
+
+  const pagination = {
+    clickable: true,
+  };
+
   return (
     <div className="px-10">
       <div className={`${anton.className} text-5xl py-10 `}>TESTIMONIALS</div>
       <Swiper
         spaceBetween={50}
+        pagination={pagination}
         slidesPerView={isMobile ? 1 : 3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        modules={[Pagination]}
       >
         {testimonials.map((testimonial, index) => (
-          <SwiperSlide key={testimonial.name}>
+          <SwiperSlide className="cursor-grab" key={testimonial.name}>
             <div
               key={index}
               className="inline-block w-full bg-sb-lightdarkblue rounded-3xl "
@@ -133,7 +140,7 @@ export const MainTestimonialsCarousel = () => {
                     </p>
                   </div>
                 </div>
-                <p className="font-bold mb-5">{testimonial.header}</p>
+                <p className="font-bold my-5">{testimonial.header}</p>
 
                 <p className="text-sm font-medium overflow-wrap break-words">
                   {testimonial.quote}
