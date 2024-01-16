@@ -20,7 +20,7 @@ export const MainVideoFlow = () => {
             Down-the-Line, Behind, From Target, Above and Below
           </div>
         </div>
-        <div className=" lg:w-1/4">
+        <div className=" lg:w-[27%]">
           <video autoPlay muted loop>
             <source src="videos/main-3.mp4" type="video/mp4" />
           </video>
@@ -53,7 +53,7 @@ export const MainVideoFlow = () => {
             degrees
           </div>
         </div>
-        <div className="lg:w-1/4">
+        <div className="lg:w-[27%]">
           <video autoPlay muted loop>
             <source src="videos/main-5.mp4" type="video/mp4" />
           </video>
@@ -61,7 +61,7 @@ export const MainVideoFlow = () => {
       </div>
 
       <div className="bg-sb-darkblue flex justify-center w-full px-10 lg:px-[150px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-32">
-        <div className="lg:w-[20%]">
+        <div className="lg:w-[25%]">
           <video autoPlay muted loop>
             <source src="videos/main-6.mp4" type="video/mp4" />
           </video>
@@ -78,7 +78,7 @@ export const MainVideoFlow = () => {
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex flex-col gap-10 w-full items-center px-10 lg:px-[250px] py-[20px] lg:py-[200px] flex-wrap">
+      <div className="bg-sb-darkblue flex flex-col gap-10 w-full items-center px-10 lg:px-[250px] py-[20px] lg:py-[50px] flex-wrap">
         <div className="flex flex-col gap-y-4">
           <div className={`${anton.className} text-3xl lg:text-5xl `}>
             COMPARE TWO SWINGS WITH 3D MOTION DATA.
@@ -96,13 +96,13 @@ export const MainVideoFlow = () => {
       </div>
 
       <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-10">
-        <div className=" lg:w-[20%]">
+        <div className=" lg:w-[25%]">
           <video autoPlay muted loop>
             <source src="videos/main-8.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="flex flex-col gap-10 lg:w-[55%] justify-center">
-          <div className={`${anton.className}  text-3xl lg:text-6xl `}>
+          <div className={`${anton.className}  text-3xl lg:text-5xl `}>
             AUTO SWING DETECTION RECORDS AND CUTS YOUR SWING VIDEOS FOR YOU
           </div>
           <HoverButton
@@ -119,7 +119,7 @@ export const MainVideoFlow = () => {
           <div className={`${anton.className} text-3xl lg:text-7xl `}>
             HOW IT WORKS
           </div>
-          <div className=" lg:w-[70%]">
+          <div className=" lg:w-[80%]">
             <video autoPlay muted loop>
               <source src="videos/main-9.mp4" type="video/mp4" />
             </video>
