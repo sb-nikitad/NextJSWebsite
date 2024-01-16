@@ -3,7 +3,7 @@
 import "../../../app/globals.css";
 import { Lato, Anton } from "next/font/google";
 
-const videoSrc = "videos/test.mp4";
+const videoSrc = "videos/demo.mov";
 const lato = Lato({ weight: "400", subsets: ["latin"] });
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
