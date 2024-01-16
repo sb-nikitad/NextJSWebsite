@@ -29,7 +29,7 @@ export const MainVideoFlow = () => {
 
       <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[150px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-10">
         <div className="lg:w-[50%]">
-          <video autoPlay muted loop w-full>
+          <video autoPlay muted loop>
             <source src="videos/main-4.mp4" type="video/mp4" />
           </video>
         </div>
