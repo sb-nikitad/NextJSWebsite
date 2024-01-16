@@ -61,7 +61,7 @@ export const MainVideoFlow = () => {
       </div>
 
       <div className="bg-sb-darkblue flex justify-center w-full px-10 lg:px-[150px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-32">
-        <div className="lg:w-[25%]">
+        <div className="lg:w-[20%]">
           <video autoPlay muted loop>
             <source src="videos/main-6.mp4" type="video/mp4" />
           </video>
@@ -96,7 +96,7 @@ export const MainVideoFlow = () => {
       </div>
 
       <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-10">
-        <div className=" lg:w-[30%]">
+        <div className=" lg:w-[20%]">
           <video autoPlay muted loop>
             <source src="videos/main-8.mp4" type="video/mp4" />
           </video>
