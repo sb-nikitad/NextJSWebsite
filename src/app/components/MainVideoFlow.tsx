@@ -27,25 +27,25 @@ export const MainVideoFlow = () => {
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap flex-col-reverse lg:flex-row gap-10">
-        <div className="lg:w-[48%]">
-          <video autoPlay muted loop>
+      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[150px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-10">
+        <div className="lg:w-[50%]">
+          <video autoPlay muted loop w-full>
             <source src="videos/main-4.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="flex flex-col gap-10 lg:w-[48%] justify-center">
-          <div className={`${anton.className} text-2xl lg:text-6xl `}>
+        <div className="flex flex-col gap-10 lg:w-[50%] justify-center">
+          <div className={`${anton.className} text-2xl lg:text-5xl `}>
             THE ULTIMATE VIDEO ANALYSIS TOOL
           </div>
-          <div className="text-xl">
+          <div className="text-xl font-light">
             Analyze in both 3D and 2D using our 3D trackers and drawing tools
           </div>
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap gap-10">
-        <div className="flex flex-col gap-10 lg:w-2/3 justify-center">
-          <div className={`${anton.className} text-2xl lg:text-6xl `}>
+      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[200px] py-[20px] flex-wrap gap-4">
+        <div className="flex flex-col gap-10 lg:w-[55%] justify-center">
+          <div className={`${anton.className} text-2xl lg:text-5xl `}>
             GET ACCURATE 3D BIOMECHANICAL MEASUREMENTS FOR EVERY SWING
           </div>
           <div className="text-xl">
@@ -60,17 +60,17 @@ export const MainVideoFlow = () => {
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap flex-col-reverse lg:flex-row gap-10">
-        <div className=" lg:w-[48%]">
+      <div className="bg-sb-darkblue flex justify-center w-full px-10 lg:px-[150px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-32">
+        <div className="lg:w-[25%]">
           <video autoPlay muted loop>
             <source src="videos/main-6.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="flex flex-col gap-10 lg:w-[48%] justify-center">
-          <div className={`${anton.className} text-2xl lg:text-6xl `}>
+        <div className="flex flex-col gap-10 lg:w-[50%] justify-center">
+          <div className={`${anton.className} text-2xl lg:text-5xl `}>
             CREATE CUSTOM WATCHLISTS FOR IMMEDIATE FEEDBACK
           </div>
-          <div className="text-xl">
+          <div className="text-xl font-light">
             Coaches can set goal ranges that provide students with immediate
             feedback to quantify and track their progress (i.e. More turn in the
             backswing, using chest and pelvis turn trackers)
@@ -79,8 +79,8 @@ export const MainVideoFlow = () => {
       </div>
 
       <div className="bg-sb-darkblue flex flex-col gap-10 w-full items-center px-10 lg:px-[250px] py-[20px] lg:py-[200px] flex-wrap">
-        <div className="">
-          <div className={`${anton.className} text-3xl lg:text-6xl `}>
+        <div className="flex flex-col gap-y-4">
+          <div className={`${anton.className} text-3xl lg:text-5xl `}>
             COMPARE TWO SWINGS WITH 3D MOTION DATA.
           </div>
           <div className="text-xl">
@@ -88,27 +88,27 @@ export const MainVideoFlow = () => {
             pro’s swing as a model reference
           </div>
         </div>
-        <div className=" lg:w-[48%]">
+        <div className=" lg:w-[75%]">
           <video autoPlay muted loop>
             <source src="videos/main-7.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
 
-      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap flex-col-reverse lg:flex-row gap-10">
-        <div className=" lg:w-[48%]">
+      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row gap-10">
+        <div className=" lg:w-[30%]">
           <video autoPlay muted loop>
             <source src="videos/main-8.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="flex flex-col gap-10 lg:w-[48%] justify-center">
-          <div className={`${anton.className}  text-3xl lg:text-7xl `}>
+        <div className="flex flex-col gap-10 lg:w-[55%] justify-center">
+          <div className={`${anton.className}  text-3xl lg:text-6xl `}>
             AUTO SWING DETECTION RECORDS AND CUTS YOUR SWING VIDEOS FOR YOU
           </div>
           <HoverButton
             color="bg-sb-blue"
             text="Get Started"
-            width="w-fit"
+            width="w-[180px]"
             link="https://3dgolf.sportsbox.ai/sign-up"
           />
         </div>
