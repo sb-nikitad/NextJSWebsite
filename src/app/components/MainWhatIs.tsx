@@ -31,7 +31,7 @@ export function MainWhatIs() {
           your mobile phone and at a fraction of the cost of existing 3D Motion
           Capture Systems.
         </p>
-        <div className="lg:w-[45%]">
+        <div className="md:w-[45%]">
           <Image
             src={imagePath}
             alt="Image Description"

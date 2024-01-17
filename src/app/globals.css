@@ -47,12 +47,14 @@ dd {
 } */
 
 .swiper {
-  height: 300px !important;
+  height: 340px !important;
 }
 
 .swiper-pagination-bullet {
   background-color: white !important;
   opacity: 0.8 !important;
+  width: 13px !important;
+  height: 13px !important;
 }
 
 .swiper-pagination-bullet-active {

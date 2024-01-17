@@ -12,13 +12,13 @@ export const MainThumbnail = () => {
           </div>
           <div className="flex justify-center xl:justify-between flex-wrap gap-4 xl:w-[500px]">
             <HoverButton
-              className="w-10/12 xl:w-52"
+              className="w-full xl:w-52"
               color="bg-sb-blue"
               text="For Players"
               link="/student"
             />
             <HoverButton
-              className="w-10/12 xl:w-52"
+              className="w-full xl:w-52"
               color="bg-sb-blue"
               text="For Coaches"
               link="/coach"
