@@ -14,22 +14,17 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 const InstagramPost = ({ image, link }: { image: any; link: string }) => {
   return (
     <Link href={link} rel="noopener noreferrer" target="_blank">
-      <div className="w-[280px] h-[280px] relative overflow-hidden rounded-2xl ">
+      <div className="w-[280px] h-[280px] flex justify-center items-center overflow-hidden rounded-2xl relative">
         <Image
-          style={{ objectPosition: "0 -100px" }}
-          className="transition ease-in-out object-cover object-center hover:scale-125"
+          className="transition ease-in-out object-cover object-center hover:scale-125 absolute"
           src={image}
           width={280}
           height={280}
-          alt="instagram post"
+          alt="Instagram post"
+          style={{ objectPosition: "0 -100px" }}
         />
+        <Play className="w-fit z-20" width={30} height={30} />
       </div>
-
-      <Play
-        className="w-fit  relative bottom-1/2 left-[47%] z-20"
-        width={30}
-        height={30}
-      />
     </Link>
   );
 };
