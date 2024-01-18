@@ -119,10 +119,10 @@ export const MainTestimonialsCarousel = () => {
           <SwiperSlide className="cursor-grab" key={testimonial.name}>
             <div
               key={index}
-              className="inline-block w-full bg-sb-lightdarkblue rounded-3xl "
+              className="inline-block h-[85%] bg-sb-lightdarkblue rounded-3xl "
               style={{ width: "100%" }}
             >
-              <div className="h-full p-4">
+              <div className="p-4">
                 <div className="flex gap-2 items-center ">
                   <Image
                     src={testimonial.avatar}
@@ -132,17 +132,17 @@ export const MainTestimonialsCarousel = () => {
                     alt="avatar"
                   />
                   <div>
-                    <p className="text-sm font-semibold uppercase text-white">
+                    <p className="text-m font-semibold uppercase text-white">
                       {testimonial.name}
                     </p>
-                    <p className="text-xs uppercase text-white">
+                    <p className="text-s uppercase text-white">
                       {testimonial.location}
                     </p>
                   </div>
                 </div>
-                <p className="font-bold my-5">{testimonial.header}</p>
+                <p className="text-l font-bold my-5">{testimonial.header}</p>
 
-                <p className="text-sm font-medium overflow-wrap break-words">
+                <p className="text-l font-light overflow-wrap break-words">
                   {testimonial.quote}
                 </p>
               </div>
