@@ -122,7 +122,7 @@ export const MainTestimonialsCarousel = () => {
               className="inline-block w-full bg-sb-lightdarkblue rounded-3xl "
               style={{ width: "100%" }}
             >
-              <div className="h-full p-4">
+              <div className="h-[300px] p-4">
                 <div className="flex gap-2 items-center ">
                   <Image
                     src={testimonial.avatar}

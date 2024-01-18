@@ -155,8 +155,8 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="flex justify-between gap-20 px-10 lg:px-[230px] py-[100px] flex-wrap lg:flex-nowrap">
-      <div>
+    <div className="flex justify-between gap-20 px-10 lg:px-[100px] 2xl:px-[200px] py-[100px] flex-wrap lg:flex-nowrap">
+      <div className="w-full md:w-[300px] xl:w-full">
         <div className="h-[5px] w-full bg-sb-blue" />
         <div
           className={clsx(anton.className, "whitespace-pre-wrap text-4xl py-7")}
@@ -170,7 +170,7 @@ const ImageSlider = () => {
         </div>
       </div>
       <div>
-        <div className="relative w-[80vw] lg:w-[50vw] overflow-hidden h-full">
+        <div className="relative w-[80vw] md:w-[90vw] lg:w-[64vw] xl:w-[50vw] overflow-hidden h-full">
           <div
             className="flex transition-transform duration-300 gap-5"
             style={{
