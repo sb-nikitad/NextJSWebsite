@@ -86,7 +86,7 @@ const testimonials = [
     location: "Spain",
     header: "It’s been a great help to really measure where he’s at",
     quote:
-      "One of our graduate students from our full time international junior academy, Tiger Christensen, has now started at Oklahoma State [University]. He’s been sending his swing footage to me, which I’ve then converted into 3D.",
+      "One of our graduate students from our full time international junior academy, Tiger Christensen, has now started at Oklahoma State University. He’s been sending his swing footage to me, which I’ve then converted into 3D.",
   },
   {
     avatar: img9,
