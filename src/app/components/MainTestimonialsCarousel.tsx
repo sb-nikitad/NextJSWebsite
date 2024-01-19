@@ -29,7 +29,7 @@ const testimonials = [
     header:
       "Having the ability to show my student this in a busy setting is a game changer!",
     quote:
-      "I teach at a busy public range in variable changing conditions… Sportsbox Golf very quickly allows me to provide quick, effective analysis to my students. I had one long-time student, who is a decent player, pick up ten yards in one session",
+      "I teach at a busy public range in variable changing conditions… Sportsbox Golf very quickly allows me to provide quick, effective analysis to my students. I had one long-time student, who is a decent player, pick up ten yards in one session.",
   },
   {
     avatar: img2,
