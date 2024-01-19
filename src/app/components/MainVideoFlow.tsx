@@ -5,7 +5,7 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 export const MainVideoFlow = () => {
   return (
     <>
-      <div className="bg-sb-darkblue flex justify-between w-full px-10 lg:px-[250px] py-[20px] flex-wrap gap-10">
+      <div className="bg-sb-darkblue flex justify-between w-full px-10 xl:px-[250px] py-[20px] flex-wrap gap-10">
         <div className="flex flex-col gap-10 md:w-2/3 justify-center">
           <div className="bg-sb-blue p-3 font-bold w-fit">
             With Sportsbox 3D Golf, you can…

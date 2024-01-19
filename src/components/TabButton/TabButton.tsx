@@ -41,7 +41,8 @@ export function TabButton({ text, width, height, subTabs = [] }: Props) {
           "p-5",
           "bg-sb-darkblue",
           "justify-self-start",
-          "text-[19px]"
+          "text-[19px]",
+          "z-50"
         )}
         onMouseEnter={() => handleHover(true)}
         onMouseLeave={() => handleHover(false)}

@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import React from "react";
 import s from "../../components/PersonInfCard/CardPersonInfo.module.css";
@@ -12,6 +10,7 @@ import appStore from "../../../public/images/footer/app-store.svg";
 import playMarket from "../../../public/images/footer/play-market.svg";
 import { Separator } from "../Separator";
 import linkStyle from "../Footer/footer.module.css";
+import Link from "next/link";
 
 const anton = Anton({ weight: "400", subsets: ["latin"] });
 
@@ -27,7 +26,12 @@ export const DesktopFooter = () => {
       <div className="flex gap-[200px] p-10">
         <div className="flex flex-col gap-y-[4px]">
           <div className={`${anton.className} text-2xl`}>
-            <a href="mailto:contact@sportsbox.ai" className={`${s.cardButton}`}>
+            <a
+              href="mailto:contact@sportsbox.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${s.cardButton}`}
+            >
               CONTACT@SPORTSBOX.AI{" "}
             </a>
           </div>

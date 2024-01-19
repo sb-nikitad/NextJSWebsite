@@ -8,7 +8,7 @@ import img2 from "../../../public/images/ambassadors/Erika+Larkin.jpeg";
 import img3 from "../../../public/images/ambassadors/Mike+Adams.jpeg";
 import img4 from "../../../public/images/ambassadors/David+Leadbetter.png";
 import img5 from "../../../public/images/ambassadors/Dana+Dahlquist.jpeg";
-import img6 from "../../../public/images/ambassadors/Terry+Rowles.jpeg";
+import img6 from "../../../public/images/main/testimonials/Terry_Rowles.png";
 import img7 from "../../../public/images/ambassadors/Jeff+Smith.jpeg";
 import img8 from "../../../public/images/ambassadors/Chris+Mayson.png";
 import img9 from "../../../public/images/ambassadors/Suzy+Whaley.jpeg";
@@ -30,7 +30,7 @@ const ImageSlider = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 1180px)" });
 
   const IMAGE_DIMENSIONS = isMobile ? 350 : 350;
-  const MAX_SCROLL = 14;
+  const MAX_SCROLL = isMobile ? 15 : 14;
 
   const handleSlideRight = () => {
     setSlideAmount((prev) => (prev <= 0 ? prev : prev - 1));
