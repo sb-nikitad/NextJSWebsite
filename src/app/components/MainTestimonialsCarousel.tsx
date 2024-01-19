@@ -29,7 +29,7 @@ const testimonials = [
     header:
       "Having the ability to show my student this in a busy setting is a game changer!",
     quote:
-      "I teach at a busy public range in variable changing conditions…[Sportsbox Golf] very quickly allows me to provide quick, effective analysis to my students. I had one long-time student, [who is a decent player], pick up ten yards in one session",
+      "I teach at a busy public range in variable changing condition. Sportsbox Golf very quickly allows me to provide quick, effective analysis to my students. I had one long-time student, who is a decent player, pick up ten yards in one session",
   },
   {
     avatar: img2,
@@ -53,7 +53,7 @@ const testimonials = [
     location: "United States",
     header: "Sportsbox allows us to make better golfers, quicker",
     quote:
-      "My entire career I have emphasized the importance of measuring instead of guessing... Sportsbox allows us to quantify the issues and find solutions to make golfers better, quicker.",
+      "My entire career I have emphasized the importance of measuring instead of guessing. Sportsbox allows us to quantify the issues and find solutions to make golfers better, quicker.",
   },
   {
     avatar: img5,
@@ -86,7 +86,7 @@ const testimonials = [
     location: "Spain",
     header: "It’s been a great help to really measure where he’s at",
     quote:
-      "One of our graduate students from our full time international junior academy, Tiger Christensen, has now started at Oklahoma State [University]. He’s been sending his swing footage to me, which I’ve then converted into 3D...",
+      "One of our graduate students from our full time international junior academy, Tiger Christensen, has now started at Oklahoma State University. He’s been sending his swing footage to me, which I’ve then converted into 3D.",
   },
   {
     avatar: img9,
@@ -95,7 +95,7 @@ const testimonials = [
     header:
       "It's been much easier to get them to understand the necessary adjustments",
     quote:
-      "[I’ve been] using the app with higher level juniors that have some flaws in their movement [and] it's been much easier to get them to understand the necessary adjustments and the reason for them.",
+      "I’ve been using the app with higher level juniors that have some flaws in their movement and it's been much easier to get them to understand the necessary adjustments and the reason for them.",
   },
 ];
 
