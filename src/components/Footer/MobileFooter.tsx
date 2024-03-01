@@ -54,7 +54,7 @@ export const MobileFooter = () => {
         </Link>
       </div>
       <div className={`${anton.className} text-2xl`}>
-        SPORTSBOX.AI INC., © 2023
+        SPORTSBOX.AI INC., © {new Date().getFullYear()}
       </div>
       <div className="flex gap-5">
         <Link href="https://apps.apple.com/us/app/sportsbox-3d-golf/id1578921026">

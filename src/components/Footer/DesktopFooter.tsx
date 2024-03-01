@@ -84,7 +84,7 @@ export const DesktopFooter = () => {
           </a>
         </div>
         <div className={`${anton.className} text-2xl`}>
-          SPORTSBOX.AI INC., © 2023
+          SPORTSBOX.AI INC., © {new Date().getFullYear()}
         </div>
       </div>
       <div className="flex w-1/2 justify-between">

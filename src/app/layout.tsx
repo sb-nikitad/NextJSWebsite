@@ -4,6 +4,7 @@ import { Lato } from "next/font/google";
 import { Footer } from "../components/Footer/Footer";
 import { Navbar } from "../components/Navbar/Navbar";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -34,6 +35,13 @@ export default function RootLayout({
         <div>{children}</div>
         <Footer />
       </body>
+      <GoogleAnalytics
+        gaId={
+          process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
+            ? process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
+            : ""
+        }
+      />
     </html>
   );
 }

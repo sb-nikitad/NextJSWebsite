@@ -141,7 +141,7 @@ export const DesktopNavbar = () => {
                 color="bg-sb-lightpurple"
                 height="h-[50px]"
                 width="w-[180px]"
-                link="https://meetings.hubspot.com/edwin-fuh/product-demo"
+                link="https://meetings.hubspot.com/edwin-fuh/demo-team"
               />
             </Link>
             <Link href={"https://3dgolf.sportsbox.ai/sign-up"}>
